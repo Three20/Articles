@@ -1,0 +1,48 @@
+
+html {
+  background: #EEE url('/gfx/texturedgray.gif') repeat scroll 0 0;
+}
+
+#content h1 {
+  font-size: 4em;
+  margin-bottom: 0.2em;
+}
+
+#content h1,
+#content h2,
+#content h3 {
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
+}
+
+#toc .box {
+  background-color: #FFF;
+  border: 1px solid #EEE;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#toc .box .title {
+  background: #EEE url('/gfx/texturedgray.gif') repeat scroll 0 0;
+  padding: 10px;
+  font-size: 2em;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;;
+}
+
+#toc .box a {
+  color: #0054a6;
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 1em;
+  display: block;
+}
+
+#toc .box a:visited {
+  color: #66A;
+}
+
+#toc .box a:hover {
+  cursor: pointer;
+  background-color: #acd6ff;
+  color: #FFF;
+}
