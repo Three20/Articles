@@ -7,3 +7,13 @@
 #kohana-profiler {
   overflow: auto;
 }
+
+#content a {
+  text-decoration: none;
+  color: #0054a6;
+}
+
+#content a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

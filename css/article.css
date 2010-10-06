@@ -26,16 +26,6 @@ html {
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
 }
 
-#content a {
-  text-decoration: none;
-  color: #0054a6;
-}
-
-#content a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 #content p,
 #content ul {
   font-size: 1.5em;
