@@ -33,6 +33,7 @@ html {
 
 #content a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 #content p,
@@ -58,9 +59,21 @@ html {
 }
 
 #content code {
-  /* Font-family set borrowed from StackOverflow; their font selection is delicious! */
-  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
   padding: 3px;
   line-height: 1.5em;
   background-color: #F6F6F6;
 }
+
+#content pre {
+  padding: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+#content code,
+#content pre {
+  /* Font-family set borrowed from StackOverflow; their font selection is delicious! */
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+}
+
+
