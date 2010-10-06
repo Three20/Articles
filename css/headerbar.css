@@ -1,0 +1,31 @@
+
+#header {
+  background-color: #EEE;
+  padding: 20px;
+  height: 1.7em;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #DDD;
+}
+
+#header .left-links li {
+  float: left;
+}
+
+#header .right-links li {
+  float: right;
+}
+
+#header .left-links li,
+#header .right-links li {
+  font-size: 1.3em;
+}
+
+#header a {
+  text-decoration: none;
+  color: #0054a6;
+}
+
+#header a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
