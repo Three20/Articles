@@ -38,7 +38,6 @@ pattern is to have a single, shared navigator used across your whole application
 Here's an example to get started. Typically this appears in your Application Delegate's
 `applicationDidFinishLaunching:` selector.
 
-."brush: obj-c;"
     TTNavigator* navigator = [TTNavigator navigator];
     navigator.window = window;
 
@@ -49,7 +48,6 @@ Here's an example to get started. Typically this appears in your Application Del
 The above refers to a class, `RestaurantController`, with a selector,
 `initWithName:`
 
-."brush: obj-c;"
     -(void) initWithName: (NSString*)name {
       //...
     }
@@ -59,7 +57,6 @@ restaurant controller for a given restaurant. For instance, Chotchkie's.
 
 Typically you'd do it this way, if you were embedded in a UINavigationController:
 
-."brush: obj-c;"
     RestaurantController* controller = [[RestaurantController alloc]
       initWithName:@"Chotchkie's"];
     [navigationController pushViewController:controller animated:YES];
@@ -71,7 +68,6 @@ context" and be done with it.
 
 With TTNavigator, just open this url with:
 
-."brush: obj-c;"
     [navigator openURLAction:[TTURLAction actionWithURLPath:@"http://github.com/jverkoey"]];
     [[TTNavigator navigator] openURLAction:
       [[TTURLAction actionWithURLPath:@"tt://restaurant/Chotchkie's"] applyAnimated:YES]]
@@ -115,7 +111,6 @@ the navigator) you can set one of three persistence modes.
 To set the persistence mode, set the `persistenceMode` property of
 `TTNavigator`.
 
-."brush: obj-c;"
     TTNavigator* navigator = [TTNavigator navigator];
     navigator.persistenceMode = TTNavigatorPersistenceModeAll;
 
@@ -132,25 +127,21 @@ URLs to Controllers
 The first form is when you have a url, say "tt://menu/1", and this is being mapped to a
 Controller. Let's say we have the following map (from TTNavigatorDemo):
 
-."brush: obj-c;"
     [map from:@"tt://menu/(initWithMenu:)"
       toSharedViewController:[MenuController class]];
 
 Opening "tt://menu/1" will call
 
-."brush: obj-c;"
     [[MenuController alloc] initWithMenu:1]
 
 This extends for multiple parameters, also. Let's say we want to display a specific page in
 MenuController.
 
-."brush: obj-c;"
     [map from:@"tt://menu/(initWithMenu:)/(page:)"
       toSharedViewController:[MenuController class]];
 
 Opening "tt://menu/1/5" will call
 
-."brush: obj-c;"
     [[MenuController alloc] initWithMenu:1 page:5]
 
 ### Other data types
@@ -158,24 +149,20 @@ Opening "tt://menu/1/5" will call
 Parameters will automatically map to the method's data types. In the above examples we've
 assumed that `initWithMenu:` has this signature
 
-."brush: obj-c;"
     - (id)initWithMenu:(MenuPage)page
 
 Where `MenuPage` is an enum (effectively an int).  
 We could also map parameters to strings if we wanted.
 
-."brush: obj-c;"
     - (id)initWithMenuName:(NSString*)name
 
 The map:
 
-."brush: obj-c;"
     [map from:@"tt://menu/(initWithMenuName:)"
       toSharedViewController:[MenuController class]];
 
 Opening "tt://menu/lunch" will call
 
-."brush: obj-c;"
     [[MenuController alloc] initWithMenuName:@"lunch"]
 
 NSObjects to URLs
@@ -188,7 +175,6 @@ This is an incredibly useful feature when populating a table with items. So how 
 
 First off, let's consider a basic NSObject:
 
-."brush: obj-c;"
     @interface Contact : NSObject {
 
     }
@@ -205,13 +191,11 @@ can set a URL for each table item, but how do we generate this URL?
 
 Introducing the NSObject TTURL map:
 
-."brush: obj-c;"
     [map from:[Contact class] name:@"view" toURL:@"tt://contact/view/(uid)"];
 
 Calling `[aContact URLValueWithName:@"view"]` will generate a URL
 specifically for aContact.
 
-."brush: obj-c;"
     Contact* aContact = [[Contact alloc]
       initWithFirstName:@"Johnny" lastName:@"Appleseed" uid:1];
     NSString* url = [aContact URLValueWithName:@"view"];
@@ -236,7 +220,6 @@ rather than encoding them somehow in a URL. There is a simple pattern for this, 
 selector, `openURL:query:animated:query:`. For example, imagine you
 wanted to pass along an `NSArray` of items to show in the new view:
 
-."brush: obj-c;"
     NSArray *arr = [...load up with data...];
     [[TTNavigator navigator] openURL:@"tt://restaurant/Chotchkie's" 
       query:[NSDictionary dictionaryWithObject:arr forKey:@"arraydata"],
@@ -245,7 +228,6 @@ wanted to pass along an `NSArray` of items to show in the new view:
 In this example, the array is passed directly to the initWithName: but only if there is a
 matching selector that accepts the query:
 
-."brush: obj-c;"
     -(id) initWithName: (NSString*)name query:(NSDictionary*)query {
       for (MyObject* item in [query objectForKey:@"arrayData"])
         //... do something with item ...
