@@ -1,4 +1,8 @@
 
+html {
+  background: #EEE url('/gfx/texturedgray.gif') repeat scroll 0 0;
+}
+
 #content h1 {
   font-size: 4em;
   margin-bottom: 0.2em;
@@ -17,6 +21,7 @@
 
 #content .horizontal-bar {
   margin-top: 20px;
+  margin-bottom: 20px;
   border-top: 1px solid #DDD;
   border-bottom: 1px solid #DDD;
   background-color: #EEE;
@@ -26,4 +31,31 @@
 #content .horizontal-bar .links {
   text-align: center;
   font-size: 2em;
+}
+
+#content .profile {
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #DDD;
+  background-color: #FFF;
+  float: left;
+}
+
+#content .name {
+  font-size: 2em;
+  text-align: center;
+}
+
+#content .role {
+  font-size: 1.3em;
+  text-align: center;
+  color: #888;
+  margin-bottom: 0.3em;
+}
+
+#content .twitter,
+#content .github {
+  font-size: 1.3em;
+  text-align: center;
 }
