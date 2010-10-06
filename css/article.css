@@ -1,0 +1,66 @@
+
+html {
+  background: #EEE url('/gfx/texturedgray.gif') repeat scroll 0 0;
+}
+
+#content h1 {
+  font-size: 4em;
+  margin-bottom: 0.2em;
+}
+
+#content h2 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: #666;
+}
+
+#content h3 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #888;
+}
+
+#content h1,
+#content h2,
+#content h3 {
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;;
+}
+
+#content a {
+  text-decoration: none;
+  color: #0054a6;
+}
+
+#content a:hover {
+  text-decoration: underline;
+}
+
+#content p,
+#content ul {
+  font-size: 1.5em;
+}
+
+#content ul li {
+  font-size: 1em;
+}
+
+#content ul li {
+  list-style-type: circle;
+  margin-left: 1.5em;
+}
+
+#content ul,
+#content p {
+  margin-bottom: 1em;
+  background-color: #FFF;
+  padding: 1em;
+  border: 1px solid #eee;
+}
+
+#content code {
+  /* Font-family set borrowed from StackOverflow; their font selection is delicious! */
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+  padding: 3px;
+  line-height: 1.5em;
+  background-color: #F6F6F6;
+}

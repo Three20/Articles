@@ -1,0 +1,9 @@
+
+.fixed-width {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#kohana-profiler {
+  overflow: auto;
+}
