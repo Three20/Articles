@@ -1,0 +1,9 @@
+
+html {
+  background: #EEE url('/gfx/texturedgray.gif') repeat scroll 0 0;
+}
+
+
+#content h1 {
+  font-size:4em;
+}

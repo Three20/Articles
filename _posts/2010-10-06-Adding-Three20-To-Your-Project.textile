@@ -1,4 +1,3 @@
-
 h1. Adding Three20 To Your Project
 
 h3. Adapted from Three20.info by Michael Grinich
@@ -11,7 +10,6 @@ h2. Add the library to your project
 
 Locate the @Three20.xcodeproj@ file under @three20/src/Three20/@. Drag @Three20.xcodeproj@ and drop it onto the root of your Xcode project's "Groups and Files" sidebar. A dialog will appear -- make sure "Copy items" is unchecked and "Reference Type" is "Relative to Project" before clicking "Add".
 
-
 Open the Three20 Xcode Project that you just added to your app and expand the "Dependencies" group. Select all of the projects listed there and drag them to your app as well. You should now have the following list of Three20 projects added to your app:
 
 * Three20Core
@@ -21,7 +19,7 @@ Open the Three20 Xcode Project that you just added to your app and expand the "D
 * Three20UINavigator
 * Three20UI
 * Three20
-	
+
 Now you need to link the Three20 static libraries to your project. Select all of the project items that you just added to the sidebar. Under the "Details" table, you will see a number of items, such as @libThree20.a@ and @libThree20Core.a@. Check the checkbox on the far right for each of the lib files (not the UnitTests). This will link each part of the Three20 framework to your app.
 
 Now you need to add Three20 as a dependency of your project, so Xcode compiles it whenever you compile your project. Expand the "Targets" section of the sidebar and double-click your application's target. Under the "General" tab you will see a "Direct Dependencies" section. Click the "+" button, select "Three20" and each of the other libs, and click "Add Target". You do not need to add the UnitTests target for each lib.

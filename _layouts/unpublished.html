@@ -18,7 +18,7 @@
   echo three20html::stylesheet(array(
     'css/reset',
     'css/global.css',
-    'css/article.css',
+    'css/unpublished.css'
   ), null, FALSE);
   echo three20html::stylesheet($css_files, null, FALSE);
   echo three20html::script($js_head_files, FALSE);
@@ -28,13 +28,13 @@
 <body>
 
 <div id="page-wrapper">
-<div class="fixed-width">
 <div id="content">
+<div class="fixed-width">
 
-<?php echo $content ?>
+<h1>This article hasn't been published.</h1>
 
-</div>
-</div>
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->
 </div> <!-- #page-wrapper -->
 
 <noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/155532ns.gif" /></p></noscript>
