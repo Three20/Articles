@@ -34,5 +34,4 @@ While you are in Project Settings, go to "Other Linker Flags" under the "Linker"
 
 You're now ready to go! Just @#import "Three20/Three20.h"@ anywhere you want to use Three20 classes in your project.
 
-
 fn1. http://developer.apple.com/graphicsimaging/coreanimation/ framework
