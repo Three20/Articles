@@ -3,6 +3,10 @@ html {
   background: #EEE url('/gfx/texturedgray.gif') repeat scroll 0 0;
 }
 
+#content {
+  padding-bottom: 20px;
+}
+
 #content h1 {
   font-size: 4em;
   margin-bottom: 0.2em;
@@ -47,6 +51,25 @@ html {
   background-color: #FFF;
   padding: 1em;
   border: 1px solid #eee;
+}
+
+#content .authors {
+  float: right;
+  color: #888;
+  margin-bottom: 1em;
+}
+
+#content .authors div {
+  text-align: right;
+}
+
+#content .horizontal-bar {
+  text-align: center;
+  font-size: 2em;
+  padding: 1em;
+  margin-bottom: 20px;
+  background-color: #FFF;
+  border: 1px solid #EEE;
 }
 
 #content .image p {

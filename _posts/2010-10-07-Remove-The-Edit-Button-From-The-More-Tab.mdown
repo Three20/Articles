@@ -1,0 +1,67 @@
+---
+title: Remove the 'Edit' Button from the 'More' tab
+---
+
+<div class="authors">
+  <div class="author">Author: robertvmathews</div>
+  <div class="author">Author: Drync</div>
+  <div class="editor">Editor: Jeff Verkoeyen</div>
+</div>
+
+Remove the 'Edit' Button from the 'More' tab
+============================================
+
+### Adapted from the <a href="http://groups.google.com/group/three20/web/recipe-removing-the-edit-button-from-the-more-tab">Three20 Google Group</a>
+
+If you are using the TTNavigationController, then you have a UITabBarController
+subclass that controls your top level tabs. That was probably copied straight from
+the `Three20/samples/TTNavigatorDemo` example, and so looks something like the
+code below.
+
+Your problem is that on the More tab there is an 'Edit' button so that the user
+can rearrange and edit the order of the tabs. How do you hide it?
+
+This is hard, and the subject of several StackOverflow articles, so I'll preserve
+the Three20 version of the StackOverflow article here.
+
+Note that I've tested this and it works in works in iOS4.
+
+    #import "TabBarController.h"
+
+    @implementation TabBarController
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    // UIViewController
+
+    - (void)viewDidLoad {
+        [self setTabURLs:[NSArray arrayWithObjects:@"myapp://leftmost_tab",
+                                                 @"myapp://second_tab",
+                                                 @"myapp://third_tab",
+                                                 @"myapp://fourth_tab",
+                                                 // everything past four is behind the "More..." icon
+                                                 @"myapp://top_more_item",
+                                                 @"myapp://second_more_item",
+                        nil]];
+    }
+
+    - (void)viewWillAppear:(BOOL)animated
+    {
+        [super viewWillAppear: animated];
+        self.moreNavigationController.navigationBar.tintColor = [UIColor colorWithRed: .23
+                                                                                green: .03
+                                                                                 blue: 0.02
+                                                                                alpha: 1.0];
+        self.customizableViewControllers = nil;
+        self.moreNavigationController.delegate = self;
+    }
+
+    - (void)navigationController:(UINavigationController *)navigationController
+          willShowViewController:(UIViewController *)viewController
+                        animated:(BOOL)animated {
+    
+        UINavigationBar *morenavbar = navigationController.navigationBar;
+        UINavigationItem *morenavitem = morenavbar.topItem;
+        /* We don't need Edit button in More screen. */
+        morenavitem.rightBarButtonItem = nil;
+    }
+    @end
