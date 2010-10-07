@@ -18,6 +18,12 @@
   font-size: 3em;
 }
 
+#header .leadin h1,
+#header .leadin h2,
+#navbar .text {
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
+}
+
 #header .leadin strong {
   color: #FFF;
 }
