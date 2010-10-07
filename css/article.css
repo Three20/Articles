@@ -52,6 +52,7 @@ html {
 #content .naviblock {
   background: #EEE url('/gfx/angledgradientred.gif') repeat scroll 0 0;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 #content .naviblock .navi {
