@@ -28,6 +28,7 @@ html {
 
 #content p,
 #content ul {
+  -webkit-font-smoothing: antialiased;
   font-size: 1.5em;
 }
 
