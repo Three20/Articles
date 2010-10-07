@@ -49,6 +49,27 @@ html {
   border: 1px solid #eee;
 }
 
+#content .naviblock {
+  background: #EEE url('/gfx/angledgradientred.gif') repeat scroll 0 0;
+  padding: 10px;
+}
+
+#content .naviblock .navi {
+  font-size: 2em;
+  color: #000;
+  background-color: #FFF;
+  display: inline;
+  padding: 1px 10px;
+  border: 1px solid #EEE;
+  border-bottom: none;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
+}
+
+#content .source {
+  text-align: right;
+  padding: 5px;
+}
+
 #content code {
   padding: 3px;
   line-height: 1.5em;
