@@ -44,8 +44,7 @@ Note that I've tested this and it works in works in iOS4.
                         nil]];
     }
 
-    - (void)viewWillAppear:(BOOL)animated
-    {
+    - (void)viewWillAppear:(BOOL)animated {
         [super viewWillAppear: animated];
         self.moreNavigationController.navigationBar.tintColor = [UIColor colorWithRed: .23
                                                                                 green: .03
@@ -58,10 +57,9 @@ Note that I've tested this and it works in works in iOS4.
     - (void)navigationController:(UINavigationController *)navigationController
           willShowViewController:(UIViewController *)viewController
                         animated:(BOOL)animated {
-    
-        UINavigationBar *morenavbar = navigationController.navigationBar;
-        UINavigationItem *morenavitem = morenavbar.topItem;
-        /* We don't need Edit button in More screen. */
+        UINavigationBar* morenavbar = navigationController.navigationBar;
+        UINavigationItem* morenavitem = morenavbar.topItem;
+        // We don't need Edit button in More screen.
         morenavitem.rightBarButtonItem = nil;
     }
     @end
