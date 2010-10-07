@@ -1,7 +1,7 @@
 Debugging with Three20
 ======================
 
-[TTDebug.h](http://github.com/facebook/Three20/blob/master/src/Three20/TTDebug.h)
+[TTDebug.h](http://github.com/facebook/three20/blob/master/src/Three20Core/Headers/TTDebug.h)
 contains a set of useful debug tools, including priority-based logging and
 debug-only assertions. These macros deprecate the original Three20 `TTLOG`
 macros and Xcode `NSLog` methods that were difficult to disable (and tended to cause an
@@ -11,49 +11,66 @@ to see the logs you care about.
 ### Table of Contents
 
 <div class="toc" markdown="1">
-* [How to turn on logging](#turnonlogging)
-* [Logging](#logging)
+* [What is logging?](#whatislogging)
+* [How to enable Three20 logging](#turnonlogging)
+* [How to write to the log](#logging)
 * [Conditional Logging](#conditionlogging)
 * [Debug-only assertions](#debugassertions)
 </div>
 <div class="clearfix"></div>
 
-How to turn on logging {#turnonlogging}
-======================
+What is logging? {#whatislogging}
+================
 
-All you need to do is define a `DEBUG` preprocessor definition in the `GCC_PREPROCESSOR_DEFINITIONS`
-option in your debug target settings. You shouldn't define this for your release build.
-<div class="image" markdown=1>![Add the preprocessor definitions](/gfx/core/debugging/preprocessor.png 339x35)</div>
+Writing text to a console or file, at it's simplest. In Xcode, we use the `NSLog`
+method to write to the Xcode log, visible when running an application with the
+debugger attached.
 
-If you want to enable logging for Three20, you will need to add a preprocessor definition to the
-Three20 lib like so: `TTMAXLOGLEVEL=TTLOGLEVEL_INFO`. You'll need to actually open the Three20
-project and change its settings for this to work.
+Three20 adds an extra layer that makes it easier to disable logging when you
+ship your app, selectively show certain logging messages, or make assertions
+only in development builds of your app.
 
-If you want to enable logging for **your own project**, you will need to add a preprocessor
-definition to your project like so: `TTMAXLOGLEVEL=TTLOGLEVEL_INFO`.
+How to enable Three20 logging {#turnonlogging}
+=============================
+
+Define a `DEBUG` preprocessor definition in the `GCC_PREPROCESSOR_DEFINITIONS`
+option in your debug target settings. You shouldn't define this for your release
+build.
+**If you define `DEBUG` in the build you submit to the App Store, your app *will* be
+rejected**.
 
 !> !* Hey, listen!
 !> 
-!> Be sure that you do **not** have "All Configuration Settings" selected when you do
-!> this! When the DEBUG flag is defined, Three20 will include a set of debug utilities in your binary
-!> that is unsafe for the App Store. This could cause your app to be rejected.
+!> Be sure that you do **not** have "All Configuration Settings" selected when you
+!> do this! When the DEBUG flag is defined, Three20 will include a set of debug
+!> utilities in your binary that is unsafe for the App Store. This *will* cause
+!> your app to be rejected.
 !> 
 !> **Don't** submit DEBUG builds to the App Store!
 
-Logging {#logging}
-=======
+<div class="image" markdown=1>![Add the preprocessor definitions](/gfx/core/debugging/preprocessor.png 339x35)</div>
 
-The logging system introduces a new set of macros.
+How to write to the log {#logging}
+=======================
 
-    TTDERROR(text, ...)    // Log level 1
-    TTDWARNING(text, ...)  // Log level 3
-    TTDINFO(text, ...)     // Log level 5
-    TTDPRINT(text, ...)
+The logging system introduces a new set of priority-based macros.
 
-Each of the above logging macros eventually routes the logs through `TTDPRINT`, but the messages
-will only be displayed if the message's priority level is below the `TTMAXLOGLEVEL` threshold.  If
-you don't explicitly set `TTMAXLOGLEVEL`, the default is set to `TTLOGLEVEL_WARNING`, meaning only
-warning and error logs will be displayed.
+    TTDERROR(text, ...)    // Priority level 1
+    TTDWARNING(text, ...)  // Priority level 3
+    TTDINFO(text, ...)     // Priority level 5
+    TTDPRINT(text, ...)    // Always prints
+
+What does priority mean?
+------------------------
+
+The log message will only be written if the log's priority level is below
+the `TTMAXLOGLEVEL`. So if the max log level is 3, then no logging
+messages with a priority level higher than that will be displayed (i.e.
+`TTDINFO`).
+
+If you don't explicitly set `TTMAXLOGLEVEL`, the default is set to
+`TTLOGLEVEL_WARNING`, meaning only warning and error logs will
+be displayed.
 
 The standard output of `TTDPRINT` looks something like this:
 
@@ -65,14 +82,14 @@ Conditional Logging {#conditionlogging}
 
 <div class="source">New since Dec 5, 2009</div>
 
-Conditional logging allows you to use logging methods that only produce output when
+Conditional logging allows you to produce output only when
 a certain condition is met. A quick example:
 
     TTDCONDITIONLOG(TTDFLAG_URLREQUEST, @"Request parameters: %@", request.parameters)
 
 This will only produce the log if the flag `TTDFLAG_URLREQUEST` is set to a non-zero value. You can
 see a set of basic Three20 conditional log flags in
-[TTDebugFlags.h](http://github.com/facebook/Three20/blob/master/src/Three20/TTDebugFlags.h).
+[TTDebugFlags.h](http://github.com/facebook/three20/blob/master/src/Three20Core/Headers/TTDebugFlags.h).
 
 Debug-only assertions {#debugassertions}
 =====================

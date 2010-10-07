@@ -16,7 +16,7 @@ html {
 
 #content h3 {
   font-size: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 0.7em;
   color: #888;
 }
 
@@ -49,10 +49,31 @@ html {
   border: 1px solid #eee;
 }
 
+#content .image p {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  text-align: center;
+}
+
+#content .image p img {
+  padding: 10px;
+  background-color: #FFF;
+  border: 1px solid #EEE;
+}
+
+#content em {
+  font-style: italic;
+}
+
+#content strong {
+  font-family: 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
+}
+
 #content .naviblock {
   background: #EEE url('/gfx/angledgradientred.gif') repeat scroll 0 0;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #content .naviblock .navi {
@@ -62,7 +83,7 @@ html {
   display: inline;
   padding: 1px 10px;
   border: 1px solid #EEE;
-  border-bottom: none;
+  border-bottom: 1px solid #FFF;
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
 }
 
