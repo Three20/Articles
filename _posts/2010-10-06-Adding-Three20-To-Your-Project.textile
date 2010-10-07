@@ -6,7 +6,7 @@ h1. Adding Three20 To Your Project
 
 h3. Adapted from Three20.info by Michael Grinich
 
-h2. 1. Get the source
+h2. Get the source
 
 Clone the three20 git repository: @git clone git://github.com/facebook/three20.git@. Make sure you store the repository in a permanent place because Xcode will need to reference the files every time you compile your project.
 
