@@ -10,9 +10,9 @@ and pass data into it. Most applications rely on each view having a particular A
 callers must know. This leads to a lot of boilerplate code to open the same view from multiple
 locations in your application.
 
-The URL-based navigation in `TTNavigator` provides a standard way to
+The URL-based navigation in ^TTNavigator provides a standard way to
 navigate the user from one view to another, with built-in understanding of some of the standard
-iPhone interfaces like UINavigationController, UITabBarController, and more.
+iPhone interfaces like ^UINavigationController, ^UITabBarController, and more.
 
 ### Table of Contents
 
@@ -28,10 +28,10 @@ iPhone interfaces like UINavigationController, UITabBarController, and more.
 Introduction {#intro}
 ============
 
-The concept behind `TTNavigator` is similar to
+The concept behind ^TTNavigator is similar to
 [Ruby on Rails' routing](http://api.rubyonrails.org/classes/ActionController/Routing.html)
 in that you link URL patterns to code in a url _map_. Callers simply request a url, and
-`TTNavigator` will find the appropriate code to run. This means that the url map makes a semantic
+^TTNavigator will find the appropriate code to run. This means that the url map makes a semantic
 distinction between _what_ you want to display, and _how_ you want to display it. The most common
 pattern is to have a single, shared navigator used across your whole application.
 
@@ -55,7 +55,7 @@ The above refers to a class, `RestaurantController`, with a selector,
 This establishes a simple map which recognizes one url. Imagine that you wanted to open the
 restaurant controller for a given restaurant. For instance, Chotchkie's.
 
-Typically you'd do it this way, if you were embedded in a UINavigationController:
+Typically you'd do it this way, if you were embedded in a ^UINavigationController:
 
     RestaurantController* controller = [[RestaurantController alloc]
       initWithName:@"Chotchkie's"];
@@ -63,10 +63,10 @@ Typically you'd do it this way, if you were embedded in a UINavigationController
     [controller release];
 
 This is a lot of boilerplate. The only reason to keep `controller` around is to add it to the
-UINavigationController, and release it. Really, you just want to "open this view in the current
+^UINavigationController, and release it. Really, you just want to "open this view in the current
 context" and be done with it.
 
-With TTNavigator, just open this url with:
+With ^TTNavigator, just open this url with:
 
     [navigator openURLAction:[TTURLAction actionWithURLPath:@"http://github.com/jverkoey"]];
     [[TTNavigator navigator] openURLAction:
@@ -79,16 +79,16 @@ parameter.
 Persistence {#persistence}
 ===========
 
-One huge advantage of using `TTNavigator` is the fact that the user's entire navigation state can
+One huge advantage of using ^TTNavigator is the fact that the user's entire navigation state can
 be persisted automatically based on these URLs. This means that if you have a tab bar with
-navigation controllers, `TTNavigator` will remember the "stack" of urls that the user has navigated
+navigation controllers, ^TTNavigator will remember the "stack" of urls that the user has navigated
 using `openURLAction:`. The next time the application is launched, the user will be shown exactly
 the navigation state as the last time they launched the application.
 
-`TTNavigator` is smart enough to only persist the URLs, and avoid re-instantiating a whole stack of
-views on startup. So if the user is 10 levels deep into a UINavigationController, only the most
+^TTNavigator is smart enough to only persist the URLs, and avoid re-instantiating a whole stack of
+views on startup. So if the user is 10 levels deep into a ^UINavigationController, only the most
 recent view will be instantated at startup. The user will, however, be able to navigate backwards
-using UINavigationController's "back" button, and the views will be instantiated on demand.
+using ^UINavigationController's "back" button, and the views will be instantiated on demand.
 
 Be careful with this though, because it is easy to accidentally write code where a view is dependent
 on state that has been initialized in a previous view.
@@ -96,7 +96,7 @@ on state that has been initialized in a previous view.
 Enabling persistence
 --------------------
 
-The default persistence mode of TTNavigator is
+The default persistence mode of ^TTNavigator is
 `TTNavigatorPersistenceModeNone`. To enable persistence you will need
 to choose one of the other two persistence modes before you call
 `restoreViewControllers`. Within your
@@ -109,7 +109,7 @@ the navigator) you can set one of three persistence modes.
 * `TTNavigatorPersistenceModeAll` - Persist the entire history.
 
 To set the persistence mode, set the `persistenceMode` property of
-`TTNavigator`.
+^TTNavigator.
 
     TTNavigator* navigator = [TTNavigator navigator];
     navigator.persistenceMode = TTNavigatorPersistenceModeAll;
@@ -124,7 +124,7 @@ with the simpler case.
 URLs to Controllers
 -------------------
 
-The first form is when you have a url, say "tt://menu/1", and this is being mapped to a
+The first form is when you have a url, say `"tt://menu/1"`, and this is being mapped to a
 Controller. Let's say we have the following map (from TTNavigatorDemo):
 
     [map from:@"tt://menu/(initWithMenu:)"
@@ -161,7 +161,7 @@ The map:
     [map from:@"tt://menu/(initWithMenuName:)"
       toSharedViewController:[MenuController class]];
 
-Opening "tt://menu/lunch" will call
+Opening `"tt://menu/lunch"` will call
 
     [[MenuController alloc] initWithMenuName:@"lunch"]
 
@@ -186,7 +186,7 @@ First off, let's consider a basic NSObject:
     @end
 
 We want to populate a table controller with a list of Contacts. Upon tapping any contact in
-the list, you should be taken to a view that shows the Contact details. Using TTTableItems we
+the list, you should be taken to a view that shows the Contact details. Using ^TTTableItem we
 can set a URL for each table item, but how do we generate this URL?
 
 Introducing the NSObject TTURL map:
@@ -214,7 +214,7 @@ object down into a unique URL representation.
 Native parameters {#nativeparams}
 =================
 
-One of the first questions people ask about TTNavigator is how to pass native objects around,
+One of the first questions people ask about ^TTNavigator is how to pass native objects around,
 rather than encoding them somehow in a URL. There is a simple pattern for this, using the
 `query:` version of the `openURL:animated:`
 selector, `openURL:query:animated:query:`. For example, imagine you

@@ -2,7 +2,7 @@
 #header {
   background-color: #EEE;
   padding: 20px;
-  height: 1.7em;
+  height: 1.3em;
   margin-bottom: 20px;
   border-bottom: 1px solid #DDD;
 }
@@ -17,7 +17,6 @@
 
 #header .left-links li,
 #header .right-links li {
-  font-size: 1.3em;
 }
 
 #header a {

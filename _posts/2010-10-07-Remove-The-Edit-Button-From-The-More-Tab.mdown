@@ -13,7 +13,7 @@ Remove the 'Edit' Button from the 'More' tab
 
 ### Adapted from the <a href="http://groups.google.com/group/three20/web/recipe-removing-the-edit-button-from-the-more-tab">Three20 Google Group</a>
 
-If you are using the TTNavigationController, then you have a UITabBarController
+If you are using the ^TTNavigationController, then you have a UITabBarController
 subclass that controls your top level tabs. That was probably copied straight from
 the `Three20/samples/TTNavigatorDemo` example, and so looks something like the
 code below.

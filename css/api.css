@@ -1,0 +1,97 @@
+#content ul {
+  border: none;
+  background: transparent;
+}
+
+.tabs,
+.tablist li,
+.tablist a,
+.tablist a:hover,
+.tablist li.current a {
+  background: none;
+}
+
+.tablist a,
+.tablist a:hover,
+.tablist li.current a {
+  text-shadow: none;
+  font-weight: normal;
+}
+
+.tablist a {
+  padding: 0;
+  padding-right: 20px;
+}
+
+#searchli {
+  float: none;
+}
+
+#MSearchBox {
+  right: auto;
+}
+
+.tablist {
+  display: block;
+}
+
+#content ul li {
+  margin: 0;
+}
+
+#content .tablist {
+  padding: 0;
+}
+
+table {
+  margin-top: 20px;
+  background-color: #FFF;
+}
+
+table tr {
+  border-bottom: 1px solid #EEE;
+}
+
+table td {
+  padding: 1em;
+}
+
+#MSearchBox .left,
+#MSearchField,
+#MSearchBox .right {
+  background: none;
+}
+
+#MSearchSelectWindow {
+  border: none;
+}
+
+a.SelectItem:hover {
+  background-color: #EEE;
+}
+
+#content a.SelectItem:hover {
+  text-decoration: none;
+}
+
+#MSearchField {
+  background-color: #FFF;
+  border: 1px solid #EEE;
+}
+
+#MSearchResultsWindow {
+  background-color: #FFF;
+  border: 1px solid #EEE;
+}
+
+.right #MSearchClose {
+  right: auto;
+}
+
+.tabs,
+.tabs2,
+.tabs3,
+.header,
+.contents {
+  clear: both;
+}

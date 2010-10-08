@@ -8,18 +8,18 @@ html {
 }
 
 #content h1 {
-  font-size: 4em;
+  font-size: 3em;
   margin-bottom: 0.2em;
 }
 
 #content h2 {
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 0.5em;
   color: #666;
 }
 
 #content h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 0.7em;
   color: #888;
 }
@@ -30,14 +30,15 @@ html {
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
 }
 
+#content .toc ul {
+  background-color: transparent;
+  border: 0;
+  margin-bottom: 1em;
+}
+
 #content p,
 #content ul {
   -webkit-font-smoothing: antialiased;
-  font-size: 1.5em;
-}
-
-#content ul li {
-  font-size: 1em;
 }
 
 #content ul li {
@@ -47,10 +48,17 @@ html {
 
 #content ul,
 #content p {
-  margin-bottom: 1em;
   background-color: #FFF;
-  padding: 1em;
   border: 1px solid #eee;
+}
+
+#content ul {
+  padding-left: 1em;
+}
+
+#content p {
+  margin-bottom: 1em;
+  padding: 1em;
 }
 
 #content .authors {
@@ -116,8 +124,6 @@ html {
 }
 
 #content code {
-  padding: 3px;
-  line-height: 1.5em;
   background-color: #F6F6F6;
 }
 
@@ -130,7 +136,6 @@ html {
 #content code,
 #content pre {
   /* Font-family set borrowed from StackOverflow; their font selection is delicious! */
-  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+  font-family: Consolas,Monaco,"Lucida Console","Liberation Mono","DejaVu Sans Mono","Bitstream Vera Sans Mono","Courier New";
+  font-size: 0.8em !important;
 }
-
-

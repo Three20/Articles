@@ -10,13 +10,13 @@
 
 #header .leadin h1 {
   color: #333;
-  font-size: 8em;
   padding-top: 10px;
+  font-size: 6.2em;
 }
 
 #header .leadin h2 {
   color: #0054a6;
-  font-size: 3em;
+  font-size: 2.3em;
 }
 
 #header .leadin h1,
@@ -43,7 +43,7 @@
 #navbar .text {
   padding-top: 30px;
   margin-left: 500px;
-  font-size: 3em;
+  font-size: 2.3em;
   color: #333;
 }
 
@@ -81,11 +81,11 @@
 }
 
 #content .areas .box h1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 #content .areas .box h2 {
-  font-size: 1.2em;
+  font-size: 0.95em;
 }
 
 #content .news h1 {

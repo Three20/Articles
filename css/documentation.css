@@ -4,8 +4,20 @@ html {
 }
 
 #content h1 {
-  font-size: 4em;
+  font-size: 3em;
   margin-bottom: 0.2em;
+}
+
+#content h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: #666;
+}
+
+#content h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.7em;
+  color: #888;
 }
 
 #content h1,
@@ -25,15 +37,15 @@ html {
 #toc .box .title {
   background: #F8F8F8;
   padding: 10px;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;;
 }
 
 #toc .box a {
   color: #0054a6;
   text-decoration: none;
-  font-size: 1.3em;
-  padding: 1em;
+  font-size: 1em;
+  padding: 10px;
   display: block;
 }
 
