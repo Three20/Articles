@@ -2,7 +2,6 @@
 published:false
 ---
 
-
 <div class="authors">
   <div class="author">Author: Sujee Maniyam</div>
   <div class="editor">Editor: Jeff Verkoeyen</div>
@@ -11,14 +10,14 @@ published:false
 Three20 Tidbits
 ===============
 
-### Adapted from <a href="http://sujee.net/tech/articles/iphone-three20/">sujee.net</a>
+### Adapted from <a href="http://sujee.net/tech/articles/iphone-Three20/">sujee.net</a>
 
 Three20 is an open source iPhone/iPad library that packs a lot of cool features.
-Three20 is popular for its UI components such as TTNavigator, TTWebBrowser,
-TTPhotoViewer. 
+Three20 is popular for its UI components such as ^TTNavigator, ^TTWebController,
+^TTPhotoViewController.
 
-Also there is lot more than UI in Three20.  I use Three20 sparingly in my iphone
-projects. I don't build my app as a 'full blown three20 app'.  I use some
+Also there is lot more than UI in Three20.  I use Three20 sparingly in my iOS
+projects. I don't build my app as a 'full-blown Three20 app'.  I use some
 components to save myself from re-inventing the wheels.  That is what I will
 focus on here.
 
@@ -26,10 +25,10 @@ Getting Started
 ===============
 
 Follow steps in the article {{2010-10-06-Adding-Three20-To-Your-Project}}
-on how to incorporate three20 into your iphone/ipad project.
+on how to incorporate Three20 into your iphone/ipad project.
 
 --
-<a href="http://github.com/sujee/three20-tidbits">View the code for this article on GitHub</a>
+<a href="http://github.com/sujee/Three20-tidbits">View the code for this article on GitHub</a>
 --
 
 Include
@@ -133,7 +132,7 @@ Output:
 When you want to get md5-hash a string.
 
     NSLog(@"\n\n====== NSString : md5 =======");
-    NSString *s1 = @"hiya three20 world";
+    NSString *s1 = @"hiya Three20 world";
     NSString *md5 = [s1 md5Hash];
     NSLog(@"md5('%@') =>  %@", s1, md5);
 
@@ -141,7 +140,7 @@ Output:
 1.
 ====== NSString : md5 =======
 2.
-md5('hiya three20 world') =>  6fd98ef06e6041b87dbe8dc978b95c4c
+md5('hiya Three20 world') =>  6fd98ef06e6041b87dbe8dc978b95c4c
 md5Hash is also available for NSData
 Version Compare:
 
@@ -367,11 +366,13 @@ CGFloat TTKeyboardHeightForOrientation(UIInterfaceOrientation orientation);
 */
 69.
 void TTAlert(NSString* message);
-TTIMAGEVIEW
+
+^TTImageView
+
 ile : Three20UI/TTImageView.h
-his is a drop-in replacement for any UIImageView, where image has to be loaded from a URL. All you do is feed a URL and it does the rest (starts downloading the image, shows placeholder image while downloading, and displays the image)! Self-contained. Also uses TTCache, so if the image has already been downloaded, it will not downloaded it, will just use from cache... cool!
+his is a drop-in replacement for any UIImageView, where image has to be loaded from a URL. All you do is feed a URL and it does the rest (starts downloading the image, shows placeholder image while downloading, and displays the image)! Self-contained. Also uses ^TTCache, so if the image has already been downloaded, it will not downloaded it, will just use from cache... cool!
 01.
-// create TTImageView,
+// create ^TTImageView,
 02.
 // this can be done programatically, or change the class name
 03.

@@ -17,3 +17,16 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+#content .horizontal-bar {
+  text-align: center;
+  font-size: 2em;
+  padding: 1em;
+  margin-bottom: 20px;
+  background-color: #FFF;
+  border: 1px solid #EEE;
+}
+
+.clearfix {
+  clear: both;
+}

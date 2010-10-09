@@ -71,15 +71,6 @@ html {
   text-align: right;
 }
 
-#content .horizontal-bar {
-  text-align: center;
-  font-size: 2em;
-  padding: 1em;
-  margin-bottom: 20px;
-  background-color: #FFF;
-  border: 1px solid #EEE;
-}
-
 #content .image p {
   background-color: transparent;
   padding: 0;
