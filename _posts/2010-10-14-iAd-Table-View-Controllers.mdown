@@ -18,13 +18,26 @@ and have it only appear when the iAd server comes back with a successful respons
 You don't have to do it this way, but I found it to be the most reliable without
 disrupting the overall display of the UI.
 
+In the sample the iAds appear at the bottom of the table view.
+
 --
 [View the code for this article on GitHub](http://github.com/Three20/Samples/tree/master/iAdSample/)
 --
 
-In the sample the iAds appear at the bottom of the table view.
+### The Final Product
+
+<div class="image" markdown=1>![The Final Product](/gfx/samples/iad1.png 320x480)</div>
+
+### The Source
+
+Three20+Additions imports the additions for every module of Three20. Three20UI
+in particular provides a number of helpful view methods in
+`Three20UI/UIViewAdditions.h` that we use in this file to simplify the code.
 
     #import <Three20/Three20+Additions.h>
+
+Once the ad is loaded, we animate it into the bottom of the table view frame. This
+is how long that animation will take.
 
     static const NSTimeInterval kBannerSlideInAnimationDuration = 0.4;
 
@@ -41,7 +54,12 @@ In the sample the iAds appear at the bottom of the table view.
     #pragma mark UIViewController
 
     - (void)viewDidLoad {
+      [super viewDidLoad];
+
       _adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
+
+Keep the ad view flush to the bottom of the screen on orientation changes. We'll
+still need to manually set the table view frame size, though.
 
       _adView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
 
@@ -51,49 +69,67 @@ In the sample the iAds appear at the bottom of the table view.
                                                 nil];
       _adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier320x50;
 
-      // Set initial frame to be offscreen, at the bottom
-      CGRect bannerFrame = _adView.frame;
-      bannerFrame.origin.y = self.view.height;
-      _adView.frame = bannerFrame;
-
       _adView.delegate = self;
+
+This uses the `top` and `bottom` UIView additions found in
+`Three20UI/UIViewAdditions.h`. Much easier than
+`self.view.frame.origin.y + etc...`.
+
+      _adView.top = self.view.bottom;
 
       [self.view addSubview:_adView];
     }
 
-    - (void)viewWillAppear:(BOOL)animated {
-      [super viewWillAppear:animated];
+viewDidUnload is called on a didReceiveMemoryWarning call. We need to
+ensure that we unload the ad view when we receive a memory warning,
+otherwise we'll leak the object on viewDidLoad when the controller's view is
+inevitably loaded into memory again.
 
-      UIInterfaceOrientation orientation = self.interfaceOrientation;
+    - (void)viewDidUnload {
+      [super viewDidUnload];
+
+      _adView.delegate = nil;
+      TT_RELEASE_SAFELY(_adView);
+
+      _bannerIsVisible = NO;
+    }
+
+This utility method ensures that the table view is taking up the correct amount
+of screen real estate.
+
+    - (void)updateViewFramesWithOrientation:(UIInterfaceOrientation)orientation {
       if (UIInterfaceOrientationIsLandscape(orientation)) {
         _adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier480x32;
 
       } else {
         _adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier320x50;
       }
+
+      CGRect tableFrame = self.tableView.frame;
+      tableFrame.size.height = self.view.height - (_bannerIsVisible ? _adView.height : 0);
+      self.tableView.frame = tableFrame;
+    }
+
+    - (void)viewWillAppear:(BOOL)animated {
+      [super viewWillAppear:animated];
+
+      [self updateViewFramesWithOrientation:self.interfaceOrientation];
+    }
+
+    - (void)willRotateToInterfaceOrientation: (UIInterfaceOrientation)toInterfaceOrientation
+                                    duration: (NSTimeInterval)duration {
+      [self updateViewFramesWithOrientation:toInterfaceOrientation];
     }
 
     - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
       return YES;
     }
 
-    - (void)willRotateToInterfaceOrientation: (UIInterfaceOrientation)toInterfaceOrientation
-                                    duration: (NSTimeInterval)duration {
-      if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
-        _adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier480x32;
+Your own model logic somewhere in here...
 
-      } else {
-        _adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier320x50;
-      }
-
-      if (_bannerIsVisible) {
-        CGRect tableFrame = self.tableView.frame;
-        tableFrame.size.height = self.view.height - _adView.height;
-        self.tableView.frame = tableFrame;
-      }
-    }
-
-    // Model logic...
+The Ad View delegate methods are found below. In summary, when we successfully
+load an advertisement, we animate the ad view into position and set the
+`_bannerIsVisible` flag to `YES`.
 
     #pragma mark -
     #pragma mark AdViewBannerDelegate
@@ -120,7 +156,6 @@ In the sample the iAds appear at the bottom of the table view.
 
     - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
       if (_bannerIsVisible) {
-        // Grow the tableview to occupy space left by banner
         CGRect tableFrame = self.tableView.frame;
         tableFrame.size.height = self.view.height;
 
@@ -132,3 +167,7 @@ In the sample the iAds appear at the bottom of the table view.
     }
 
     @end
+
+### The Final Product
+
+<div class="image" markdown=1>![The Final Product](/gfx/samples/iad1.png 320x480)</div>
