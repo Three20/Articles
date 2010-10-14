@@ -1,0 +1,134 @@
+
+<div class="authors">
+  <div class="author">Author: Yoshi</div>
+  <div class="editor">Editor: Jeff Verkoeyen</div>
+</div>
+
+Adding iAd to Your Three20 Application
+======================================
+
+### Adapted from the <a href="http://groups.google.com/group/three20/web/recipe-adding-iad-to-your-three20-application">Three20 Google Group</a>
+
+This is for adding iAd to a TTTableViewController (also works with
+TTThumbsViewController, which is a subclass).  This isn't really Three20-specific,
+so this approach should work for pretty much any type of view controller.
+
+The way I approached the display of iAds was that I would always hide it initially,
+and have it only appear when the iAd server comes back with a successful response.
+You don't have to do it this way, but I found it to be the most reliable without
+disrupting the overall display of the UI.
+
+--
+[View the code for this article on GitHub](http://github.com/Three20/Samples/tree/master/iAdSample/)
+--
+
+In the sample the iAds appear at the bottom of the table view.
+
+    #import <Three20/Three20+Additions.h>
+
+    static const NSTimeInterval kBannerSlideInAnimationDuration = 0.4;
+
+    @implementation AdTableViewController
+
+    - (void)dealloc {
+      _adView.delegate = nil;
+      TT_RELEASE_SAFELY(_adView);
+
+      [super dealloc];
+    }
+
+    #pragma mark -
+    #pragma mark UIViewController
+
+    - (void)viewDidLoad {
+      _adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
+
+      _adView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
+
+      _adView.requiredContentSizeIdentifiers = [NSSet setWithObjects:
+                                                ADBannerContentSizeIdentifier320x50,
+                                                ADBannerContentSizeIdentifier480x32,
+                                                nil];
+      _adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier320x50;
+
+      // Set initial frame to be offscreen, at the bottom
+      CGRect bannerFrame = _adView.frame;
+      bannerFrame.origin.y = self.view.height;
+      _adView.frame = bannerFrame;
+
+      _adView.delegate = self;
+
+      [self.view addSubview:_adView];
+    }
+
+    - (void)viewWillAppear:(BOOL)animated {
+      [super viewWillAppear:animated];
+
+      UIInterfaceOrientation orientation = self.interfaceOrientation;
+      if (UIInterfaceOrientationIsLandscape(orientation)) {
+        _adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier480x32;
+
+      } else {
+        _adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier320x50;
+      }
+    }
+
+    - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+      return YES;
+    }
+
+    - (void)willRotateToInterfaceOrientation: (UIInterfaceOrientation)toInterfaceOrientation
+                                    duration: (NSTimeInterval)duration {
+      if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
+        _adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier480x32;
+
+      } else {
+        _adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier320x50;
+      }
+
+      if (_bannerIsVisible) {
+        CGRect tableFrame = self.tableView.frame;
+        tableFrame.size.height = self.view.height - _adView.height;
+        self.tableView.frame = tableFrame;
+      }
+    }
+
+    // Model logic...
+
+    #pragma mark -
+    #pragma mark AdViewBannerDelegate
+
+    - (void)bannerViewDidLoadAd:(ADBannerView *)banner {
+      if (!_bannerIsVisible) {
+        CGRect tableFrame = self.tableView.frame;
+
+        [UIView beginAnimations:@"showBanner" context:NULL];
+        {
+          [UIView setAnimationDuration:kBannerSlideInAnimationDuration];
+
+          _adView.bottom = self.tableView.bottom;
+
+          // Shrink the tableview to create space for banner
+          tableFrame.size.height = self.view.height - _adView.height;
+          self.tableView.frame = tableFrame;
+
+          _bannerIsVisible = YES;
+        }
+        [UIView commitAnimations];
+      }
+    }
+
+    - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
+      if (_bannerIsVisible) {
+        // Grow the tableview to occupy space left by banner
+        CGRect tableFrame = self.tableView.frame;
+        tableFrame.size.height = self.view.height;
+
+        self.tableView.frame = tableFrame;
+        _adView.top = self.tableView.bottom;
+
+        _bannerIsVisible = NO;
+      }
+    }
+
+    @end
