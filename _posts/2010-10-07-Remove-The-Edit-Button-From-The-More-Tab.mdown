@@ -13,14 +13,20 @@ Remove the 'Edit' Button from the 'More' tab
 
 ### Adapted from the <a href="http://groups.google.com/group/three20/web/recipe-removing-the-edit-button-from-the-more-tab">Three20 Google Group</a>
 
+If you're using a UITabBarController subclass and want to hide the Edit button
+shown in the "More" view when you have more than 5 tabs, you generally only have to
+use the following:
+
+    self.customizableViewControllers = nil;
+
+However, due to a bug in iOS 4.0, this will not actually hide the edit button.
+In order to properly hide the button, you will need to handle the
+moreNavigationController delegate and manually remove the edit button yourself.
+The following code and sample project show how to accomplish this.
+
 --
 [View the code for this article on GitHub](http://github.com/Three20/Samples/tree/master/HiddenEditButton/)
 --
-
-If you are using the ^TTNavigationController and you're using a UITabBarController
-subclass that controls your top level tabs, the problem is that on the More
-tab there is an 'Edit' button so that the user can rearrange and edit the order
-of the tabs. How do you hide it?
 
     #import "TabBarViewController.h"
 
@@ -39,6 +45,22 @@ of the tabs. How do you hide it?
                         nil]];
     
       self.customizableViewControllers = nil;
+
+      // Due to a bug in iOS 4.0, we need to manually hide the edit button when the edit controller
+      // appears.
+      NSString* systemVersion = [[UIDevice currentDevice] systemVersion];
+      if ([systemVersion versionStringCompare:@"4.0"] >= 0
+          && [systemVersion versionStringCompare:@"4.1"] < 0) {
+        self.moreNavigationController.delegate = self;
+      }
+    }
+
+    - (void)navigationController: (UINavigationController *)navigationController
+          willShowViewController: (UIViewController *)viewController
+                        animated: (BOOL)animated {
+      UINavigationBar* morenavbar = navigationController.navigationBar;
+      UINavigationItem* morenavitem = morenavbar.topItem;
+      morenavitem.rightBarButtonItem = nil;
     }
 
     @end
