@@ -26,7 +26,15 @@ and the pusher script will handle the rest.
 
 ### File Headers
 
-There are a few properties that you can change on a per-file basis.
+There are a few properties that you can change on a per-file basis. To specify
+these properties, simply add the following block of text to the beginning of your
+file:
+
+    ---
+    <key>: <value>
+    ---
+
+Here are the available properties:
 
     title             The title of the post.
                       Used in hyperlinks and the <title> tag.
