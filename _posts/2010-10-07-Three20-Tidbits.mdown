@@ -1,7 +1,3 @@
----
-published:false
----
-
 <div class="authors">
   <div class="author">Author: Sujee Maniyam</div>
   <div class="editor">Editor: Jeff Verkoeyen</div>
@@ -21,15 +17,15 @@ projects. I don't build my app as a 'full-blown Three20 app'.  I use some
 components to save myself from re-inventing the wheels.  That is what I will
 focus on here.
 
+--
+<a href="http://github.com/sujee/Three20-tidbits">View the code for this article on GitHub</a>
+--
+
 Getting Started
 ===============
 
 Follow steps in the article {{2010-10-06-Adding-Three20-To-Your-Project}}
 on how to incorporate Three20 into your iphone/ipad project.
-
---
-<a href="http://github.com/sujee/Three20-tidbits">View the code for this article on GitHub</a>
---
 
 Include
 
@@ -47,9 +43,9 @@ Code : `Three20Core/NSStringAdditions.h`
 To see if strings only have white space.
 
     NSLog(@"\n\n====== NSString : white space =======");
-    NSString *ws = @" \t\n";
-    NSString *empty = @"    ";
-    NSString *nws = @"hello";
+    NSString* ws = @" \t\n";
+    NSString* empty = @"    ";
+    NSString* nws = @"hello";
     NSLog(@"'%@' contains only whitespace ? : %d", ws, [ws isWhitespaceAndNewlines]);
     NSLog(@"'%@' contains only whitespace ? : %d", nws, [nws isWhitespaceAndNewlines]);       
     NSLog(@"'%@' is empty? : %d", empty, [empty isEmptyOrWhitespace]); 
@@ -70,8 +66,8 @@ Handy for displaying user-entered data (comment/feedback) on UIWebView.
 We want to strip the HTML and only show text.
 
     NSLog(@"\n\n====== NSString : stripHTML =======");
-    NSString *html = @"I <b>am</b> an HTML script.";
-    NSString *stipped = [html stringByRemovingHTMLTags];
+    NSString* html = @"I <b>am</b> an HTML script.";
+    NSString* stipped = [html stringByRemovingHTMLTags];
     NSLog(@"html : %@", html);
     NSLog(@"stripped : %@", stipped);
 
@@ -84,12 +80,13 @@ Output:
 
 ### Parsing URL query parameters
 
-Parse URL query paramters and put them in a nice NSDIctionary
+Parse URL query parameters and put them in a nice NSDictionary
 
     NSLog(@"\n\n====== NSString : parse URL params =======");
-    NSURL *url = [NSURL URLWithString:@"http://www.google.com/search?sourceid=chrome&;ie=UTF-8&q=pizza"];
-    NSString *paramString = [url query];
-    NSDictionary *params = [paramString queryDictionaryUsingEncoding:NSASCIIStringEncoding];
+    NSURL* url = [NSURL URLWithString:
+      @"http://www.google.com/search?sourceid=chrome&;ie=UTF-8&q=pizza"];
+    NSString* paramString = [url query];
+    NSDictionary* params = [paramString queryDictionaryUsingEncoding:NSASCIIStringEncoding];
     NSLog(@"url : %@", url);
     NSLog(@"params:\n%@", params);
 
@@ -106,14 +103,14 @@ Output:
 
 ### Create a URL from parameters
 
-Create a valid query string from a NSDictionary
+Create a valid query string from an NSDictionary
 
     NSLog(@"\n\n====== NSString : create URL query string =======");
-    NSString *baseUrl = @"http://www.yahoo.com/search";
-    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    NSString* baseUrl = @"http://www.yahoo.com/search";
+    NSMutableDictionary* params = [[NSMutableDictionary alloc] init];
     [params setValue:@"pizza" forKey:@"q"];
     [params setValue:@"json" forKey:@"format"];
-    NSString *fullURL = [baseUrl stringByAddingQueryDictionary:params];
+    NSString* fullURL = [baseUrl stringByAddingQueryDictionary:params];
     NSLog(@"query parameters\n%@", params);
     NSLog(@"query string is : %@", fullURL);
 
@@ -129,267 +126,113 @@ Output:
 
 ### md5 hash
 
-When you want to get md5-hash a string.
+When you want to md5 hash a string.
 
     NSLog(@"\n\n====== NSString : md5 =======");
-    NSString *s1 = @"hiya Three20 world";
-    NSString *md5 = [s1 md5Hash];
+    NSString* s1 = @"hiya Three20 world";
+    NSString* md5 = [s1 md5Hash];
     NSLog(@"md5('%@') =>  %@", s1, md5);
 
 Output:
-1.
-====== NSString : md5 =======
-2.
-md5('hiya Three20 world') =>  6fd98ef06e6041b87dbe8dc978b95c4c
-md5Hash is also available for NSData
-Version Compare:
 
-is "3.5" > "3.0.1"
-1.
-NSLog(@"\n\n====== NSString : version check =======");
-2.
-NSString *v1 = @"2.5";
-3.
-NSString *v2 = @"3.0";
-4.
-NSString *v3 = @"3.0.1";
-5.
-NSLog(@"%@ <=> %@  is %d", v2, v1, [v2 versionStringCompare:v1]);
-6.
-NSLog(@"%@ <=> %@  is %d", v1, v2, [v1 versionStringCompare:v2]);
-7.
-NSLog(@"%@ <=> %@  is %d", v3, v2, [v3 versionStringCompare:v2]);
-8.
-NSLog(@"%@ <=> %@  is %d", v3, v3, [v3 versionStringCompare:v3]);
+    ====== NSString : md5 =======
+    md5('hiya Three20 world') =>  6fd98ef06e6041b87dbe8dc978b95c4c
+    md5Hash is also available for NSData
+
+### Version Compare:
+
+For example, is "3.5" > "3.0.1"?
+
+    NSLog(@"\n\n====== NSString : version check =======");
+    NSString* v1 = @"2.5";
+    NSString* v2 = @"3.0";
+    NSString* v3 = @"3.0.1";
+    NSLog(@"%@ <=> %@  is %d", v2, v1, [v2 versionStringCompare:v1]);
+    NSLog(@"%@ <=> %@  is %d", v1, v2, [v1 versionStringCompare:v2]);
+    NSLog(@"%@ <=> %@  is %d", v3, v2, [v3 versionStringCompare:v2]);
+    NSLog(@"%@ <=> %@  is %d", v3, v3, [v3 versionStringCompare:v3]);
+
 Output:
-1.
-====== NSString : version check =======
-2.
-3.0 <=> 2.5  is 1
-3.
-2.5 <=> 3.0  is -1
-4.
-3.0.1 <=> 3.0  is 1
-5.
-3.0.1 <=> 3.0.1  is 0
 
+    ====== NSString : version check =======
+    3.0 <=> 2.5  is 1
+    2.5 <=> 3.0  is -1
+    3.0.1 <=> 3.0  is 1
+    3.0.1 <=> 3.0.1  is 0
 
-NSDATE ADDITIONS
-ile : Three20Core/NSDateAdditions.h
+NSDate Additions
+----------------
 
-There is lot of goodies here.  My favorite is 'relative time'... like '2 hours ago',   'few minutes ago' ...etc
-Also it has handy functions to create various dates with ease (check the header file) 
-01.
-NSLog(@"\n\n====== NSDate : format =======");
-02.
-NSDate *todayMidnight = [NSDate dateWithToday];
-03.
-NSLog(@"today midnight date is : %@", [todayMidnight formatDate]);
-04.
- 
-05.
-NSDate *timeNow = [[NSDate alloc] init];
-06.
-NSDate *fewDaysBack = [[NSDate alloc] initWithTimeIntervalSinceReferenceDate:[timeNow timeIntervalSinceReferenceDate] - (3600*24 * 4)];
-07.
- 
-08.
-NSLog(@"\n\n====== NSDate : relative time =======");
-09.
-NSLog(@"today midnight was : %@", [todayMidnight formatRelativeTime]);
-10.
-NSLog(@"just now was : %@", [timeNow formatRelativeTime]);
-11.
-NSLog(@"few days back was (short format) : %@ ago", [fewDaysBack formatShortRelativeTime]);
+File : `Three20Core/NSDateAdditions.h`
+
+There are a lot of goodies here.  My favorite is 'relative time'... like
+'2 hours ago',   'few minutes ago' ...etc.
+
+Also it has handy functions to create various dates with ease (check the header
+file).
+
+    NSLog(@"\n\n====== NSDate : format =======");
+    NSDate* todayMidnight = [NSDate dateWithToday];
+    NSLog(@"today midnight date is : %@", [todayMidnight formatDate]);
+    
+    NSDate* timeNow = [[NSDate alloc] init];
+    NSDate* fewDaysBack = [[NSDate alloc] initWithTimeIntervalSinceReferenceDate:
+      [timeNow timeIntervalSinceReferenceDate] - (3600*24 * 4)];
+    
+    NSLog(@"\n\n====== NSDate : relative time =======");
+    
+    NSLog(@"today midnight was : %@", [todayMidnight formatRelativeTime]);
+    NSLog(@"just now was : %@", [timeNow formatRelativeTime]);
+    NSLog(@"few days back was (short format) : %@ ago",
+      [fewDaysBack formatShortRelativeTime]);
+
 Output:
-1.
-====== NSDate : format =======
-2.
-today midnight date is : Thursday, August 19, 2010
-3.
- 
-4.
-====== NSDate : relative time =======
-5.
-today midnight was : 23 hours ago
-6.
-just now was : just a moment ago
-7.
-few days back was (short format) : 4d ago
-NETWORK ACTIVITY INDICATOR
-ile : Three20Network/TTGlobalNetwork.h
-hen you have multiple network requests going on (different threads ..etc), here is a handy function to keep the network indicator spinning straight....
-1.
-TTNetworkRequestStarted();
-2.
-//.....
-3.
-TTNetworkRequestStopped();
-COMMON UI STUFF
-ile : Three20UICommon/TTGlobalUICommon.h
-ome goodies here.... I will just post the header file. Functions for checking OS Version and if running iPad..etc
-01.
-/**
-02.
-* @return the current runtime version of the iPhone OS.
-03.
-*/
-04.
-float TTOSVersion();
-05.
- 
-06.
-/**
-07.
-* Checks if the link-time version of the OS is at least a certain version.
-08.
-*/
-09.
-BOOL TTOSVersionIsAtLeast(float version);
-10.
- 
-11.
-/**
-12.
-* @return TRUE if the keyboard is visible.
-13.
-*/
-14.
-BOOL TTIsKeyboardVisible();
-15.
- 
-16.
-/**
-17.
-* @return TRUE if the device has phone capabilities.
-18.
-*/
-19.
-BOOL TTIsPhoneSupported();
-20.
- 
-21.
-/**
-22.
-* @return TRUE if the device is iPad.
-23.
-*/
-24.
-BOOL TTIsPad();
-25.
- 
-26.
-/**
-27.
-* @return the current device orientation.
-28.
-*/
-29.
-UIDeviceOrientation TTDeviceOrientation();
-30.
- 
-31.
-/**
-32.
-* On iPhone/iPod touch
-33.
-* Checks if the orientation is portrait, landscape left, or landscape right.
-34.
-* This helps to ignore upside down and flat orientations.
-35.
-*
-36.
-* On iPad:
-37.
-* Always returns Yes.
-38.
-*/
-39.
-BOOL TTIsSupportedOrientation(UIInterfaceOrientation orientation);
-40.
- 
-41.
-/**
-42.
-* @return the rotation transform for a given orientation.
-43.
-*/
-44.
-CGAffineTransform TTRotateTransformForOrientation(UIInterfaceOrientation orientation);
-45.
- 
-46.
-/**
-47.
-* @return the application frame with no offset.
-48.
-*
-49.
-* From the Apple docs:
-50.
-* Frame of application screen area in points (i.e. entire screen minus status bar if visible)
-51.
-*/
-52.
-CGRect TTApplicationFrame();
-53.
- 
-54.
-/**
-55.
-* @return the toolbar height for a given orientation.
-56.
-*
-57.
-* The toolbar is slightly shorter in landscape.
-58.
-*/
-59.
-CGFloat TTToolbarHeightForOrientation(UIInterfaceOrientation orientation);
-60.
- 
-61.
-/**
-62.
-* @return the height of the keyboard for a given orientation.
-63.
-*/
-64.
-CGFloat TTKeyboardHeightForOrientation(UIInterfaceOrientation orientation);
-65.
- 
-66.
-/**
-67.
-* A convenient way to show a UIAlertView with a message.
-68.
-*/
-69.
-void TTAlert(NSString* message);
+
+    ====== NSDate : format =======
+    today midnight date is : Thursday, August 19, 2010
+    
+    ====== NSDate : relative time =======
+    today midnight was : 23 hours ago
+    just now was : just a moment ago
+    few days back was (short format) : 4d ago
+
+Network Activity Indicator
+--------------------------
+
+File : `Three20Network/TTGlobalNetwork.h`
+
+When you have multiple network requests going on (different threads ..etc), here is
+a handy function to keep the network indicator spinning straight....
+    TTNetworkRequestStarted();
+    //.....
+    TTNetworkRequestStopped();
+
+Common UI Stuff
+---------------
+
+File : `Three20UICommon/TTGlobalUICommon.h`
+
+Some goodies here.... Functions for checking OS Version and if running iPad..etc
 
 ^TTImageView
+------------
 
-ile : Three20UI/TTImageView.h
-his is a drop-in replacement for any UIImageView, where image has to be loaded from a URL. All you do is feed a URL and it does the rest (starts downloading the image, shows placeholder image while downloading, and displays the image)! Self-contained. Also uses ^TTCache, so if the image has already been downloaded, it will not downloaded it, will just use from cache... cool!
-01.
-// create ^TTImageView,
-02.
-// this can be done programatically, or change the class name
-03.
-// to 'TTImageView' in Interface Builder
-04.
-TTImageView *imgView = [[TTImageView alloc] init];
-05.
-// default image is displayed unitll the image is downloaded
-06.
-imgView.defaultImage = [UIImage imageNamed:@"place-holder.png"];
-07.
-// give it a URL to load image from
-08.
-imgView.urlPath = @"image url path";
-09.
- 
-10.
-// now set the imageView to where ever you want
-11.
-// self.imageView = imgView
+File : `Three20UI/TTImageView.h`
+
+This is a drop-in replacement for any UIImageView, where image has to be loaded
+from a URL. All you do is feed a URL and it does the rest (starts downloading the
+image, shows placeholder image while downloading, and displays the image)!
+Self-contained. Also uses ^TTURLCache, so if the image has already been downloaded, it
+will not downloaded it, will just use from cache... cool!
+
+    // create ^TTImageView,
+    // this can be done programatically, or change the class name
+    // to 'TTImageView' in Interface Builder
+    TTImageView* imgView = [[TTImageView alloc] init];
+    // default image is displayed unitll the image is downloaded
+    imgView.defaultImage = [UIImage imageNamed:@"place-holder.png"];
+    // give it a URL to load image from
+    imgView.urlPath = @"image url path";
+     
+    // now set the imageView to where ever you want
+    // self.imageView = imgView
