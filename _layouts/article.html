@@ -84,16 +84,6 @@
 <?
 echo three20html::script($js_foot_files, FALSE);
 
-if (!IN_PRODUCTION) {
-  echo three20html::inlinescript('var disqus_developer = 1;');
-}
-
-if (IN_PRODUCTION) {
-  if (!isset($hideDisqusThread) || !$hideDisqusThread) {
-    echo three20html::script('http://disqus.com/forums/Three20/embed.js', null, FALSE);
-  }
-}
-
 if (IN_PRODUCTION) {
   echo three20html::inlinescript('
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
