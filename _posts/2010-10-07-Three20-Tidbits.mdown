@@ -6,7 +6,7 @@
 Three20 Tidbits
 ===============
 
-### Adapted from <a href="http://sujee.net/tech/articles/iphone-Three20/">sujee.net</a>
+### Adapted from <a href="http://sujee.net/tech/articles/iphone-three20/">sujee.net</a>
 
 Three20 is an open source iPhone/iPad library that packs a lot of cool features.
 Three20 is popular for its UI components such as ^TTNavigator, ^TTWebController,
