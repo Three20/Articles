@@ -18,7 +18,7 @@ components to save myself from re-inventing the wheels.  That is what I will
 focus on here.
 
 --
-<a href="http://github.com/sujee/Three20-tidbits">View the code for this article on GitHub</a>
+[View the code for this article on GitHub](http://github.com/sujee/Three20-tidbits)
 --
 
 Getting Started
