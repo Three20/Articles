@@ -1,2 +1,109 @@
 Three20 Articles
 ================
+
+All content in this repository is pushed to Three20.info whenever a change has
+been pushed to GitHub. So if you want to write your own articles, simply fork this
+repository, make your changes, and make a pull request. Once the content is merged
+into the mainline branch, your new content will go live within the hour.
+
+Writing Articles
+----------------
+
+Here are some tips for writing articles. The system is based off of GitHub's
+Jekyll automated content distribution script. A custom script was written in PHP
+that mimics most of the functionality, but there are enough differences to warrant
+documenting them here.
+
+### Available Markup Languages
+
+You're free to use any of Textile, Markdown, or pure HTML for your articles.
+Simply give them the correct filename (.textile, .mdown, or .html respectively)
+and the pusher script will handle the rest.
+
+### Article Naming Convention
+
+    YYYY-MM-DD-Article-Title-Separated-By-Hyphens.<markup type>
+
+### File Headers
+
+There are a few properties that you can change on a per-file basis.
+
+    title             The title of the post.
+                      Used in hyperlinks and the <title> tag.
+
+    date              Override the published date of the article.
+                      The article's date is determined automatically by the
+                      article's filename. However, the filename acts as a unique
+                      identifier throughout the site, so if you want to change
+                      the date, use this property instead.
+
+    layout            The layout name for the post.
+                      For articles, this defaults to "article".
+                      See a list of valid layouts in the _layouts directory.
+
+    published         Defaults to true.
+                      Set to false to hide this article from the site.
+
+### Linking to Other Articles
+
+Instead of manually linking to an article yourself, you can take advantage of
+the following syntax:
+
+    {{article-id}}
+
+This will be replaced with a hyperlink to the article with the hyperlink text
+set to the article's title. See `_pages/documentation.html` for an example of this.
+
+Notice: If the article is not published, then nothing will be displayed.
+
+
+Conventions
+===========
+
+In order to maintain high quality content on the site, we've presented a set of
+guidelines to use when editing content in the various markup languages.
+
+General Conventions
+-------------------
+
+### Auto-linking Three20 Classes
+
+If you mention a Three20 class in your article, you can easily link to the
+article's API documentation by prefixing the class name with a `^`.
+
+For example:
+
+    ^TTTableViewController
+
+will become
+
+    <a href="http://api.three20.info/interface_t_t_table_view_controller.html">TTTableViewController</a>
+
+automatically, once it's posted to the site.
+
+### Auto-linking Three20 Source
+
+If you mention a Three20 source file, you can easily link to the source on GitHub
+by using the following convention:
+
+    `<Three20 Module>/<Class name>.(h|m)`
+
+Example:
+
+    `Three20UI/UIViewAdditions.h`
+
+Becomes
+
+    <a href="http://github.com/facebook/three20/blob/master/src/Three20UI/Headers/UIViewAdditions.h">UIViewAdditions</a>
+
+Markdown Conventions
+--------------------
+
+### Images
+
+    <div class="image" markdown=1>![Alt Text](/gfx/path-to-image.png WIDTHxHEIGHT)</div>
+
+Example:
+
+    <div class="image" markdown=1>![The Final Product](/gfx/samples/iad1.png 320x480)</div>
+

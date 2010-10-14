@@ -9,8 +9,8 @@ Adding iAd to Your Three20 Application
 
 ### Adapted from the <a href="http://groups.google.com/group/three20/web/recipe-adding-iad-to-your-three20-application">Three20 Google Group</a>
 
-This is for adding iAd to a TTTableViewController (also works with
-TTThumbsViewController, which is a subclass).  This isn't really Three20-specific,
+This is for adding iAd to a ^TTTableViewController (also works with
+^TTThumbsViewController, which is a subclass).  This isn't really Three20-specific,
 so this approach should work for pretty much any type of view controller.
 
 The way I approached the display of iAds was that I would always hide it initially,
