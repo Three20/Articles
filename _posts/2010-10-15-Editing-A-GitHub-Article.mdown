@@ -1,0 +1,81 @@
+---
+title: How to Edit a GitHub Article
+---
+
+How to Edit a GitHub Article
+============================
+
+Now that Three20.info's articles are all found in one central location on GitHub,
+it's surprisingly easy to edit any of the live content. All you need is a GitHub
+account (you don't even need to have Git installed).
+
+Step 1: Create a GitHub Account
+-------------------------------
+
+If you don't already have a GitHub account, go [sign up for one](https://github.com/signup/free); it's free.
+
+Step 2: Find the Article
+------------------------
+
+Once you have an account on GitHub, you can click any of the "Edit this article"
+links in the top right-hand corner of the site. These links will take you directly
+to the article in question on GitHub.
+
+<div class="image" markdown=1>![Edit an Article](/gfx/tutorial/editarticle/editarticle.png 441x376)</div>
+
+!> !* Hey, listen!
+!> 
+!> Remember the path to this article; you'll need it in a bit when you have to
+!> find it in your own fork of the repository.
+!> 
+!> For the most part, all documentation articles are in the `_posts` directory.
+
+Step 3: Fork the Articles Repository
+------------------------------------
+
+Once you're viewing the Three20/Articles repository on GitHub, simply
+click the "Fork" button in the top right-hand corner of GitHub to create
+your own fork of the project.
+
+<div class="image" markdown=1>![Fork me](/gfx/tutorial/editarticle/forkme.png 244x101)</div>
+
+You will now have your very own fork of the Articles repository after a few
+seconds.
+
+<div class="image" markdown=1>![Hardcore Forking](/gfx/tutorial/editarticle/forking.png 561x101)</div>
+
+Step 4: Edit the Article
+------------------------
+
+Now that you have your very own Articles repository, navigate to the path of the
+article that you want to edit (if you don't remember, just go back to Step 2 and
+look at the path to the article in Three20/Articles). Now just click the "Edit"
+button in the top right-hand corner of the document, and edit away!
+
+<div class="image" markdown=1>![Edit](/gfx/tutorial/editarticle/edit.png 186x51)</div>
+
+Commit it with a descriptive commit message.
+
+<div class="image" markdown=1>![Commit Message](/gfx/tutorial/editarticle/commit.png 599x84)</div>
+
+Step 5: Make a Pull Request
+---------------------------
+
+Once you've made your changes (and you can make multiple), make a pull request by
+clicking the "Pull Request" button at the top right-hand corner of your repository.
+
+<div class="image" markdown=1>![Pull Request](/gfx/tutorial/editarticle/pullrequest.png 344x37)</div>
+
+Step 6: Send the Pull Request
+-----------------------------
+
+Fill out the pull request with a title and description of your changes. Once you're
+satisfied with everything, click the "Send pull request" button.
+
+<div class="image" markdown=1>![Send a Pull Request](/gfx/tutorial/editarticle/sendpullrequest.png 141x52)</div>
+
+Step 7: Wait for Your Changes to be Accepted
+--------------------------------------------
+
+You're done! Someone in the Three20 core team will now review your changes and
+either merge them in or make comments on the changes.
