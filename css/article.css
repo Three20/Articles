@@ -9,18 +9,18 @@ html {
 
 #content h1 {
   font-size: 3em;
-  margin-bottom: 0.2em;
+  margin-bottom: 10px;
 }
 
 #content h2 {
   font-size: 2em;
-  margin-bottom: 0.5em;
+  margin-bottom: 20px;
   color: #666;
 }
 
 #content h3 {
   font-size: 1.5em;
-  margin-bottom: 0.7em;
+  margin-bottom: 20px;
   color: #888;
 }
 
@@ -53,18 +53,18 @@ html {
 }
 
 #content ul {
-  padding-left: 1em;
+  padding-left: 20px;
 }
 
 #content p {
-  margin-bottom: 1em;
-  padding: 1em;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 #content .authors {
   float: right;
   color: #888;
-  margin-bottom: 1em;
+  margin-bottom: 20px;
 }
 
 #content .authors div {

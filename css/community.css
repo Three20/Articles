@@ -1,38 +1,4 @@
 
-html {
-  background: #EEE url('/gfx/texturedgray.gif') repeat scroll 0 0;
-}
-
-#content h1 {
-  font-size: 4em;
-  margin-bottom: 0.2em;
-}
-
-#content h1,
-#content h2,
-#content h3 {
-  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
-}
-
-#content p,
-#content ul {
-  font-size: 1.3em;
-}
-
-#content .horizontal-bar {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-top: 1px solid #DDD;
-  border-bottom: 1px solid #DDD;
-  background-color: #EEE;
-  padding: 20px;
-}
-
-#content .horizontal-bar .links {
-  text-align: center;
-  font-size: 2em;
-}
-
 #content .profile {
   padding: 20px;
   margin-right: 20px;
@@ -42,9 +8,20 @@ html {
   float: left;
 }
 
+#content .retired {
+  opacity: 0.5;
+}
+
+#content .team-list .profile:nth-child(3n+4) {
+  padding-left: 19px;
+  padding-right: 19px;
+  margin-right: 0;
+}
+
 #content .name {
-  font-size: 2em;
+  font-size: 1.7em;
   text-align: center;
+  width: 212px;
 }
 
 #content .role {

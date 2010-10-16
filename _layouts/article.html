@@ -11,7 +11,7 @@
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="http://three20.info/"/>
   <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iOS iPhone iPadapi open source sdk library uikit tt" />
+  <meta name="keywords" content="three20 iOS iPhone iPad api open source sdk library uikit tt" />
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
   <title><?php echo html::specialchars($title) ?></title>
 <?
@@ -43,17 +43,22 @@
 
 <div id="page-wrapper">
 
+<!-- HEADER -->
+
 <div id="header">
 <div class="fixed-width">
-<ul class="left-links">
-  <li>&larr; <a href="/documentation">More articles</a></li>
-</ul>
+
+>>rightlinks<<
+
 <ul class="right-links">
-  <li><a href="http://github.com/Three20/Articles/tree/master/_posts/<?= $article_id ?>">Edit this article on GitHub</a></li>
   <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+  <li><a href="http://github.com/Three20/Articles/tree/master/_posts/<?= $article_id ?>">Edit this article on GitHub</a></li>
 </ul>
+
+>>leadin<<
+
 </div> <!-- .fixed-width -->
-</div>
+</div> <!-- #header -->
 
 <div id="content">
 <div class="fixed-width">

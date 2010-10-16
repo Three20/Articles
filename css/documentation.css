@@ -1,31 +1,4 @@
 
-html {
-  background: #EEE url('/gfx/texturedgray.gif') repeat scroll 0 0;
-}
-
-#content h1 {
-  font-size: 3em;
-  margin-bottom: 0.2em;
-}
-
-#content h2 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-  color: #666;
-}
-
-#content h3 {
-  font-size: 1.5em;
-  margin-bottom: 0.7em;
-  color: #888;
-}
-
-#content h1,
-#content h2,
-#content h3 {
-  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
-}
-
 #toc .box {
   background-color: #FFF;
   border: 1px solid #EEE;
@@ -39,6 +12,17 @@ html {
   padding: 10px;
   font-size: 1.5em;
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;;
+}
+
+#toc .box ul {
+  padding: 0;
+  border: none;
+}
+
+#toc .box li {
+  list-style: none;
+  border-top: 1px solid #EEE;
+  margin: 0;
 }
 
 #toc .box a {

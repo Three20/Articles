@@ -1,10 +1,16 @@
 
 #header {
   background-color: #EEE;
-  padding: 20px;
-  height: 1.3em;
-  margin-bottom: 20px;
+  padding: 1em;
+  height: 4.3em;
+  margin-bottom: 10px;
   border-bottom: 1px solid #DDD;
+}
+
+#header .right-links {
+  float: right;
+  margin-bottom: 5px;
+  clear: both;
 }
 
 #header .left-links li {
@@ -12,7 +18,7 @@
 }
 
 #header .right-links li {
-  float: right;
+  display: inline;
   padding-left: 20px;
 }
 
@@ -20,12 +26,34 @@
 #header .right-links li {
 }
 
-#header a {
+#header .right-links a {
   text-decoration: none;
-  color: #0054a6;
+  font-weight: bold;
+  color: #333;
+  font-size: 0.8em;
 }
 
-#header a:hover {
+#header .right-links a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+#header h1 a,
+#header h2 a {
+  color: #333;
+}
+
+#header .leadin h1 {
+  font-size: 2em;
+}
+
+#header .leadin h2 {
+  color: #333;
+  font-size: 1.3em;
+}
+
+#header .leadin h1,
+#header .leadin h2,
+#navbar .text {
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
 }

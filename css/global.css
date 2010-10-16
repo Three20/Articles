@@ -8,14 +8,21 @@
   overflow: auto;
 }
 
-#content a {
+a {
   text-decoration: none;
+}
+
+#content a {
   color: #0054a6;
 }
 
 #content a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.clearfix {
+  clear: both;
 }
 
 #content .horizontal-bar {
@@ -32,8 +39,4 @@
   padding: 0;
   margin: 0;
   font-size: 2em;
-}
-
-.clearfix {
-  clear: both;
 }
