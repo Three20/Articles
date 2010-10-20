@@ -2,3 +2,108 @@
 #samplebar {
   background-color: #8badcb;
 }
+
+#demobox {
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+
+#demobox .sidebar {
+  border-right: 1px solid #eee;
+  width: 150px;
+  float: left;
+  padding-bottom: 2000px;
+  margin-bottom: -2000px;
+}
+
+#demobox .showcase {
+  margin-left: 150px;
+  padding-bottom: 20px;
+}
+
+#demobox .sidebar h1 {
+  font-size: 1.5em;
+  padding: 10px;
+  padding-bottom: 5px;
+  background-color: #FFF;
+}
+
+#demobox .sidebar ul li a {
+  padding: 10px;
+  display: block;
+}
+
+#demobox .sidebar ul li a.selected {
+  background-color: #d6ecff;
+}
+
+#demobox .sidebar ul li a:hover {
+  text-decoration: none;
+  background-color: #8badcb;
+  color: #fff;
+}
+
+#demobox .sidebar ul li a .arrow {
+  display: none;
+}
+
+#demobox .sidebar ul li a.selected .arrow {
+  display: inline;
+}
+
+#demobox .sidebar ul li a:hover .arrow {
+  display: inline;
+}
+
+#demobox .showcase .page {
+  display: none;
+}
+
+#demobox .showcase .selected {
+  display: block;
+}
+
+#demobox .showcase h1,
+#demobox .showcase h2,
+#demobox .showcase p,
+#demobox .showcase .boxes {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+#demobox .showcase h1 {
+  font-size: 1.7em;
+}
+
+#demobox .showcase h2 {
+  font-size: 1.4em;
+}
+
+#demobox .showcase .captionbox {
+  float: left;
+  overflow: hidden;
+}
+
+#demobox .showcase .captionbox:nth-child(2n+2) {
+  margin-left: 5px;
+}
+
+#demobox .showcase .captionbox .title {
+  width: 300px;
+  text-align: center;
+  color: #888;
+  font-size: 0.8em;
+  text-overflow: ellipsis-word;
+}
+
+#demobox .sidebar h1,
+#demobox .showcase h1,
+#demobox .showcase h2 {
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
+}
+
+#demobox .sidebar ul li a,
+#demobox .showcase p,
+#demobox .showcase ul {
+  -webkit-font-smoothing: antialiased;
+}

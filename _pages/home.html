@@ -2,13 +2,149 @@
 css: home headerbar
 ---
 
-<!-- NAV -->
+<!-- SAMPLEBAR -->
 
 <div id="samplebar">
 </div> <!-- #samplebar -->
 
-
 <!-- CONTENT -->
 
 <div id="content">
+
+<div class="fixed-width">
+<div id="demobox">
+
+<?php
+
+$features = array();
+
+$order = array(
+  'Overview',
+  'Persistence',
+);
+
+function name_to_id($name) {
+  return preg_replace('/ |-/', '', strtolower($name));
+}
+
+foreach ($order as $name) {
+  $id = name_to_id($name);
+  $features[$id] = $name;
+}
+
+// TODO: Grab this from the URL.
+global $selectedid;
+$selectedid = isset($showcaseid) ? $showcaseid : name_to_id('Overview');
+
+function fid($id) {
+  global $selectedid;
+
+  $output = 'id="'.$id.'" class="page';
+  if ($id == $selectedid) {
+    $output .= ' selected';
+  }
+  $output .= '"';
+  return $output;
+}
+
+?>
+
+<div class="sidebar">
+  <h1>Features</h1>
+  <ul>
+<?php
+foreach ($order as $title) {
+  $id = name_to_id($title);
+  $classes = '';
+  if ($selectedid == $id) {
+    $classes = ' selected';
+  }
+  echo <<<ITEM
+    <li><a href="/showcase/$id" class="showcase_$id$classes">$title <span class="arrow">&rarr;</span></a></li>
+ITEM;
+}
+?>
+  </ul>
+</div> <!-- .sidebar -->
+
+<div class="showcase">
+
+<div <?= fid('overview') ?>>
+<h1>Overview</h1>
+<p>
+  Three20 is a collection of Objective-C classes that powers a growing number of
+  popular applications on the App Store. It provides dozens of incredibly useful
+  features that save you development time.
+</p>
+<p>
+  The library is built to be modular, which means you can selectively incorporate
+  elements of the library into your project. There is also a growing set of
+  extensions including drop-in XML and JSON parsing, as well as CSS stylesheet
+  support for theming your applications.
+</p>
+</div> <!-- #overview -->
+
+
+<div <?= fid('persistence') ?>>
+<h1>Persistence</h1>
+<p>
+  Three20 remembers your app's state so that you and your users don't have
+  to.
+</p>
+<h2>How does it work?</h2>
+<p>
+  Each page in your app is treated as a distinct URL. When the user navigates
+  through your app, Three20 stores a history of the navigation path and writes it
+  to disk. When the app starts up again, these URLs are replayed instantly,
+  and your app is right where it left off.
+</p>
+<h2>Is this necessary now that multi-tasking is available?</h2>
+<p>
+  Your app can be shut down at any time. Even with multi-tasking, the user might
+  forcefully close the app, turn off their device, or the device itself might
+  decide that it needs to shut your program down. Any of these situations will
+  require that you persist the state of your application.
+</p>
+<h2>Example</h2>
+<p>
+  In the following example Jeff is posting a status update. Below each screen
+  is the corresponding URL and the data saved to disk when the state is persisted.
+</p>
+<div class="boxes">
+  <div class="captionbox">
+    <img width="300" height="450" src="/gfx/home/persistence1.png" />
+    <div class="title">fb://profile/122605446</div>
+    <div class="title">{scrollOffsetY:0}</div>
+  </div>
+  <div class="captionbox">
+    <img width="300" height="450" src="/gfx/home/persistence2.png" />
+    <div class="title">fb://publish/profile/122605446</div>
+    <div class="title">{text:@"Demoing state persistence with Three20."}</div>
+  </div>
+  <div class="clearfix"></div>
+</div> <!-- .boxes -->
+<p>
+  When the app launches again, each of these URLs is replayed in order. Each
+  controller can then access their stored data to restore custom states.
+  The best part: if you use Three20 UI components, all of this is handled
+  automatically for you.
+</p>
+
+</div> <!-- #persistence -->
+
+<div <?= fid('photopicker') ?>>
+<h1>Photo Picker</h1>
+</div>
+
+<div <?= fid('webimages') ?>>
+<h1>Images Retrieved from the Web</h1>
+</div>
+
+</div> <!-- .showcase -->
+
+<div class="clearfix"></div>
+
+</div> <!-- #demobox -->
+</div> <!-- .fixed-width -->
+
 </div> <!-- #content -->
