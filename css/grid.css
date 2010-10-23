@@ -33,7 +33,8 @@
   border-right: 1px solid #eee;
 }
 
-#content .grid a:hover {
+#content .grid a:hover,
+#content .grid .version1dot1:hover {
   background-color: #8badcb;
   color: #fff;
   text-decoration: none;
@@ -43,6 +44,14 @@
   background-color: transparent;
   color: #0054a6;
   text-decoration: underline;
+}
+
+#content .grid .version1dot1 {
+  background: transparent url('/gfx/cornerbannerv1.1.png') no-repeat scroll 100% 0;
+}
+
+#content .grid .version1dot1:hover {
+  background: #8badcb url('/gfx/cornerbannerv1.1hover.png') no-repeat scroll 100% 0;
 }
 
 .grid .col-1 {

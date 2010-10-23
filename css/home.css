@@ -8,6 +8,13 @@
   overflow: hidden;
 }
 
+#demobox .showcase-overbar {
+  border-bottom: 1px solid #eee;
+  clear: both;
+  padding: 10px;
+  text-align: right;
+}
+
 #demobox .sidebar {
   border-right: 1px solid #eee;
   width: 150px;

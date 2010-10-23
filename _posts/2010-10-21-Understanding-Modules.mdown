@@ -26,7 +26,8 @@ Module Hierarchy
 Presented below is the Three20 Module hierarchy. Select any module to learn more about it.
 
 <div class="grid">
-  <div class="row"><a class="col-1" href="/module/launcher">Launcher</a><div class="clearfix"></div></div>
+  <div class="row"><a class="col-1" href="/module/three20">Three20</a><div class="clearfix"></div></div>
+  <div class="row"><a class="col-1 version1dot1" href="/module/launcher">Launcher</a><div class="clearfix"></div></div>
   <div class="row"><a class="col-1" href="/module/ui">UI</a><div class="clearfix"></div></div>
   <div class="row"><a class="col-2" href="/module/style">Style</a><a class="col-2" href="/module/uinavigator">UINavigator</a><div class="clearfix"></div></div>
   <div class="row"><a class="col-2" href="/module/network">Network</a><a class="col-2" href="/module/uicommon">UICommon</a><div class="clearfix"></div></div>

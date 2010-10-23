@@ -14,6 +14,10 @@ css: home headerbar
 <div class="fixed-width">
 <div id="demobox">
 
+<div class="showcase-overbar">
+{{2010-10-06-Adding-Three20-To-Your-Project}} &rarr;
+</div>
+
 <?php
 
 $features = array();
@@ -21,6 +25,7 @@ $features = array();
 $order = array(
   'Overview',
   'Persistence',
+  'Launcher',
 );
 
 function name_to_id($name) {
@@ -131,6 +136,26 @@ ITEM;
 </p>
 
 </div> <!-- #persistence -->
+
+<div <?= fid('launcher') ?>>
+<h1>Launcher</h1>
+<p>
+  Three20 provides an open-source implementation of the standard app launcher control found on
+  all iOS devices.
+</p>
+<h2>Example</h2>
+<div class="boxes">
+  <div class="captionbox">
+    <img width="300" height="450" src="/gfx/home/launcher1.png" />
+    <div class="title">The Facebook Launcher</div>
+  </div>
+  <div class="captionbox">
+    <img width="300" height="450" src="/gfx/home/launcher2.jpeg" />
+    <div class="title">The University of Houston Launcher</div>
+  </div>
+  <div class="clearfix"></div>
+</div> <!-- .boxes -->
+</div> <!-- #launcher -->
 
 <div <?= fid('photopicker') ?>>
 <h1>Photo Picker</h1>
