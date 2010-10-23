@@ -77,11 +77,11 @@ General Conventions
 ### Auto-linking Three20 Classes
 
 If you mention a Three20 class in your article, you can easily link to the
-article's API documentation by prefixing the class name with a `^`.
+article's API documentation by surrounding the class name with `^`.
 
 For example:
 
-    ^TTTableViewController
+    ^TTTableViewController^
 
 will become
 

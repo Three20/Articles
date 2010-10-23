@@ -9,8 +9,8 @@ Three20 Tidbits
 ### Adapted from <a href="http://sujee.net/tech/articles/iphone-three20/">sujee.net</a>
 
 Three20 is an open source iPhone/iPad library that packs a lot of cool features.
-Three20 is popular for its UI components such as ^TTNavigator, ^TTWebController,
-^TTPhotoViewController.
+Three20 is popular for its UI components such as ^TTNavigator^, ^TTWebController^,
+^TTPhotoViewController^.
 
 Also there is lot more than UI in Three20.  I use Three20 sparingly in my iOS
 projects. I don't build my app as a 'full-blown Three20 app'.  I use some
@@ -214,7 +214,7 @@ File : `Three20UICommon/TTGlobalUICommon.h`
 
 Some goodies here.... Functions for checking OS Version and if running iPad..etc
 
-^TTImageView
+^TTImageView^
 ------------
 
 File : `Three20UI/TTImageView.h`
@@ -222,10 +222,10 @@ File : `Three20UI/TTImageView.h`
 This is a drop-in replacement for any UIImageView, where image has to be loaded
 from a URL. All you do is feed a URL and it does the rest (starts downloading the
 image, shows placeholder image while downloading, and displays the image)!
-Self-contained. Also uses ^TTURLCache, so if the image has already been downloaded, it
+Self-contained. Also uses ^TTURLCache^, so if the image has already been downloaded, it
 will not downloaded it, will just use from cache... cool!
 
-    // create ^TTImageView,
+    // create ^TTImageView^,
     // this can be done programatically, or change the class name
     // to 'TTImageView' in Interface Builder
     TTImageView* imgView = [[TTImageView alloc] init];

@@ -1,0 +1,53 @@
+
+<div class="authors">
+  <div class="author">Module: Three20Launcher</div>
+</div>
+
+The Three20 Launcher
+====================
+
+^TTLauncherView^ mimics the functionality of the well-known "launcher" view used on every iOS
+device to start applications. It's also used in the Facebook iPhone app.
+
+<div class="image" markdown=1>![Facebook's Launcher](/gfx/samples/launcher1.png 320x480)</div>
+
+--
+[View the code for this article on GitHub](http://github.com/Three20/Samples/tree/master/LauncherCatalog/)
+--
+
+Getting Started
+---------------
+
+The easiest way to get started with ^TTLauncherView^ is to use the related object,
+^TTLauncherViewController^. This view controller sets up the basic scaffolding for the
+view and allows you to focus on adding content.
+
+Let's start by using creating a view controller that inherits from this class and adding one
+item to the launcher view.
+
+### BasicLauncherViewController.h
+    #import <Three20Launcher/Three20Launcher.h>
+
+    @interface BasicLauncherViewController : TTLauncherViewController {
+    }
+
+    @end
+
+### BasicLauncherViewController.m
+
+    #import "BasicLauncherViewController.h"
+    
+    @implementation BasicLauncherViewController
+
+    - (void)viewDidLoad {
+      [super viewDidLoad];
+
+      TTLauncherItem* item =
+        [[TTLauncherItem alloc] initWithTitle: @"Item title"
+                                        image: @"bundle://Icon.png"
+                                          URL: nil];
+      [self.launcherView addItem:item animated:NO];
+      TT_RELEASE_SAFELY(item);
+    }
+
+    @end
