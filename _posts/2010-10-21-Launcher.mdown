@@ -1,3 +1,7 @@
+---
+title: Launcher (v1.1)
+---
+
 
 <div class="authors">
   <div class="author">Module: <a href="/modules/launcher">Three20Launcher</a></div>
@@ -5,6 +9,8 @@
 
 The Three20 Launcher
 ====================
+
+This article pertains to code found in the [v1.1](/roadmap/v1.1) development branch.
 
 ^TTLauncherView^ mimics the functionality of the well-known "launcher" view used on every iOS
 device to start applications. It's also used in the Facebook iPhone app.
