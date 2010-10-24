@@ -1,6 +1,6 @@
 
 <div class="authors">
-  <div class="author">Module: Three20Launcher</div>
+  <div class="author">Module: <a href="/modules/launcher">Three20Launcher</a></div>
 </div>
 
 The Three20 Launcher

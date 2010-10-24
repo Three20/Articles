@@ -46,19 +46,16 @@ html {
   margin-left: 1.5em;
 }
 
-#content ul,
+#content .mdlist,
 #content p {
   background-color: #FFF;
   border: 1px solid #eee;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 #content ul {
   padding-left: 20px;
-}
-
-#content p {
-  margin-bottom: 20px;
-  padding: 20px;
 }
 
 #content .authors {
@@ -98,6 +95,10 @@ html {
   margin-bottom: 20px;
 }
 
+#content .naviblock p {
+  margin-bottom: 0;
+}
+
 #content .naviblock .navi {
   font-size: 2em;
   color: #000;
@@ -114,8 +115,16 @@ html {
   padding: 5px;
 }
 
+#content .video {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* This mimics GitHub's code style so people feel at home :) */
 #content code {
-  background-color: #F6F6F6;
+  background-color: #F8F8FF;
+  border: 1px solid #DEDEDE;
+  padding: 0px 0.2em;
 }
 
 #content pre {

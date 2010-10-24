@@ -6,17 +6,13 @@ css: grid
 Add Three20 To Your Project
 ===========================
 
-<div class="grid">
-  <div class="row">
-    <div class="col-2">Command line (git)
-      <div class="subtext"><code>git clone git://github.com/facebook/three20.git</code></div>
-    </div>
-    <div class="col-2">Download
-      <div class="subtext"><a href="http://github.com/facebook/three20/tarball/master">Three20.tar.gz</a></div>
-    </div>
-    <div class="clearfix"></div>
-  </div>
+<div>
+>>v1.0a1grab<<
 </div>
+
+This will check out the latest official cut of Three20. Learn more about cuts by reading the
+article {{2010-10-24-Branches-And-Cuts}}. Pick your own cut by checking out the
+[Three20 Roadmap](/roadmap).
 
 Automatically add Three20 to your project
 -----------------------------------------
@@ -33,3 +29,7 @@ Here's a dead simple example:
 This will add the [Three20](/module/three20) module and all of its dependencies.
 Read the article "{{2010-10-21-Understanding-Modules}}" to learn more about Modules and their
 dependencies.
+
+<div class="video">
+<object style="background-image:url(http://i4.ytimg.com/vi/wCrzY7kV1Dw/hqdefault.jpg)"  width="425" height="344"><param name="movie" value="http://www.youtube.com/v/wCrzY7kV1Dw?fs=1&amp;hl=en_US"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/wCrzY7kV1Dw?fs=1&amp;hl=en_US" width="425" height="344" allowScriptAccess="never" allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash"></embed></object>
+</div>

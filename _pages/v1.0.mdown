@@ -1,0 +1,46 @@
+---
+layout:basic
+css:article headerbar grid issues
+---
+
+<div id="content">
+<div class="fixed-width" markdown="1">
+
+Version 1.0
+===========
+
+Three20 v1.0 is the first official release branch of Three20's source.
+
+Learn more about Three20 versions by understanding "{{2010-10-24-Branches-And-Cuts}}".
+
+Grab it
+-------
+
+<div class="grid">
+  <div class="row right-border">
+    <div class="col-2">Command line (git)
+      <div class="subtext"><code>git clone git://github.com/facebook/three20.git</code></div>
+      <div class="subtext"><code>git checkout v1.0</code></div>
+    </div>
+    <div class="col-2 no-right-border">Download
+      <div class="subtext"><a href="http://github.com/facebook/three20/tarball/v1.0">Three20-v1.0.tar.gz</a></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+
+Cuts {#cuts}
+----
+
+What is a cut? Read about "{{2010-10-24-Branches-And-Cuts}}".
+
+<div class="grid">
+  <div class="row"><a class="col-3" href="/roadmap/v1.0a1">v1.0a1</a><div class="col-3">First cut of v1.0</div><div class="col-3">187 Issues</div><div class="clearfix"></div></div>
+</div>
+
+<div>
+>>v1.0a1issues<<
+</div>
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->

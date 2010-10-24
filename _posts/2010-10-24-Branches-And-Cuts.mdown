@@ -1,0 +1,26 @@
+---
+title: Branches and Cuts
+---
+
+Branches and Cuts
+=================
+
+If you want to use Three20 in your project it's absolutely important that you understand how
+branches and cuts are used.
+
+What is a Branch?
+-----------------
+
+A branch in Three20 denotes a specific development path. "Mainline", for example, refers to the
+[master](http://github.com/facebook/three20) branch (i.e. the default branch). Each major
+version release of Three20 has its own branch, e.g.
+[v1.0](/roadmap/v1.0) or
+[v1.1](/roadmap/v1.1).
+
+What is a Cut?
+--------------
+
+A cut of Three20 denotes a known stable point in Three20's development history. Version cuts
+denote an accepted, stable release of the source, e.g.
+[v1.0a1](/roadmap/v1.0a1) is the first stable cut of the v1.0
+branch.

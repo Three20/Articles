@@ -1,0 +1,46 @@
+---
+layout:basic
+css:article headerbar grid issues
+---
+
+<div id="content">
+<div class="fixed-width" markdown="1">
+
+Version 1.1
+===========
+
+Three20 v1.1 is in active development. Keep this in mind if you plan to use any v1.1 features.
+
+!> !* Hey, listen!
+!> 
+!> Development branches are *not guaranteed to be production-ready*. In fact, it's entirely possible
+!> that an active development branch might not even build. If you want to use Three20 for
+!> production code, use a cut. Learn more about Three20 cuts by understanding
+!> "{{2010-10-24-Branches-And-Cuts}}" and checking out the [Three20 Roadmap](/roadmap).
+
+The v1.1 milestones are outlined on
+[Three20's Lighthouse](http://three20.lighthouseapp.com/projects/62400/milestones/88714-three20-v11).
+
+v1.1 Milestones
+---------------
+
+* Split Three20UI into smaller modules (outlined at [Three20's Lighthouse](http://three20.lighthouseapp.com/projects/62400/milestones/88714-three20-v11)).
+
+Grab it
+-------
+
+<div class="grid">
+  <div class="row right-border">
+    <div class="col-2">Command line (git)
+      <div class="subtext"><code>git clone git://github.com/facebook/three20.git</code></div>
+      <div class="subtext"><code>git checkout v1.1</code></div>
+    </div>
+    <div class="col-2 no-right-border">Download
+      <div class="subtext"><a href="http://github.com/facebook/three20/tarball/v1.1">Three20-v1.1.tar.gz</a></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->

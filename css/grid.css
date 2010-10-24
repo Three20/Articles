@@ -19,10 +19,26 @@
   border-bottom: 1px solid #EEE;
 }
 
+.grid .header-row {
+  background-color: #eee;
+  color: #888;
+}
+
+#content .grid .right-border {
+  border-right: 1px solid #eee;
+}
+
+#content .grid .no-right-border {
+  border-right: none;
+}
+
 .grid .col-1,
 .grid .col-2,
 .grid .col-3,
-.grid .col-4 {
+.grid .col-3-fill,
+.grid .col-4,
+.grid .col-4-fill-2,
+.grid .col-4-fill-3 {
   float: left;
   display: block;
   text-align: center;
@@ -66,6 +82,22 @@
   width: 239px;
 }
 
+.grid .col-3-fill {
+  width: 479px;
+}
+
 .grid .col-4 {
   width: 179px;
+}
+
+.grid .col-4-fill-2 {
+  width: 359px;
+}
+
+.grid .col-4-fill-3 {
+  width: 539px;
+}
+
+.grid .no-padding {
+  padding: 0;
 }

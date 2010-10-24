@@ -1,0 +1,25 @@
+
+.grid .info {
+  padding: 0 10px;
+  text-align: left;
+}
+
+.grid .info .date {
+  text-align: right;
+  color: #888;
+}
+
+#content .grid a:hover .date,
+#content .grid .version1dot1:hover .date {
+  color: #FFF;
+}
+
+#issues .col-1,
+#issues .col-2,
+#issues .col-3,
+#issues .col-3-fill,
+#issues .col-4,
+#issues .col-4-fill-2,
+#issues .col-4-fill-3 {
+  height: 100px;
+}
