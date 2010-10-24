@@ -68,14 +68,22 @@ html {
   text-align: right;
 }
 
-#content .image p {
+#content .image p,
+#content .image-inline p {
   background-color: transparent;
   padding: 0;
   border: none;
   text-align: center;
 }
 
-#content .image p img {
+#content .image-inline {
+  float: left;
+  text-align: left;
+  margin-right: 10px;
+}
+
+#content .image p img,
+#content .image-inline p img {
   padding: 10px;
   background-color: #FFF;
   border: 1px solid #EEE;
@@ -110,6 +118,11 @@ html {
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
 }
 
+#content .naviblock .syntaxhighlighter {
+  background-color: #fff !important;
+  padding: 20px !important;
+}
+
 #content .source {
   text-align: right;
   padding: 5px;
@@ -118,6 +131,10 @@ html {
 #content .video {
   text-align: center;
   margin-bottom: 20px;
+}
+
+#content .permalink {
+  text-align: right;
 }
 
 /* This mimics GitHub's code style so people feel at home :) */

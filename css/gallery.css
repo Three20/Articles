@@ -1,0 +1,10 @@
+#content .appstore p {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+#content .appstore {
+  float: right;
+  padding: 20px;
+}
