@@ -12,7 +12,7 @@ Roadmap
 <div class="grid">
   <div class="row header-row"><div class="col-4">Branch</div><div class="col-4">Latest Cut</div><div class="col-4-fill-2"># of Issues</div><div class="clearfix"></div></div>
   <div class="row"><a class="col-4" href="/roadmap/v1.1">v1.1</a><div class="col-4">Coming soon</div><div class="col-4-fill-2">Coming soon</div><div class="clearfix"></div></div>
-  <div class="row"><a class="col-4" href="/roadmap/v1.0">v1.0</a><a class="col-4" href="/roadmap/v1.0a1">v1.0a1</a><div class="col-4-fill-2">187 issues</div><div class="clearfix"></div></div>
+  <div class="row"><a class="col-4" href="/roadmap/v1.0">v1.0</a><a class="col-4" href="/roadmap/v1.0a1">v1.0a1</a><div class="col-4-fill-2">188 issues</div><div class="clearfix"></div></div>
 </div>
 
 Contribute

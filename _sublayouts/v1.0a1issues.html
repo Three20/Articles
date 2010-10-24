@@ -1,6 +1,11 @@
-<h2 id="openissues">187 Open Issues (v1.0a1)</h2>
+<h2 id="openissues">188 Open Issues (v1.0a1)</h2>
 
 <div class="grid" id="issues">
+  <div class="row">
+  <a class="col-4" href="http://github.com/dwery"><img width="72" height="72" align="center" src="http://www.gravatar.com/avatar/f9850254b62a96c605fd3bf00c1a3d1a?s=72&amp;d=http://three20.info/gfx/team/silhouette.gif" /></a>
+  <a class="col-4-fill-3" href="http://github.com/facebook/three20/issues/issue/294"><div class="info"><div class="title">tabbar controller with more menu not working properly</div><div class="date">2010/10/24 11:53:34 -0700</div></div></a>
+  <div class="clearfix"></div>
+  </div> <!-- .row -->
   <div class="row">
   <a class="col-4" href="http://github.com/aptogo"><img width="72" height="72" align="center" src="http://www.gravatar.com/avatar/5e8045e87af8ae378fcf8057d99ac0e3?s=72&amp;d=http://three20.info/gfx/team/silhouette.gif" /></a>
   <a class="col-4-fill-3" href="http://github.com/facebook/three20/issues/issue/293"><div class="info"><div class="title">Removal of hard-coded mappings of TTTableItems to TTTableViewCells</div><div class="date">2010/10/20 15:25:17 -0700</div></div></a>
