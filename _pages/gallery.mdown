@@ -12,6 +12,36 @@ The Three20 Gallery
 This is a showcase of some apps currently in the App Store that use Three20, shown in
 alphabetical order.
 
+Ambiance
+-------
+
+<div class="source">Created by: Urban Apps, LLC</div>
+<div class="source">Website: <a href="http://ambianceapp.com/">ambianceapp.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://bit.ly/ambiance">![FotoFind](/gfx/appstore.png 230x80)</a></div>
+
+Ambiance™ is an "environment enhancer" designed to help you create the perfect ambient atmosphere, wherever you are.
+You can choose from over 1000 free sounds, exclusive to Ambiance, to download and listen to, create customized sound mixes,
+cycle through playlists, wake up to relaxing sounds and more. Relax. Focus. Explore. 
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![CityTag](/gfx/gallery/ambiance/screenshot0.png 320x460)</div>
+<div class="image-inline" markdown=1>![CityTag](/gfx/gallery/ambiance/screenshot1.png 320x460)</div>
+<div class="clearfix"></div>
+
+### Three20 Components
+
+* ^TTStyle^
+* ^TTImageView^
+* ^TTPhotoViewController^
+* ^TTLauncherView^
+* ^TTNavigator^
+* ^TTTabStrip^
+* ^TTStyledText^
+
+
+
 
 CityTag
 -------
