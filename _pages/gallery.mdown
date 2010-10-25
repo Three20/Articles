@@ -26,8 +26,8 @@ cycle through playlists, wake up to relaxing sounds and more. Relax. Focus. Expl
 
 ### Screenshots
 
-<div class="image-inline" markdown=1>![CityTag](/gfx/gallery/ambiance/screenshot0.png 320x460)</div>
-<div class="image-inline" markdown=1>![CityTag](/gfx/gallery/ambiance/screenshot1.png 320x460)</div>
+<div class="image-inline" markdown=1>![Ambiance](/gfx/gallery/ambiance/screenshot0.png 320x460)</div>
+<div class="image-inline" markdown=1>![Ambiance](/gfx/gallery/ambiance/screenshot1.png 320x460)</div>
 <div class="clearfix"></div>
 
 ### Three20 Components
