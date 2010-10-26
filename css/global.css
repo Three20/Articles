@@ -40,3 +40,28 @@ a {
   margin: 0;
   font-size: 2em;
 }
+
+.banner-notification {
+  background-color: #d6ecff;
+  padding: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.banner-notification:hover {
+  background-color: #8badcb;
+}
+
+.banner-notification:hover .banner-content {
+  color: #fff;
+}
+
+.banner-notification .banner-content {
+  font-size: 1em;
+  color: #333;
+  text-align: center;
+}
+
+.banner-notification strong {
+  font-weight: bold;
+}
