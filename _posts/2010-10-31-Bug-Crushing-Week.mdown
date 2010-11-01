@@ -1,0 +1,105 @@
+November 2010 Bug-Crushing Week
+===============================
+
+As of [v1.0a1](/roadmap/v1.0a1), Three20 has 199 issues and countless features found in over
+400 forks on GitHub.
+
+We're going to tackle this growing set of issues. This week, from November 1st to November 7th,
+2010, we're going on a bug-crushing spree. The entire Three20 community is invited to help
+make Three20 a better library for iOS development.
+
+How It's Organized
+------------------
+
+I've dumped all of the GitHub issues into a
+Google Spreadsheet, titled "[Three20 v1.0a1 Task List](https://spreadsheets.google.com/ccc?key=0Ap-fk9EFS1C6dEgzZUo1SnNvdTBkeDRvZnYxa1ZNMWc&hl=en)".
+The spreadsheet contains two sheets.
+
+--
+[View the Task List](https://spreadsheets.google.com/ccc?key=0Ap-fk9EFS1C6dEgzZUo1SnNvdTBkeDRvZnYxa1ZNMWc&hl=en)
+--
+
+The first is a flat list of all issues and pull requests as of
+Sunday, October 31st. Next to each issue are cells for keeping track of our progress: a
+completion cell, an owner cell, and a reviewed by cell. We'll be using this list to
+organize who is responsible for merging, testing, and pushing each fix.
+
+--
+<iframe width='800' height='300' frameborder='0' src='https://spreadsheets.google.com/pub?key=0Ap-fk9EFS1C6dEgzZUo1SnNvdTBkeDRvZnYxa1ZNMWc&hl=en&single=true&gid=0&output=html&widget=true'></iframe>
+--
+
+The second is a volunteer list. We'll use this to gather the GitHub usernames of everyone who is
+actively helping out in bug week and their availability.
+
+--
+<iframe width='800' height='200' frameborder='0' src='https://spreadsheets.google.com/pub?key=0Ap-fk9EFS1C6dEgzZUo1SnNvdTBkeDRvZnYxa1ZNMWc&hl=en&single=true&gid=1&output=html&widget=true'></iframe>
+--
+
+How to Help Out
+---------------
+
+We'll be using the Three20 repository found at [github.com/Three20/Three20](http://github.com/Three20/Three20)
+to gather changes. Commit access will be given on this repository to anyone
+who helps merge code. If you don't have commit access and would like to help out,
+[send a message to jverkoey](https://github.com/inbox/new/jverkoey) on GitHub.
+
+The rationale behind using a separate repository is that this week has the potential to shake up
+a lot of things in mainline. Once the week is over we'll be able to look back at the code people
+merge and decide whether to add more committers to the facebook/Three20 repo. Think of this
+week as a trial for opening up the doors to more Three20 mainline contributors.
+
+Throughout the week there will be people hanging out in the Three20 IRC channel.
+
+    irc.freenode.net
+    #Three20
+
+If you have any questions that aren't being answered in the IRC channel, send an email to the
+mailing list at three20@googlegroups.com.
+
+Processes
+---------
+
+Here are a few guides to help you be as productive as possible during bug week.
+
+### Process for Fixing a Bug {#FixABug}
+
+1. Open the Google Spreadsheet "[Three20 v1.0a1 Task List](https://spreadsheets.google.com/ccc?key=0Ap-fk9EFS1C6dEgzZUo1SnNvdTBkeDRvZnYxa1ZNMWc&hl=en)".
+2. Find an issue that isn't owned by someone already.
+3. Add your username to the "Owner" field in the spreadsheet.
+4. Set the "Status" field in the spreadsheet. This can be anything, but should be used to
+   indicate to others what your progress is. The cell will change color for the following
+   words: "Testing" "Reviewing" "Committed".
+5. Verify that you can reproduce the bug on the [v1.0](/roadmap/v1.0) branch. Don't just use
+   [v1.0a1](/roadmap/v1.0a1) to test bugs because you'll need to eventually push the code to
+   the v1.0 branch.
+6. Create a new local branch, titled `issue_<issue number>`.
+7. Fix the bug on this new local branch. Please follow the {{2010-10-24-Three20-Style-Guide}} when
+   writing new code.
+8. Verify that your fix does, in fact, fix the bug.
+9. Commit your fix. Some fixes may require multiple commits, don't be afraid to do this!
+   In the final commit for your fix, start the first line with the following:
+   `Closes #<issue number>`. This will make GitHub close the relevant issue and automatically
+    link back to the commit.
+10. Push your `issue_<issue number>` branch to Three20/Three20. [Learn How](#PushToThree20).
+11. Ask somebody else from the volunteer list to review your changes. If you can't find
+    anyone on the volunteer list to help, send an email to the mailing list at
+    three20@googlegroups.com.
+12. Once your change has been reviewed, merge it into the [v1.0](/roadmap/v1.0) branch.
+13. Congratulations! Thanks for helping squash bugs in Three20! Crack a beer, you've earned it.
+
+### Process for Pushing to Three20 {#PushToThree20}
+
+1. If you already have Three20 checked out on your local machine, run    
+  `git remote add three20-bugweek git@github.com:Three20/Three20.git`.    
+   If you don't have Three20 checked out, run    
+   `git clone git@github.com:Three20/Three20.git`.    
+   You will need commit access in order to push to Three20. Request it by
+   [sending a message to jverkoey](https://github.com/inbox/new/jverkoey).
+2. Check out [v1.0](/roadmap/v1.0). `git checkout v1.0`
+3. Make a new branch. `git checkout -b issue_<issue number>`
+3. Make your changes.
+4. Commit messages should be of the form:    
+   `[<module names affected>] <short title>`    
+   `<empty line>`    
+   `<message body>`
+5. Push your branch. `git push three20-bugweek issue_<issue number>`

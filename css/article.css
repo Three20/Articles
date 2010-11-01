@@ -37,13 +37,20 @@ html {
 }
 
 #content p,
-#content ul {
+#content ul,
+#content ol {
   -webkit-font-smoothing: antialiased;
 }
 
 #content ul li {
   list-style-type: circle;
   margin-left: 1.5em;
+}
+
+#content ol li {
+  list-style-type: decimal;
+  margin-left: 1.5em;
+  margin-bottom: 0.3em;
 }
 
 #content .mdlist,
@@ -54,7 +61,8 @@ html {
   padding: 20px;
 }
 
-#content ul {
+#content ul,
+#content ol {
   padding-left: 20px;
 }
 
