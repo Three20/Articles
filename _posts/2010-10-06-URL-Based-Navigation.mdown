@@ -169,7 +169,7 @@ NSObjects to URLs
 -----------------
 
 NSObjects in three20 have the ability to be mapped to URLs via the
-`URLValueWithName` addition in NSObjectAdditions.h.
+`URLValueWithName` addition in `UINSObjectAdditions.h`.
 
 This is an incredibly useful feature when populating a table with items. So how does it work?
 
