@@ -16,92 +16,92 @@ alphabetical order.
 <a href="#ambiance" class="artwork">
   <img class="artwork" src="/gfx/gallery/ambiance/icon.jpeg" width="75" height="75" alt="Ambience" />
   <span class="mask"></span>
-  <div class="title">Ambiance</div>
+  <span class="title">Ambiance</span>
 </a>
 <a href="#bcliquor" class="artwork">
   <img class="artwork" src="/gfx/gallery/bcliquor/icon.jpeg" width="75" height="75" alt="BC Liquor Locator" />
   <span class="mask"></span>
-  <div class="title">BC Liquor Locator</div>
+  <span class="title">BC Liquor Locator</span>
 </a>
 <a href="#citytag" class="artwork">
   <img class="artwork" src="/gfx/gallery/citytag/icon.jpeg" width="75" height="75" alt="CityTag" />
   <span class="mask"></span>
-  <div class="title">CityTag</div>
+  <span class="title">CityTag</span>
 </a>
 <a href="#thecolorofwar" class="artwork">
   <img class="artwork" src="/gfx/gallery/colorofwar/icon.jpeg" width="75" height="75" alt="The Color of War" />
   <span class="mask"></span>
-  <div class="title">The Color of War</div>
+  <span class="title">The Color of War</span>
 </a>
 <a href="#cookmate" class="artwork">
   <img class="artwork" src="/gfx/gallery/cookmate/icon.jpeg" width="75" height="75" alt="Cookmate" />
   <span class="mask"></span>
-  <div class="title">Cookmate</div>
+  <span class="title">Cookmate</span>
 </a>
 <a href="#facebook" class="artwork">
   <img class="artwork" src="/gfx/gallery/facebook/icon.jpeg" width="75" height="75" alt="Facebook" />
   <span class="mask"></span>
-  <div class="title">Facebook</div>
+  <span class="title">Facebook</span>
 </a>
 <a href="#ffhound" class="artwork">
   <img class="artwork" src="/gfx/gallery/ffhound/icon.jpeg" width="75" height="75" alt="FFHound!" />
   <span class="mask"></span>
-  <div class="title">FFHound!</div>
+  <span class="title">FFHound!</span>
 </a>
 <a href="#fotofind" class="artwork">
   <img class="artwork" src="/gfx/gallery/fotofind/icon.jpeg" width="75" height="75" alt="FotoFind" />
   <span class="mask"></span>
-  <div class="title">FotoFind</div>
+  <span class="title">FotoFind</span>
 </a>
 <a href="#goodreads" class="artwork">
   <img class="artwork" src="/gfx/gallery/goodreads/icon.jpeg" width="75" height="75" alt="Goodreads" />
   <span class="mask"></span>
-  <div class="title">Goodreads</div>
+  <span class="title">Goodreads</span>
 </a>
 <a href="#hackernews" class="artwork">
   <img class="artwork" src="/gfx/gallery/hackernews/icon.jpeg" width="75" height="75" alt="Hacker News" />
   <span class="mask"></span>
-  <div class="title">Hacker News</div>
+  <span class="title">Hacker News</span>
 </a>
 <a href="#hitask" class="artwork">
   <img class="artwork" src="/gfx/gallery/hitask/icon.jpeg" width="75" height="75" alt="HiTask" />
   <span class="mask"></span>
-  <div class="title">HiTask</div>
+  <span class="title">HiTask</span>
 </a>
 <a href="#mountainbiketrails" class="artwork">
   <img class="artwork" src="/gfx/gallery/mountainbiketrails/icon.jpeg" width="75" height="75" alt="Mountain Bike Trails" />
   <span class="mask"></span>
-  <div class="title">Mountain Bike Trails</div>
+  <span class="title">Mountain Bike Trails</span>
 </a>
 <a href="#panoramio" class="artwork">
   <img class="artwork" src="/gfx/gallery/panoramio/icon.jpeg" width="75" height="75" alt="Panoramio Photo Viewer" />
   <span class="mask"></span>
-  <div class="title">Panoramio Photo Viewer</div>
+  <span class="title">Panoramio Photo Viewer</span>
 </a>
 <a href="#pocketsalsa" class="artwork">
   <img class="artwork" src="/gfx/gallery/pocketsalsa/icon.jpeg" width="75" height="75" alt="Pocket Salsa" />
   <span class="mask"></span>
-  <div class="title">Pocket Salsa</div>
+  <span class="title">Pocket Salsa</span>
 </a>
 <a href="#pompidou" class="artwork">
   <img class="artwork" src="/gfx/gallery/pompidou/icon.jpeg" width="75" height="75" alt="Pompidou" />
   <span class="mask"></span>
-  <div class="title">Pompidou</div>
+  <span class="title">Pompidou</span>
 </a>
 <a href="#posterous" class="artwork">
   <img class="artwork" src="/gfx/gallery/posterous/icon.jpeg" width="75" height="75" alt="Posterous" />
   <span class="mask"></span>
-  <div class="title">Posterous</div>
+  <span class="title">Posterous</span>
 </a>
 <a href="#simplytweet" class="artwork">
   <img class="artwork" src="/gfx/gallery/simplytweet/icon.jpeg" width="75" height="75" alt="SimplyTweet 3" />
   <span class="mask"></span>
-  <div class="title">SimplyTweet 3</div>
+  <span class="title">SimplyTweet 3</span>
 </a>
 <a href="#uhguide" class="artwork">
   <img class="artwork" src="/gfx/gallery/uhguide/icon.jpeg" width="75" height="75" alt="UH Guide" />
   <span class="mask"></span>
-  <div class="title">UH Guide</div>
+  <span class="title">UH Guide</span>
 </a>
 <div class="clearfix"></div>
 </div>
