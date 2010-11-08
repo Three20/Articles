@@ -63,6 +63,11 @@ alphabetical order.
   <span class="mask"></span>
   <div class="title">Hacker News</div>
 </a>
+<a href="#hitask" class="artwork">
+  <img class="artwork" src="/gfx/gallery/hitask/icon.jpeg" width="75" height="75" alt="HiTask" />
+  <span class="mask"></span>
+  <div class="title">HiTask</div>
+</a>
 <a href="#mountainbiketrails" class="artwork">
   <img class="artwork" src="/gfx/gallery/mountainbiketrails/icon.jpeg" width="75" height="75" alt="Mountain Bike Trails" />
   <span class="mask"></span>
@@ -277,11 +282,11 @@ FFHound! is the ultimate client for FriendFeed.
 
 ### Screenshots
 
-<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot01.jpeg 334x480)</div>
-<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot02.jpeg 334x480)</div>
-<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot03.jpeg 334x480)</div>
-<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot04.jpeg 334x480)</div>
-<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot05.jpeg 334x480)</div>
+<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot05.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
@@ -315,7 +320,7 @@ Goodreads {#goodreads}
 <div class="source">Created by: Goodreads</div>
 <div class="source">Website: <a href="http://www.brushthedog.com/">brushthedog.com</a></div>
 
-<div class="appstore" markdown=1><a href="http://itunes.apple.com/us/app/goodreads/id355833469?mt=8">![FotoFind](/gfx/appstore.png 230x80)</a></div>
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/goodreads/id355833469?mt=8">![FotoFind](/gfx/appstore.png 230x80)</a></div>
 
 Goodreads members recommend books, compare what they are reading, keep track of what they've read
 and would like to.
@@ -340,7 +345,7 @@ Hacker News {#hackernews}
 <div class="source">Created by: Michael Grinich</div>
 <div class="source">Website: <a href="http://michaelgrinich.com/hackernews">michaelgrinich.com/hackernews</a></div>
 
-<div class="appstore" markdown=1><a href="http://itunes.apple.com/ca/app/hacker-news/id339408916?mt=8">![Hacker News](/gfx/appstore.png 230x80)</a></div>
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/hacker-news/id339408916?mt=8">![Hacker News](/gfx/appstore.png 230x80)</a></div>
 
 View stories and comments from Y Combinator's Hacker News on your iPhone or iPod touch.
 
@@ -355,6 +360,25 @@ View stories and comments from Y Combinator's Hacker News on your iPhone or iPod
 * ^TTNavigator^
 * ^TTURLRequest^
 * ^TTStyle^
+
+
+HiTask {#hitask}
+------
+
+<div class="source">Created by: Human Computer Pty Ltd</div>
+<div class="source">Website: <a href="http://hitask.com">hitask.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/hitask-online-task-management/id357815569?mt=8">![HiTask](/gfx/appstore.png 230x80)</a></div>
+
+Synchronize tasks and projects over the net between your iphone and desktop. Share and assign tasks
+and projects with your team mates.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![HiTask](/gfx/gallery/hitask/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![HiTask](/gfx/gallery/hitask/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![HiTask](/gfx/gallery/hitask/screenshot03.jpeg 320x480)</div>
+<div class="clearfix"></div>
 
 
 Mountain Bike Trails {#mountainbiketrails}
