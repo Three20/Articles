@@ -12,15 +12,15 @@
 #applist {
   padding: 20px;
   padding-top: 0;
-  width: 400px;
+  width: 530px;
   margin: 0 auto;
 }
 
 #content .artwork {
   display: block;
   position: relative;
-  width: 80px;
-  height: 110px;
+  width: 90px;
+  height: 130px;
   float: left;
   text-align: center;
   margin-right: 15px;
@@ -33,14 +33,14 @@
   border: 1px solid white;
   height: 60px;
   width: 60px;
-  left: 10px;
+  left: 15px;
 }
 
 #content .artwork .mask {
   background: url(/gfx/gallery/mask60.png) no-repeat 0px 0px;
   display: block;
   position: absolute;
-  left: 10px;
+  left: 15px;
   top: 1px;
   z-index: 1;
   height: 63px;
