@@ -68,6 +68,11 @@ alphabetical order.
   <span class="mask"></span>
   <div class="title">Panoramio Photo Viewer</div>
 </a>
+<a href="#pocketsalsa" class="artwork">
+  <img class="artwork" src="/gfx/gallery/pocketsalsa/icon.jpeg" width="75" height="75" alt="Pocket Salsa" />
+  <span class="mask"></span>
+  <div class="title">Pocket Salsa</div>
+</a>
 <a href="#pompidou" class="artwork">
   <img class="artwork" src="/gfx/gallery/pompidou/icon.jpeg" width="75" height="75" alt="Pompidou" />
   <span class="mask"></span>
@@ -381,6 +386,26 @@ of fun to explore the world with photos.
 * ^TTStyleSheet^
 * ^TTURLCache^
 * ^TTURLRequest^
+
+
+Pocket Salsa {#pocketsalsa}
+------------
+
+<div class="source">Created by: addicted2salsa</div>
+<div class="source">Website: <a href="http://addicted2salsa.com/pocketsalsa">addicted2salsa.com/pocketsalsa</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/us/app/pocket-salsa/id371402545?mt=8">![Pocket Salsa](/gfx/appstore.png 230x80)</a></div>
+
+Salsa dancing lesson and lifestyle application.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Pocket Salsa](/gfx/gallery/pocketsalsa/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Pocket Salsa](/gfx/gallery/pocketsalsa/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Pocket Salsa](/gfx/gallery/pocketsalsa/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Pocket Salsa](/gfx/gallery/pocketsalsa/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Pocket Salsa](/gfx/gallery/pocketsalsa/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
 
 
 Pompidou {#pompidou}
