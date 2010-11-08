@@ -93,6 +93,11 @@ alphabetical order.
   <span class="mask"></span>
   <div class="title">Posterous</div>
 </a>
+<a href="#simplytweet" class="artwork">
+  <img class="artwork" src="/gfx/gallery/simplytweet/icon.jpeg" width="75" height="75" alt="SimplyTweet 3" />
+  <span class="mask"></span>
+  <div class="title">SimplyTweet 3</div>
+</a>
 <a href="#uhguide" class="artwork">
   <img class="artwork" src="/gfx/gallery/uhguide/icon.jpeg" width="75" height="75" alt="UH Guide" />
   <span class="mask"></span>
@@ -493,9 +498,10 @@ Posterous {#posterous}
 <div class="source">Created by: Posterous, Inc.</div>
 <div class="source">Website: <a href="http://posterous.com/">posterous.com</a></div>
 
-<div class="appstore" markdown=1><a href="http://itunes.apple.com/ca/app/posterous/id394252521?mt=8">![Posterous](/gfx/appstore.png 230x80)</a></div>
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/posterous/id394252521?mt=8">![Posterous](/gfx/appstore.png 230x80)</a></div>
 
-Posterous lets you post any mix of text, photos and video instantly on the web for free. It's the only content sharing app you need from your iPhone or iPod touch.
+Posterous lets you post any mix of text, photos and video instantly on the web for free. It's
+the only content sharing app you need from your iPhone or iPod touch.
 
 ### Screenshots
 
@@ -507,13 +513,34 @@ Posterous lets you post any mix of text, photos and video instantly on the web f
 <div class="clearfix"></div>
 
 
+SimplyTweet 3 {#simplytweet}
+-------------
+
+<div class="source">Created by: MotionObj</div>
+<div class="source">Website: <a href="http://motionobj.com/simplytweet">motionobj.com/simplytweet</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/simplytweet-3-twitter-client/id364574174?mt=8">![SimplyTweet 3](/gfx/appstore.png 230x80)</a></div>
+
+SimplyTweet makes using Twitter easy, keeping you informed via push notifications when
+someone messages or mentions you. Choose from several themes available.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![SimplyTweet 3](/gfx/gallery/simplytweet/screenshot01.png 320x460)</div>
+<div class="image-inline" markdown=1>![SimplyTweet 3](/gfx/gallery/simplytweet/screenshot02.png 320x460)</div>
+<div class="image-inline" markdown=1>![SimplyTweet 3](/gfx/gallery/simplytweet/screenshot03.png 320x460)</div>
+<div class="image-inline" markdown=1>![SimplyTweet 3](/gfx/gallery/simplytweet/screenshot04.png 320x460)</div>
+<div class="image-inline" markdown=1>![SimplyTweet 3](/gfx/gallery/simplytweet/screenshot05.png 320x460)</div>
+<div class="clearfix"></div>
+
+
 UH Guide {#uhguide}
 --------
 
 <div class="source">Created by: CampusGuide, University of Houston CS Dept.</div>
 <div class="source">Website: <a href="http://uhcamp.us.to/blog/">uhcamp.us.to/blog</a></div>
 
-<div class="appstore" markdown=1><a href="http://itunes.apple.com/ca/app/uh-guide/id347382575?mt=8">![UH Guide](/gfx/appstore.png 230x80)</a></div>
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/uh-guide/id347382575?mt=8">![UH Guide](/gfx/appstore.png 230x80)</a></div>
 
 The UH Guide iPhone application assists you in finding your way around the University of Houston
 (main campus) as well as staying updated with what is going on on-campus.
