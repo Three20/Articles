@@ -107,15 +107,26 @@ html {
 
 #content .naviblock {
   background: #EEE url('/gfx/angledgradientred.gif') repeat scroll 0 0;
+}
+
+#content .infoblock {
+  background: #EEE url('/gfx/angledgradientgreen.gif') repeat scroll 0 0;
+}
+
+#content .naviblock,
+#content .infoblock {
   padding: 10px;
+  padding-bottom: 1px;
   margin-bottom: 20px;
 }
 
-#content .naviblock p {
-  margin-bottom: 0;
+#content .naviblock p,
+#content .infoblock p {
+  margin-bottom: 10px;
 }
 
-#content .naviblock .navi {
+#content .naviblock .navi,
+#content .infoblock .navi {
   font-size: 2em;
   color: #000;
   background-color: #FFF;
@@ -126,7 +137,8 @@ html {
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
 }
 
-#content .naviblock .syntaxhighlighter {
+#content .naviblock .syntaxhighlighter,
+#content .infoblock .syntaxhighlighter {
   background-color: #fff !important;
   padding: 20px !important;
 }

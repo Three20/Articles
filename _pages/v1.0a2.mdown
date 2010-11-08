@@ -1,0 +1,68 @@
+---
+layout:basic
+title:v1.0a2 Cut Information
+css:article headerbar grid issues
+---
+
+<div id="content">
+<div class="fixed-width" markdown="1">
+
+Version 1.0, Cut 2 (v1.0a2)
+===========================
+
+The second cut of the [v1.0 branch](/roadmap/v1.0). Included in this cut:
+[1 deprecated method](#deprecation), [5 new features](#newfeatures),
+[57 resolved issues](#resolvedissues), and [162 open issues](#openissues).
+
+This cut was made after the November 2010 bug week. Special thanks to coneybeare, diederich,
+gresrun, jwang, mrevilme, and wlach for their hard work throughout the week and to everyone who
+submitted issues and pull requests.
+
+<div>
+>>v1.0a2grab<<
+</div>
+
+Deprecation Notices Since [v1.0a1](/roadmap/v1.0a1) {#deprecation}
+--------------------------------
+
+!> !* `Three20Core/NSStringAdditions.h`
+!> 
+!> <a href="https://github.com/facebook/three20/blob/v1.0a2/src/Three20Core/Headers/NSStringAdditions.h#L36">`queryDictionaryUsingEncoding:`</a>
+!> has been deprecated in favor of <a href="https://github.com/facebook/three20/blob/v1.0a2/src/Three20Core/Headers/NSStringAdditions.h#L43">`queryContentsUsingEncoding:`</a>.
+
+New Features Since [v1.0a1](/roadmap/v1.0a1) {#newfeatures}
+-------------------------
+
++> !* `Three20Core/NSDataAdditions.h`
++> 
++> <a href="https://github.com/facebook/three20/blob/v1.0a2/src/Three20Core/Headers/NSDataAdditions.h#L28">`sha1Hash`</a> - Calculate the SHA1 hash of this data using CC_SHA1.
+
++> !* `Three20Core/NSStringAdditions.h`
++> 
++> <a href="https://github.com/facebook/three20/blob/v1.0a2/src/Three20Core/Headers/NSStringAdditions.h#L99">`sha1Hash`</a> - Calculate the SHA1 hash of this string using CC_SHA1.
+
++> !* `Three20UICommon/TTGlobalUICommon.h`
++> 
++> <a href="https://github.com/facebook/three20/blob/v1.0a2/src/Three20UICommon/Headers/TTGlobalUICommon.h#L90">`TTAlertNoTitle`</a> - Same as TTAlert but the alert view has no title.
+
++> !* `Three20UI/TTLauncherViewDelegate.h`
++> 
++> <a href="https://github.com/facebook/three20/blob/v1.0a2/src/Three20UI/Headers/TTLauncherViewDelegate.h#L34">`launcherViewDidEndDragging:`</a> - Notifies the end of a drag gesture.
+
++> !* `Three20UI/TTMessageController.h`
++> 
++> <a href="https://github.com/facebook/three20/blob/v1.0a2/src/Three20UI/Headers/TTMessageController.h#L103">`requireNonEmptyMessageBody`</a> - Indicates if the user must enter text in the editor field to be allowed to send the message.
+
+Resolved Issues Since [v1.0a1](/roadmap/v1.0a1) {#resolvedissues}
+----------------------------
+
+<div>
+>>v1.0a2resolved<<
+</div>
+
+<div>
+>>v1.0a2issues<<
+</div>
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->

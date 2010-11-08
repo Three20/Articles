@@ -1,5 +1,6 @@
 ---
 layout:basic
+title:v1.1 Branch Information
 css:article headerbar grid issues
 ---
 

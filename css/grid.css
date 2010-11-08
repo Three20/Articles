@@ -45,8 +45,9 @@
   font-size: 1.5em;
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
   -webkit-font-smoothing: antialiased;
-  padding: 20px 0;
+  padding: 20px 0px;
   border-right: 1px solid #eee;
+  overflow: hidden;
 }
 
 #content .grid a:hover,
