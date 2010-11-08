@@ -73,6 +73,11 @@ alphabetical order.
   <span class="mask"></span>
   <div class="title">Pompidou</div>
 </a>
+<a href="#posterous" class="artwork">
+  <img class="artwork" src="/gfx/gallery/posterous/icon.jpeg" width="75" height="75" alt="Posterous" />
+  <span class="mask"></span>
+  <div class="title">Posterous</div>
+</a>
 <a href="#uhguide" class="artwork">
   <img class="artwork" src="/gfx/gallery/uhguide/icon.jpeg" width="75" height="75" alt="UH Guide" />
   <span class="mask"></span>
@@ -406,6 +411,26 @@ commissaire de l'exposition.
 * ^TTPhotoViewController^
 * ^TTScrollView^
 * ^TTURLCache^
+
+
+Posterous {#posterous}
+---------
+
+<div class="source">Created by: Posterous, Inc.</div>
+<div class="source">Website: <a href="http://posterous.com/">posterous.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/ca/app/posterous/id394252521?mt=8">![Posterous](/gfx/appstore.png 230x80)</a></div>
+
+Posterous lets you post any mix of text, photos and video instantly on the web for free. It's the only content sharing app you need from your iPhone or iPod touch.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Posterous](/gfx/gallery/posterous/screenshot01.png 320x460)</div>
+<div class="image-inline" markdown=1>![Posterous](/gfx/gallery/posterous/screenshot02.png 320x460)</div>
+<div class="image-inline" markdown=1>![Posterous](/gfx/gallery/posterous/screenshot03.png 320x460)</div>
+<div class="image-inline" markdown=1>![Posterous](/gfx/gallery/posterous/screenshot04.png 320x460)</div>
+<div class="image-inline" markdown=1>![Posterous](/gfx/gallery/posterous/screenshot05.png 320x460)</div>
+<div class="clearfix"></div>
 
 
 UH Guide {#uhguide}
