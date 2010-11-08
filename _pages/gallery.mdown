@@ -43,6 +43,11 @@ alphabetical order.
   <span class="mask"></span>
   <div class="title">Facebook</div>
 </a>
+<a href="#ffhound" class="artwork">
+  <img class="artwork" src="/gfx/gallery/ffhound/icon.jpeg" width="75" height="75" alt="FFHound!" />
+  <span class="mask"></span>
+  <div class="title">FFHound!</div>
+</a>
 <a href="#fotofind" class="artwork">
   <img class="artwork" src="/gfx/gallery/fotofind/icon.jpeg" width="75" height="75" alt="FotoFind" />
   <span class="mask"></span>
@@ -215,7 +220,7 @@ Cookmate {#cookmate}
 <div class="source">Created by: Tapmates</div>
 <div class="source">Website: <a href="http://www.cookmateapp.com">cookmateapp.com</a></div>
 
-<div class="appstore" markdown=1><a href="http://itunes.apple.com/ca/app/cookmate/id334838276?mt=8">![Cookmate](/gfx/appstore.png 230x80)</a></div>
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/cookmate/id334838276?mt=8">![Cookmate](/gfx/appstore.png 230x80)</a></div>
 
 Did you ever had several items that you were just not sure of how to bring them together into
 a spontaneous and delicious meal? There's an app for that! Cookmate tells you what is possible
@@ -244,7 +249,7 @@ Facebook {#facebook}
 <div class="source">Created by: Facebook Inc.</div>
 <div class="source">Website: <a href="http://www.facebook.com">facebook.com</a></div>
 
-<div class="appstore" markdown=1><a href="http://itunes.apple.com/ca/app/facebook/id284882215?mt=8">![Facebook](/gfx/appstore.png 230x80)</a></div>
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/facebook/id284882215?mt=8">![Facebook](/gfx/appstore.png 230x80)</a></div>
 
 Facebook for iPhone makes it easy to stay connected and share information with friends.
 Use your iPhone to start a conversation with Facebook Chat, check your friends' latest photos
@@ -257,6 +262,26 @@ on the go.
 <div class="image-inline" markdown=1>![Facebook](/gfx/gallery/facebook/screenshot02.jpeg 334x480)</div>
 <div class="image-inline" markdown=1>![Facebook](/gfx/gallery/facebook/screenshot03.jpeg 334x480)</div>
 <div class="image-inline" markdown=1>![Facebook](/gfx/gallery/facebook/screenshot04.jpeg 334x480)</div>
+<div class="clearfix"></div>
+
+
+FFHound! {#ffhound}
+--------
+
+<div class="source">Created by: iAppleMobileApps</div>
+<div class="source">Website: <a href="http://www.iapplemobileapps.com/ffhound.html">iapplemobileapps.com/ffhound.html</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/ffhound/id368956511?mt=8">![FFHound!](/gfx/appstore.png 230x80)</a></div>
+
+FFHound! is the ultimate client for FriendFeed.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot01.jpeg 334x480)</div>
+<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot02.jpeg 334x480)</div>
+<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot03.jpeg 334x480)</div>
+<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot04.jpeg 334x480)</div>
+<div class="image-inline" markdown=1>![FFHound!](/gfx/gallery/ffhound/screenshot05.jpeg 334x480)</div>
 <div class="clearfix"></div>
 
 
