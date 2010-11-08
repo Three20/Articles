@@ -12,8 +12,72 @@ The Three20 Gallery
 This is a showcase of some apps currently in the App Store that use Three20, shown in
 alphabetical order.
 
-Ambiance
--------
+<div id="applist">
+<a href="#ambiance" class="artwork">
+  <img class="artwork" src="/gfx/gallery/ambiance/icon.jpeg" width="75" height="75" alt="Ambience" />
+  <span class="mask"></span>
+  <div class="title">Ambiance</div>
+</a>
+<a href="#bcliquor" class="artwork">
+  <img class="artwork" src="/gfx/gallery/bcliquor/icon.jpeg" width="75" height="75" alt="BC Liquor Locator" />
+  <span class="mask"></span>
+  <div class="title">BC Liquor Locator</div>
+</a>
+<a href="#citytag" class="artwork">
+  <img class="artwork" src="/gfx/gallery/citytag/icon.jpeg" width="75" height="75" alt="CityTag" />
+  <span class="mask"></span>
+  <div class="title">CityTag</div>
+</a>
+<a href="#thecolorofwar" class="artwork">
+  <img class="artwork" src="/gfx/gallery/colorofwar/icon.jpeg" width="75" height="75" alt="The Color of War" />
+  <span class="mask"></span>
+  <div class="title">The Color of War</div>
+</a>
+<a href="#cookmate" class="artwork">
+  <img class="artwork" src="/gfx/gallery/cookmate/icon.jpeg" width="75" height="75" alt="Cookmate" />
+  <span class="mask"></span>
+  <div class="title">Cookmate</div>
+</a>
+<a href="#facebook" class="artwork">
+  <img class="artwork" src="/gfx/gallery/facebook/icon.jpeg" width="75" height="75" alt="Facebook" />
+  <span class="mask"></span>
+  <div class="title">Facebook</div>
+</a>
+<a href="#fotofind" class="artwork">
+  <img class="artwork" src="/gfx/gallery/fotofind/icon.jpeg" width="75" height="75" alt="FotoFind" />
+  <span class="mask"></span>
+  <div class="title">FotoFind</div>
+</a>
+<a href="#goodreads" class="artwork">
+  <img class="artwork" src="/gfx/gallery/goodreads/icon.jpeg" width="75" height="75" alt="Goodreads" />
+  <span class="mask"></span>
+  <div class="title">Goodreads</div>
+</a>
+<a href="#hackernews" class="artwork">
+  <img class="artwork" src="/gfx/gallery/hackernews/icon.jpeg" width="75" height="75" alt="Hacker News" />
+  <span class="mask"></span>
+  <div class="title">Hacker News</div>
+</a>
+<a href="#mountainbiketrails" class="artwork">
+  <img class="artwork" src="/gfx/gallery/mountainbiketrails/icon.jpeg" width="75" height="75" alt="Mountain Bike Trails" />
+  <span class="mask"></span>
+  <div class="title">Mountain Bike Trails</div>
+</a>
+<a href="#pompidou" class="artwork">
+  <img class="artwork" src="/gfx/gallery/pompidou/icon.jpeg" width="75" height="75" alt="Pompidou" />
+  <span class="mask"></span>
+  <div class="title">Pompidou</div>
+</a>
+<a href="#uhguide" class="artwork">
+  <img class="artwork" src="/gfx/gallery/uhguide/icon.jpeg" width="75" height="75" alt="UH Guide" />
+  <span class="mask"></span>
+  <div class="title">UH Guide</div>
+</a>
+<div class="clearfix"></div>
+</div>
+
+Ambiance {#ambiance}
+--------
 
 <div class="source">Created by: Urban Apps, LLC</div>
 <div class="source">Website: <a href="http://ambianceapp.com/">ambianceapp.com</a></div>
@@ -41,9 +105,39 @@ cycle through playlists, wake up to relaxing sounds and more. Relax. Focus. Expl
 * ^TTStyledText^
 
 
+BC Liquor Locator {#bcliquor}
+-----------------
+
+<div class="source">Created by: Matt Vague</div>
+<div class="source">Website: <a href="http://bcliquorlocator.com/">bcliquorlocator.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/ca/app/bc-liquor-locator/id368167119?mt=8">![FotoFind](/gfx/appstore.png 230x80)</a></div>
+
+What good is a closed liquor store? BC Liquor Locator is an iPhone App that uses your
+current location to find the closest open BCL.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![BC Liquor Locator](/gfx/gallery/bcliquor/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![BC Liquor Locator](/gfx/gallery/bcliquor/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![BC Liquor Locator](/gfx/gallery/bcliquor/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![BC Liquor Locator](/gfx/gallery/bcliquor/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![BC Liquor Locator](/gfx/gallery/bcliquor/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+### Three20 Components
+
+* ^TTNavigator^
+* ^TTStyle^
+* ^TTStyleSheet^
+* ^TTTableViewController^
+* ^TTURLCache^
+* ^TTURLRequest^
 
 
-CityTag
+
+
+CityTag {#citytag}
 -------
 
 <div class="source">Created by: Appiphany Pty Ltd.</div>
@@ -71,7 +165,7 @@ post comments and manage out of date information.
 
 
 
-The Color of War
+The Color of War {#thecolorofwar}
 ----------------
 
 <div class="source">Created by: David Ethell</div>
@@ -99,7 +193,58 @@ providing a sampling of photos with more photos downloadable through in-app purc
 * ^TTThumbsViewController^
 
 
-FotoFind
+Cookmate {#cookmate}
+--------
+
+<div class="source">Created by: Tapmates</div>
+<div class="source">Website: <a href="http://www.cookmateapp.com">cookmateapp.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/ca/app/cookmate/id334838276?mt=8">![Cookmate](/gfx/appstore.png 230x80)</a></div>
+
+Did you ever had several items that you were just not sure of how to bring them together into
+a spontaneous and delicious meal? There's an app for that! Cookmate tells you what is possible
+to cook from these ingredients! Never wonder what's for dinner again!
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Cookmate](/gfx/gallery/cookmate/screenshot01.jpeg 334x480)</div>
+<div class="image-inline" markdown=1>![Cookmate](/gfx/gallery/cookmate/screenshot02.jpeg 334x480)</div>
+<div class="image-inline" markdown=1>![Cookmate](/gfx/gallery/cookmate/screenshot03.jpeg 334x480)</div>
+<div class="image-inline" markdown=1>![Cookmate](/gfx/gallery/cookmate/screenshot04.jpeg 334x480)</div>
+<div class="image-inline" markdown=1>![Cookmate](/gfx/gallery/cookmate/screenshot05.jpeg 334x480)</div>
+<div class="clearfix"></div>
+
+### Three20 Components
+
+* ^TTNavigator^
+* ^TTTableView^
+* ^TTStyle^
+* ^TTWebController^
+
+
+Facebook {#facebook}
+--------
+
+<div class="source">Created by: Facebook Inc.</div>
+<div class="source">Website: <a href="http://www.facebook.com">facebook.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/ca/app/facebook/id284882215?mt=8">![Facebook](/gfx/appstore.png 230x80)</a></div>
+
+Facebook for iPhone makes it easy to stay connected and share information with friends.
+Use your iPhone to start a conversation with Facebook Chat, check your friends' latest photos
+and status updates, look up a phone number, or upload your own mobile photos to Facebook while
+on the go.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Facebook](/gfx/gallery/facebook/screenshot01.jpeg 334x480)</div>
+<div class="image-inline" markdown=1>![Facebook](/gfx/gallery/facebook/screenshot02.jpeg 334x480)</div>
+<div class="image-inline" markdown=1>![Facebook](/gfx/gallery/facebook/screenshot03.jpeg 334x480)</div>
+<div class="image-inline" markdown=1>![Facebook](/gfx/gallery/facebook/screenshot04.jpeg 334x480)</div>
+<div class="clearfix"></div>
+
+
+FotoFind {#fotofind}
 --------
 
 <div class="source">Created by: Bethany Associates Inc.</div>
@@ -123,7 +268,7 @@ cards animate as you discover new photos and explore where they were taken on a 
 * ^TTMarkupStripper^
 
 
-Goodreads
+Goodreads {#goodreads}
 ---------
 
 <div class="source">Created by: Goodreads</div>
@@ -148,7 +293,7 @@ and would like to.
 * ^TTWebController^
 
 
-Hacker News
+Hacker News {#hackernews}
 -----------
 
 <div class="source">Created by: Michael Grinich</div>
@@ -156,7 +301,7 @@ Hacker News
 
 <div class="appstore" markdown=1><a href="http://itunes.apple.com/ca/app/hacker-news/id339408916?mt=8">![Hacker News](/gfx/appstore.png 230x80)</a></div>
 
-A native Hacker News reader for iPhone.
+View stories and comments from Y Combinator's Hacker News on your iPhone or iPod touch.
 
 ### Screenshots
 
@@ -170,14 +315,46 @@ A native Hacker News reader for iPhone.
 * ^TTURLRequest^
 * ^TTStyle^
 
-Pompidou
+
+Mountain Bike Trails {#mountainbiketrails}
+--------------------
+
+<div class="source">Created by: Total Square LLC</div>
+<div class="source">Website: <a href="http://www.trailfu.com/">trailfu.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/mountain-bike-trails/id330046884?mt=8">![Mountain Bike Trails](/gfx/appstore.png 230x80)</a></div>
+
+We list accurate trails all over the world and bring riders together to talk about them.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Mountain Bike Trails](/gfx/gallery/mountainbiketrails/screenshot01.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Mountain Bike Trails](/gfx/gallery/mountainbiketrails/screenshot02.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Mountain Bike Trails](/gfx/gallery/mountainbiketrails/screenshot03.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Mountain Bike Trails](/gfx/gallery/mountainbiketrails/screenshot04.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Mountain Bike Trails](/gfx/gallery/mountainbiketrails/screenshot05.jpeg 320x460)</div>
+<div class="clearfix"></div>
+
+### Three20 Components
+
+* ^TTPhotoViewController^
+* ^TTThumbsViewController^
+
+
+Pompidou {#pompidou}
 --------
 
 <div class="source">Created by: TAC Creative</div>
 
-<div class="appstore" markdown=1><a href="http://itunes.apple.com/fr/app/pompidou/id372939642?mt=8#">![Pompidou](/gfx/appstore.png 230x80)</a></div>
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/ca/app/centre-pompidou-metz-une-visite/id391974123?mt=8">![Pompidou](/gfx/appstore.png 230x80)</a></div>
 
 Official application for the Centre Pompidou (Museum, France).
+
+L'application Centre Pompidou-Metz vous fait visiter les expositions du Centre Pompidou-Metz
+comme si vous y étiez. Vous déambulerez dans les galeries, vous aurez accès à une trentaine
+d'œuvres expliquées en Français, en Anglais et en Allemand. Vous serez guidés à travers
+l'exposition Chefs-d'œuvre ? par Laurent Le Bon, directeur du Centre Pompidou-Metz et
+commissaire de l'exposition.
 
 ### Screenshots
 
@@ -193,7 +370,8 @@ Official application for the Centre Pompidou (Museum, France).
 * ^TTScrollView^
 * ^TTURLCache^
 
-UH Guide
+
+UH Guide {#uhguide}
 --------
 
 <div class="source">Created by: CampusGuide, University of Houston CS Dept.</div>

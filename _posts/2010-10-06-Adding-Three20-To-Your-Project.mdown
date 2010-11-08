@@ -7,7 +7,7 @@ Add Three20 To Your Project
 ===========================
 
 <div>
->>v1.0a1grab<<
+>>v1.0a2grab<<
 </div>
 
 This will check out the latest official cut of Three20. Learn more about cuts by reading the
