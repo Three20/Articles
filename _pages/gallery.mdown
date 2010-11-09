@@ -78,6 +78,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">Fun Motion Pro</span>
 </a>
+<a href="#hofstra" class="artwork">
+  <img class="artwork" src="/gfx/gallery/hofstra/icon.jpeg" width="75" height="75" alt="Hofstra University" />
+  <span class="mask"></span>
+  <span class="title">Hofstra University</span>
+</a>
 <a href="#gogodocs" class="artwork">
   <img class="artwork" src="/gfx/gallery/gogodocs/icon.jpeg" width="75" height="75" alt="gogoDocs Google Docs™ Reader" />
   <span class="mask"></span>
@@ -520,6 +525,26 @@ NOW YOU are the Director! "Go a bit slower, fast forward... REWIND!"
 <div class="image-inline" markdown=1>![Fun Motion Pro](/gfx/gallery/funmotionpro/screenshot03.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![Fun Motion Pro](/gfx/gallery/funmotionpro/screenshot04.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![Fun Motion Pro](/gfx/gallery/funmotionpro/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+Hofstra University {#hofstra}
+----------
+
+<div class="source">Created by: Hofstra University</div>
+<div class="source">Website: <a href="http://www.hofstra.edu/iphone">hofstra.edu/iphone</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/hofstra-university/id379058744?mt=8">![Hofstra University](/gfx/appstore.png 230x80)</a></div>
+
+With Hofstra mobile, you can now access Hofstra information wherever you go!
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Hofstra University](/gfx/gallery/hofstra/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Hofstra University](/gfx/gallery/hofstra/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Hofstra University](/gfx/gallery/hofstra/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Hofstra University](/gfx/gallery/hofstra/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Hofstra University](/gfx/gallery/hofstra/screenshot05.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
