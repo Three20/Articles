@@ -11,8 +11,9 @@
 
 #applist {
   padding: 20px;
+  padding-right: 0;
   padding-top: 0;
-  width: 740px;
+  width: 780px;
   margin: 0 auto;
 }
 
@@ -23,7 +24,7 @@
   height: 130px;
   float: left;
   text-align: center;
-  margin-right: 15px;
+  margin-right: 20px;
   margin-bottom: 5px;
 }
 

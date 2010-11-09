@@ -83,6 +83,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">Mountain Bike Trails</span>
 </a>
+<a href="#mywalls" class="artwork">
+  <img class="artwork" src="/gfx/gallery/mywalls/icon.jpeg" width="75" height="75" alt="MyWalls" />
+  <span class="mask"></span>
+  <span class="title">MyWalls</span>
+</a>
 <a href="#panoramio" class="artwork">
   <img class="artwork" src="/gfx/gallery/panoramio/icon.jpeg" width="75" height="75" alt="Panoramio Photo Viewer" />
   <span class="mask"></span>
@@ -467,6 +472,26 @@ We list accurate trails all over the world and bring riders together to talk abo
 
 * ^TTPhotoViewController^
 * ^TTThumbsViewController^
+
+
+MyWalls {#mywalls}
+-------
+
+<div class="source">Created by: Simpa studio</div>
+<div class="source">Website: <a href="http://iphone.iwalls.org/">iphone.iwalls.org</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/us/app/mywalls/id367265551?mt=8">![MyWalls](/gfx/appstore.png 230x80)</a></div>
+
+FREE collection of thousands unique wallpapers and backgrounds in over 30 different categories.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![MyWalls](/gfx/gallery/mywalls/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![MyWalls](/gfx/gallery/mywalls/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![MyWalls](/gfx/gallery/mywalls/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![MyWalls](/gfx/gallery/mywalls/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![MyWalls](/gfx/gallery/mywalls/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
 
 
 Panoramio Photo Viewer {#panoramio}
