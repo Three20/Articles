@@ -173,6 +173,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">Roadside America</span>
 </a>
+<a href="#scvngr" class="artwork">
+  <img class="artwork" src="/gfx/gallery/scvngr/icon.jpeg" width="75" height="75" alt="SCVNGR" />
+  <span class="mask"></span>
+  <span class="title">SCVNGR</span>
+</a>
 <a href="#simplytweet" class="artwork">
   <img class="artwork" src="/gfx/gallery/simplytweet/icon.jpeg" width="75" height="75" alt="SimplyTweet 3" />
   <span class="mask"></span>
@@ -970,6 +975,26 @@ RoadsideAmerica.com reveals a world of nutty sights and wonders along America's 
 <div class="image-inline" markdown=1>![Roadside America](/gfx/gallery/roadside/screenshot03.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![Roadside America](/gfx/gallery/roadside/screenshot04.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![Roadside America](/gfx/gallery/roadside/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+SCVNGR {#scvngr}
+----------
+
+<div class="source">Created by: SCVNGR</div>
+<div class="source">Website: <a href="http://www.scvngr.com/">scvngr.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/scvngr/id323248984?mt=8">![SCVNGR](/gfx/appstore.png 230x80)</a></div>
+
+SCVNGR is a game about going places, doing challenges and earning points.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![SCVNGR](/gfx/gallery/scvngr/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![SCVNGR](/gfx/gallery/scvngr/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![SCVNGR](/gfx/gallery/scvngr/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![SCVNGR](/gfx/gallery/scvngr/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![SCVNGR](/gfx/gallery/scvngr/screenshot05.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
