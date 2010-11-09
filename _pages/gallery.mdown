@@ -163,6 +163,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">SportsBUZZ</span>
 </a>
+<a href="#tweets" class="artwork">
+  <img class="artwork" src="/gfx/gallery/tweets/icon.jpeg" width="75" height="75" alt="Tweets for Twitter" />
+  <span class="mask"></span>
+  <span class="title">Tweets for Twitter</span>
+</a>
 <a href="#uhguide" class="artwork">
   <img class="artwork" src="/gfx/gallery/uhguide/icon.jpeg" width="75" height="75" alt="UH Guide" />
   <span class="mask"></span>
@@ -894,6 +899,26 @@ athletes can interact and respond directly to fans through Fan Mail.
 <div class="image-inline" markdown=1>![SportsBuzz](/gfx/gallery/sportsbuzz/screenshot03.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![SportsBuzz](/gfx/gallery/sportsbuzz/screenshot04.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![SportsBuzz](/gfx/gallery/sportsbuzz/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+Tweets for Twitter {#tweets}
+----------
+
+<div class="source">Created by: Prime31 Design</div>
+<div class="source">Website: <a href="http://www.prime31.com/tweets">prime31.com/tweets</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/tweets-for-twitter/id335368656?mt=8">![Tweets for Twitter](/gfx/appstore.png 230x80)</a></div>
+
+Tweets is a fast, user-friendly Twitter client with all the right features. It has a well designed interface that looks great and takes the guesswork out of using Twitter's advanced features.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Tweets for Twitter](/gfx/gallery/tweets/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Tweets for Twitter](/gfx/gallery/tweets/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Tweets for Twitter](/gfx/gallery/tweets/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Tweets for Twitter](/gfx/gallery/tweets/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Tweets for Twitter](/gfx/gallery/tweets/screenshot05.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
