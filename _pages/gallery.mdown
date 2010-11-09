@@ -63,6 +63,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">Facedekk</span>
 </a>
+<a href="#potret" class="artwork">
+  <img class="artwork" src="/gfx/gallery/potret/icon.jpeg" width="75" height="75" alt="Flickr Potret" />
+  <span class="mask"></span>
+  <span class="title">Flickr Potret</span>
+</a>
 <a href="#ffhound" class="artwork">
   <img class="artwork" src="/gfx/gallery/ffhound/icon.jpeg" width="75" height="75" alt="FFHound!" />
   <span class="mask"></span>
@@ -464,6 +469,28 @@ Facebook account as well as your own personal account?
 <div class="image-inline" markdown=1>![Facedekk](/gfx/gallery/facedekk/screenshot03.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![Facedekk](/gfx/gallery/facedekk/screenshot04.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![Facedekk](/gfx/gallery/facedekk/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+Flickr Potret {#potret}
+----------
+
+<div class="source">Created by: Rheza Pahlevi</div>
+<div class="source">Website: <a href="http://potretr.com/">potretr.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/flickr-potret/id384290407?mt=8">![Flickr Potret](/gfx/appstore.png 230x80)</a></div>
+
+If you need a idea for taking a picture, use flickr potret for check any interesting photo in
+seconds. Just type in the keyword on search feature or tap any options in main menu. You can
+easily save images for wallpaper or somethings else.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Flickr Potret](/gfx/gallery/potret/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Flickr Potret](/gfx/gallery/potret/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Flickr Potret](/gfx/gallery/potret/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Flickr Potret](/gfx/gallery/potret/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Flickr Potret](/gfx/gallery/potret/screenshot05.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
