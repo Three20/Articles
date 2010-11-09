@@ -53,6 +53,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">Facebook</span>
 </a>
+<a href="#facedekk" class="artwork">
+  <img class="artwork" src="/gfx/gallery/facedekk/icon.jpeg" width="75" height="75" alt="Facedekk" />
+  <span class="mask"></span>
+  <span class="title">Facedekk</span>
+</a>
 <a href="#ffhound" class="artwork">
   <img class="artwork" src="/gfx/gallery/ffhound/icon.jpeg" width="75" height="75" alt="FFHound!" />
   <span class="mask"></span>
@@ -382,6 +387,27 @@ on the go.
 <div class="image-inline" markdown=1>![Facebook](/gfx/gallery/facebook/screenshot02.jpeg 334x480)</div>
 <div class="image-inline" markdown=1>![Facebook](/gfx/gallery/facebook/screenshot03.jpeg 334x480)</div>
 <div class="image-inline" markdown=1>![Facebook](/gfx/gallery/facebook/screenshot04.jpeg 334x480)</div>
+<div class="clearfix"></div>
+
+
+Facedekk {#facedekk}
+----------
+
+<div class="source">Created by: Taknology</div>
+<div class="source">Website: <a href="http://www.facedekk.com/">facedekk.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/facedekk/id362923729?mt=8">![Facedekk](/gfx/appstore.png 230x80)</a></div>
+
+Got Facebook!  Do you have more than one Facebook account?  Do you manage a business or club
+Facebook account as well as your own personal account?
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Facedekk](/gfx/gallery/facedekk/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Facedekk](/gfx/gallery/facedekk/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Facedekk](/gfx/gallery/facedekk/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Facedekk](/gfx/gallery/facedekk/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Facedekk](/gfx/gallery/facedekk/screenshot05.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
