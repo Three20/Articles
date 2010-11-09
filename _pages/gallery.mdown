@@ -173,6 +173,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">SportsBUZZ</span>
 </a>
+<a href="#taplist" class="artwork">
+  <img class="artwork" src="/gfx/gallery/taplist/icon.jpeg" width="75" height="75" alt="Taplist Shopping List" />
+  <span class="mask"></span>
+  <span class="title">Taplist Shopping List</span>
+</a>
 <a href="#tweets" class="artwork">
   <img class="artwork" src="/gfx/gallery/tweets/icon.jpeg" width="75" height="75" alt="Tweets for Twitter" />
   <span class="mask"></span>
@@ -952,6 +957,25 @@ athletes can interact and respond directly to fans through Fan Mail.
 <div class="image-inline" markdown=1>![SportsBuzz](/gfx/gallery/sportsbuzz/screenshot03.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![SportsBuzz](/gfx/gallery/sportsbuzz/screenshot04.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![SportsBuzz](/gfx/gallery/sportsbuzz/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+Taplist Shopping List {#taplist}
+----------
+
+<div class="source">Created by: Jan Mudroch</div>
+<div class="source">Website: <a href="http://taplistapp.com/">taplistapp.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/taplist-shopping-list/id393830573?mt=8">![Taplist Shopping List](/gfx/appstore.png 230x80)</a></div>
+
+Taplist – different from other grocery lists.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Taplist Shopping List](/gfx/gallery/taplist/screenshot01.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Taplist Shopping List](/gfx/gallery/taplist/screenshot02.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Taplist Shopping List](/gfx/gallery/taplist/screenshot03.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Taplist Shopping List](/gfx/gallery/taplist/screenshot04.jpeg 320x460)</div>
 <div class="clearfix"></div>
 
 
