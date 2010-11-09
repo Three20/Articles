@@ -138,6 +138,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">SimplyTweet 3</span>
 </a>
+<a href="#skimble" class="artwork">
+  <img class="artwork" src="/gfx/gallery/skimble/icon.jpeg" width="75" height="75" alt="Skimble" />
+  <span class="mask"></span>
+  <span class="title">Skimble</span>
+</a>
 <a href="#sportsbuzz" class="artwork">
   <img class="artwork" src="/gfx/gallery/sportsbuzz/icon.jpeg" width="75" height="75" alt="SportsBUZZ" />
   <span class="mask"></span>
@@ -750,6 +755,30 @@ someone messages or mentions you. Choose from several themes available.
 <div class="image-inline" markdown=1>![SimplyTweet 3](/gfx/gallery/simplytweet/screenshot03.jpeg 320x460)</div>
 <div class="image-inline" markdown=1>![SimplyTweet 3](/gfx/gallery/simplytweet/screenshot04.jpeg 320x460)</div>
 <div class="image-inline" markdown=1>![SimplyTweet 3](/gfx/gallery/simplytweet/screenshot05.jpeg 320x460)</div>
+<div class="clearfix"></div>
+
+
+Skimble {#skimble}
+----------
+
+<div class="source">Created by: Skimble</div>
+<div class="source">Website: <a href="http://www.skimble.com/">skimble.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/skimble/id345235704?mt=8">![Skimble](/gfx/appstore.png 230x80)</a></div>
+
+Stay healthy & fit by tracking all your sports activities. Download the Skimble Sports
+Tracker to keep track of activities. Share accomplishments on Facebook & Twitter. Compete
+on leaderboards, achieve Personal Best badges, win prizes & monitor your performance. The
+New York Times says with Skimble: "Sharing details is the point. People reveal how many
+push-ups they are doing and how long they spend in yoga class."
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot05.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
