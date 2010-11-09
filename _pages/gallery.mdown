@@ -103,6 +103,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">HiTask</span>
 </a>
+<a href="#ibacklog" class="artwork">
+  <img class="artwork" src="/gfx/gallery/ibacklog/icon.jpeg" width="75" height="75" alt="iBacklog" />
+  <span class="mask"></span>
+  <span class="title">iBacklog</span>
+</a>
 <a href="#imagebank" class="artwork">
   <img class="artwork" src="/gfx/gallery/imagebank/icon.jpeg" width="75" height="75" alt="ImageBank" />
   <span class="mask"></span>
@@ -608,6 +613,27 @@ and projects with your team mates.
 <div class="image-inline" markdown=1>![HiTask](/gfx/gallery/hitask/screenshot01.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![HiTask](/gfx/gallery/hitask/screenshot02.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![HiTask](/gfx/gallery/hitask/screenshot03.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+iBacklog {#ibacklog}
+----------
+
+<div class="source">Created by: LittleApps Inc.</div>
+<div class="source">Website: <a href="http://littleapps.co.jp/">http://littleapps.co.jp/</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/ibacklog/id396109051?mt=8">![iBacklog](/gfx/appstore.png 230x80)</a></div>
+
+"iBacklog" is a client application for Backlog, a task management ASP.
+You can check Backlog tasks anywhere with your iOS devices.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![iBacklog](/gfx/gallery/ibacklog/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![iBacklog](/gfx/gallery/ibacklog/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![iBacklog](/gfx/gallery/ibacklog/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![iBacklog](/gfx/gallery/ibacklog/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![iBacklog](/gfx/gallery/ibacklog/screenshot05.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
