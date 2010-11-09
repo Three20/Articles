@@ -153,6 +153,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">UH Guide</span>
 </a>
+<a href="#vorarlberg" class="artwork">
+  <img class="artwork" src="/gfx/gallery/vorarlberg/icon.jpeg" width="75" height="75" alt="Vorarlberg Online" />
+  <span class="mask"></span>
+  <span class="title">Vorarlberg Online</span>
+</a>
 <a href="#wildobs" class="artwork">
   <img class="artwork" src="/gfx/gallery/wildobs/icon.jpeg" width="75" height="75" alt="WildObs Naturalist" />
   <span class="mask"></span>
@@ -836,6 +841,27 @@ The UH Guide iPhone application assists you in finding your way around the Unive
 * ^TTURLRequest^: caching for our "points of interest" requests
 * ^TTPhotoViewController^: nice thumbnail photos from Flickr
 * ^TTTabBar^: switching between content
+
+
+Vorarlberg Online {#vorarlberg}
+----------
+
+<div class="source">Created by: medienhaus.com </div>
+<div class="source">Website: <a href="http://medienhaus.com">medienhaus.com </a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/at/app/vorarlberg-online-nachrichten/id323365304?mt=8">![Vorarlberg Online](/gfx/appstore.png 230x80)</a></div>
+
+Vorarlberg Online für unterwegs als IPhone Applikation. Brandaktuelle Nachrichten aus Vorarlberg, News aus Österreich und der Welt sowie spannende Unterhaltung und nützlichen Service – mit vol.at bleiben Sie mobil stets Informiert.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Vorarlberg Online](/gfx/gallery/vorarlberg/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Vorarlberg Online](/gfx/gallery/vorarlberg/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Vorarlberg Online](/gfx/gallery/vorarlberg/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Vorarlberg Online](/gfx/gallery/vorarlberg/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Vorarlberg Online](/gfx/gallery/vorarlberg/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
 
 WildObs Naturalist {#wildobs}
 ----------
