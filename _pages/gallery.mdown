@@ -158,6 +158,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">WildObs Naturalist</span>
 </a>
+<a href="#workouttrainer" class="artwork">
+  <img class="artwork" src="/gfx/gallery/workouttrainer/icon.jpeg" width="75" height="75" alt="Workout Trainer" />
+  <span class="mask"></span>
+  <span class="title">Workout Trainer</span>
+</a>
 <div class="clearfix"></div>
 </div>
 
@@ -849,6 +854,26 @@ Reference your personal wildlife encounters where-ever you go.
 <div class="image-inline" markdown=1>![WildObs Naturalist](/gfx/gallery/wildobs/screenshot03.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![WildObs Naturalist](/gfx/gallery/wildobs/screenshot04.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![WildObs Naturalist](/gfx/gallery/wildobs/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+Workout Trainer {#workouttrainer}
+----------
+
+<div class="source">Created by: Skimble</div>
+<div class="source">Website: <a href="http://www.skimble.com/workouts">http://www.skimble.com/workouts</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/skimble/id395686735?mt=8">![Workout Trainer](/gfx/appstore.png 230x80)</a></div>
+
+Download Skimble's Workout Trainer and get jacked with custom audio workouts! Listen to your virtual personal fitness trainers, Jack and Sophia, as they guide you through audio workouts with step-by-step exercise instructions. Put on your headphones and follow along while you weightlift or do cardio at the gym. You can also use it for running, yoga, rock climbing, weight loss routines, or to focus on target areas like arms, abs, and butt.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Workout Trainer](/gfx/gallery/workouttrainer/screenshot01.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Workout Trainer](/gfx/gallery/workouttrainer/screenshot02.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Workout Trainer](/gfx/gallery/workouttrainer/screenshot03.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Workout Trainer](/gfx/gallery/workouttrainer/screenshot04.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Workout Trainer](/gfx/gallery/workouttrainer/screenshot05.jpeg 320x460)</div>
 <div class="clearfix"></div>
 
 </div> <!-- .fixed-width -->
