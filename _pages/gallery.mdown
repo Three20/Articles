@@ -68,6 +68,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">Goodreads</span>
 </a>
+<a href="#gpsms" class="artwork">
+  <img class="artwork" src="/gfx/gallery/gpsms/icon.jpeg" width="75" height="75" alt="GPSMS" />
+  <span class="mask"></span>
+  <span class="title">GPSMS</span>
+</a>
 <a href="#hackernews" class="artwork">
   <img class="artwork" src="/gfx/gallery/hackernews/icon.jpeg" width="75" height="75" alt="Hacker News" />
   <span class="mask"></span>
@@ -405,6 +410,25 @@ and would like to.
 * ^TTStyle^
 * ^TTThumbsViewController^
 * ^TTWebController^
+
+
+GPSMS {#gpsms}
+-----
+
+<div class="source">Created by: Freestyle Developments</div>
+<div class="source">Website: <a href="http://www.gpsms.co.uk/">gpsms.co.uk</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/gpsms/id385082043?mt=8">![GPSMS](/gfx/appstore.png 230x80)</a></div>
+
+GPSMS is an app that allows you to send your current location to a contact in your address book.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![GPSMS](/gfx/gallery/gpsms/screenshot01.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![GPSMS](/gfx/gallery/gpsms/screenshot02.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![GPSMS](/gfx/gallery/gpsms/screenshot03.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![GPSMS](/gfx/gallery/gpsms/screenshot04.jpeg 320x460)</div>
+<div class="clearfix"></div>
 
 
 Hacker News {#hackernews}
