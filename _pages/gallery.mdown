@@ -83,6 +83,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">HiTask</span>
 </a>
+<a href="#imagebank" class="artwork">
+  <img class="artwork" src="/gfx/gallery/imagebank/icon.jpeg" width="75" height="75" alt="ImageBank" />
+  <span class="mask"></span>
+  <span class="title">ImageBank</span>
+</a>
 <a href="#mountainbiketrails" class="artwork">
   <img class="artwork" src="/gfx/gallery/mountainbiketrails/icon.jpeg" width="75" height="75" alt="Mountain Bike Trails" />
   <span class="mask"></span>
@@ -470,6 +475,27 @@ and projects with your team mates.
 <div class="image-inline" markdown=1>![HiTask](/gfx/gallery/hitask/screenshot01.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![HiTask](/gfx/gallery/hitask/screenshot02.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![HiTask](/gfx/gallery/hitask/screenshot03.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+ImageBank {#imagebank}
+--------------------
+
+<div class="source">Created by: Infinite Evolution Technologies</div>
+<div class="source">Website: <a href="http://imagebank4ios.weebly.com/index.html">imagebank4ios.weebly.com/index.html</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/imagebank/id382641857">![ImageBank](/gfx/appstore.png 230x80)</a></div>
+
+ImageBank lets you view your photos over a network connection on your iPhone, iPod Touch or
+iPad without syncing or uploading.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![ImageBank](/gfx/gallery/imagebank/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![ImageBank](/gfx/gallery/imagebank/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![ImageBank](/gfx/gallery/imagebank/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![ImageBank](/gfx/gallery/imagebank/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![ImageBank](/gfx/gallery/imagebank/screenshot05.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
