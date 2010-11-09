@@ -13,6 +13,11 @@ This is a showcase of some apps currently in the App Store that use Three20, sho
 alphabetical order.
 
 <div id="applist">
+<a href="#allrecalls" class="artwork">
+  <img class="artwork" src="/gfx/gallery/allrecalls/icon.jpeg" width="75" height="75" alt="All Recalls" />
+  <span class="mask"></span>
+  <span class="title">All Recalls</span>
+</a>
 <a href="#ambiance" class="artwork">
   <img class="artwork" src="/gfx/gallery/ambiance/icon.jpeg" width="75" height="75" alt="Ambience" />
   <span class="mask"></span>
@@ -145,6 +150,30 @@ alphabetical order.
 </a>
 <div class="clearfix"></div>
 </div>
+
+
+All Recalls {#allrecalls}
+----------
+
+<div class="source">Created by: Urban Apps</div>
+<div class="source">Website: <a href="http://allrecallsapp.com/">allrecallsapp.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/all-recalls/id399685027?mt=8">![All Recalls](/gfx/appstore.png 230x80)</a></div>
+
+All Recalls is an application that keeps you updated on all the most recent product recalls.
+See product images, descriptions, company information and other important details to track and
+learn about the recalled products.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![All Recalls](/gfx/gallery/allrecalls/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![All Recalls](/gfx/gallery/allrecalls/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![All Recalls](/gfx/gallery/allrecalls/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![All Recalls](/gfx/gallery/allrecalls/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![All Recalls](/gfx/gallery/allrecalls/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
 
 Ambiance {#ambiance}
 --------
