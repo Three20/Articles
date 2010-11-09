@@ -138,6 +138,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">UH Guide</span>
 </a>
+<a href="#wildobs" class="artwork">
+  <img class="artwork" src="/gfx/gallery/wildobs/icon.jpeg" width="75" height="75" alt="WildObs Naturalist" />
+  <span class="mask"></span>
+  <span class="title">WildObs Naturalist</span>
+</a>
 <div class="clearfix"></div>
 </div>
 
@@ -741,6 +746,25 @@ The UH Guide iPhone application assists you in finding your way around the Unive
 * ^TTURLRequest^: caching for our "points of interest" requests
 * ^TTPhotoViewController^: nice thumbnail photos from Flickr
 * ^TTTabBar^: switching between content
+
+WildObs Naturalist {#wildobs}
+----------
+
+<div class="source">Created by: Neukadye</div>
+<div class="source">Website: <a href="http://wildobs.com/about/iphone">wildobs.com/about/iphone</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/wildobs-naturalist/id335805326?mt=8">![WildObs Naturalist](/gfx/appstore.png 230x80)</a></div>
+
+Reference your personal wildlife encounters where-ever you go.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![WildObs Naturalist](/gfx/gallery/wildobs/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![WildObs Naturalist](/gfx/gallery/wildobs/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![WildObs Naturalist](/gfx/gallery/wildobs/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![WildObs Naturalist](/gfx/gallery/wildobs/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![WildObs Naturalist](/gfx/gallery/wildobs/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
 
 </div> <!-- .fixed-width -->
 </div> <!-- #content -->
