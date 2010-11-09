@@ -774,11 +774,11 @@ push-ups they are doing and how long they spend in yoga class."
 
 ### Screenshots
 
-<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot01.jpeg 320x480)</div>
-<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot02.jpeg 320x480)</div>
-<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot03.jpeg 320x480)</div>
-<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot04.jpeg 320x480)</div>
-<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot05.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot01.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot02.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot03.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot04.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Skimble](/gfx/gallery/skimble/screenshot05.jpeg 320x460)</div>
 <div class="clearfix"></div>
 
 
