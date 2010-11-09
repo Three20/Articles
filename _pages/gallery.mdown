@@ -58,6 +58,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">FotoFind</span>
 </a>
+<a href="#funmotionpro" class="artwork">
+  <img class="artwork" src="/gfx/gallery/funmotionpro/icon.jpeg" width="75" height="75" alt="Fun Motion Pro" />
+  <span class="mask"></span>
+  <span class="title">Fun Motion Pro</span>
+</a>
 <a href="#gogodocs" class="artwork">
   <img class="artwork" src="/gfx/gallery/gogodocs/icon.jpeg" width="75" height="75" alt="gogoDocs Google Docs™ Reader" />
   <span class="mask"></span>
@@ -368,6 +373,28 @@ cards animate as you discover new photos and explore where they were taken on a 
 
 * ^TTPhotoViewController^
 * ^TTMarkupStripper^
+
+
+Fun Motion Pro {#funmotionpro}
+--------------
+
+<div class="source">Created by: Calogero Mauceri</div>
+<div class="source">Website: <a href="http://www.fufflets.com/">fufflets.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/fun-motion-pro/id359243912?mt=8">![gogoDocs Google Docs™ Reader](/gfx/appstore.png 230x80)</a></div>
+
+"Fun Motion" brings some real fun into the world of animated sequences!
+It is not just watching an animation, you can control the motion with your hand!
+NOW YOU are the Director! "Go a bit slower, fast forward... REWIND!"
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Fun Motion Pro](/gfx/gallery/funmotionpro/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Fun Motion Pro](/gfx/gallery/funmotionpro/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Fun Motion Pro](/gfx/gallery/funmotionpro/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Fun Motion Pro](/gfx/gallery/funmotionpro/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Fun Motion Pro](/gfx/gallery/funmotionpro/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
 
 
 gogoDocs Google Docs™ Reader {#gogodocs}
