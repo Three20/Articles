@@ -43,6 +43,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">Cookmate</span>
 </a>
+<a href="#daftie" class="artwork">
+  <img class="artwork" src="/gfx/gallery/daftie/icon.jpeg" width="75" height="75" alt="Daft.ie" />
+  <span class="mask"></span>
+  <span class="title">Daft.ie</span>
+</a>
 <a href="#drync" class="artwork">
   <img class="artwork" src="/gfx/gallery/drync/icon.jpeg" width="75" height="75" alt="Drync Wine Pro" />
   <span class="mask"></span>
@@ -345,6 +350,27 @@ to cook from these ingredients! Never wonder what's for dinner again!
 * ^TTTableView^
 * ^TTStyle^
 * ^TTWebController^
+
+
+Daft.ie {#daftie}
+----------
+
+<div class="source">Created by: Daft Media</div>
+<div class="source">Website: <a href="http://www.daft.ie/iphone/">daft.ie/iphone</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/ie/app/daft-ie/id346547065?mt=8">![Daft.ie](/gfx/appstore.png 230x80)</a></div>
+
+Search Ireland’s largest property website with the free Daft.ie iPad and iPhone app -
+Over 100,000 properties.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Daft.ie](/gfx/gallery/daftie/screenshot01.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Daft.ie](/gfx/gallery/daftie/screenshot02.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Daft.ie](/gfx/gallery/daftie/screenshot03.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Daft.ie](/gfx/gallery/daftie/screenshot04.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![Daft.ie](/gfx/gallery/daftie/screenshot05.jpeg 320x460)</div>
+<div class="clearfix"></div>
 
 
 Drync Wine Pro {#drync}
