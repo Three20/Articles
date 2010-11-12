@@ -23,6 +23,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">Ambiance</span>
 </a>
+<a href="#audibrasil" class="artwork">
+  <img class="artwork" src="/gfx/gallery/audibrasil/icon.jpeg" width="75" height="75" alt="Audi Brasil" />
+  <span class="mask"></span>
+  <span class="title">Audi Brasil</span>
+</a>
 <a href="#bcliquor" class="artwork">
   <img class="artwork" src="/gfx/gallery/bcliquor/icon.jpeg" width="75" height="75" alt="BC Liquor Locator" />
   <span class="mask"></span>
@@ -302,6 +307,26 @@ cycle through playlists, wake up to relaxing sounds and more. Relax. Focus. Expl
 * ^TTNavigator^
 * ^TTTabStrip^
 * ^TTStyledText^
+
+
+Audi Brasil {#audibrasil}
+----------
+
+<div class="source">Created by: I-MOBILE</div>
+<div class="source">Website: <a href="http://www.i-mobilemarketing.com/">i-mobilemarketing.com/</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/audi-brasil/id369824544?mt=8">![Audi Brasil](/gfx/appstore.png 230x80)</a></div>
+
+Audi is a manufacturer of exquisite cars – attractive, sophisticated and technically perfect.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Audi Brasil](/gfx/gallery/audibrasil/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Audi Brasil](/gfx/gallery/audibrasil/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Audi Brasil](/gfx/gallery/audibrasil/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Audi Brasil](/gfx/gallery/audibrasil/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Audi Brasil](/gfx/gallery/audibrasil/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
 
 
 BC Liquor Locator {#bcliquor}
