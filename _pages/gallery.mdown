@@ -153,6 +153,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">JandB Photo</span>
 </a>
+<a href="#kidsbox" class="artwork">
+  <img class="artwork" src="/gfx/gallery/kidsbox/icon.jpeg" width="75" height="75" alt="Kidsbox" />
+  <span class="mask"></span>
+  <span class="title">Kidsbox</span>
+</a>
 <a href="#luciartista" class="artwork">
   <img class="artwork" src="/gfx/gallery/luciartista/icon.jpeg" width="75" height="75" alt="Luci d'Artista" />
   <span class="mask"></span>
@@ -907,6 +912,26 @@ images can be shared with facebook with just a click.
 <div class="image-inline" markdown=1>![JandB Photo](/gfx/gallery/jandb/screenshot02.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![JandB Photo](/gfx/gallery/jandb/screenshot03.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![JandB Photo](/gfx/gallery/jandb/screenshot04.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+Kidsbox {#kidsbox}
+----------
+
+<div class="source">Created by: AYCS UG</div>
+<div class="source">Website: <a href="http://aycs.de/">aycs.de</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/kidsbox/id372182265?mt=8">![Kidsbox](/gfx/appstore.png 230x80)</a></div>
+
+With the KidsBox you can change your iPhone or iPod Touch into a sound-treasure-chest. In various categories memorable sounds and tones are prepared for your children. In addition to every beautiful sound there is an hand-painted graphic to cause not only the learning of the sounds but also an optical learning effect.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Kidsbox](/gfx/gallery/kidsbox/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Kidsbox](/gfx/gallery/kidsbox/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Kidsbox](/gfx/gallery/kidsbox/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Kidsbox](/gfx/gallery/kidsbox/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Kidsbox](/gfx/gallery/kidsbox/screenshot05.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
