@@ -158,6 +158,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">Kidsbox</span>
 </a>
+<a href="#kidsquiz" class="artwork">
+  <img class="artwork" src="/gfx/gallery/kidsquiz/icon.jpeg" width="75" height="75" alt="KidsQuiz" />
+  <span class="mask"></span>
+  <span class="title">KidsQuiz</span>
+</a>
 <a href="#luciartista" class="artwork">
   <img class="artwork" src="/gfx/gallery/luciartista/icon.jpeg" width="75" height="75" alt="Luci d'Artista" />
   <span class="mask"></span>
@@ -932,6 +937,25 @@ With the KidsBox you can change your iPhone or iPod Touch into a sound-treasure-
 <div class="image-inline" markdown=1>![Kidsbox](/gfx/gallery/kidsbox/screenshot03.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![Kidsbox](/gfx/gallery/kidsbox/screenshot04.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![Kidsbox](/gfx/gallery/kidsbox/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+KidsQuiz {#kidsquiz}
+----------
+
+<div class="source">Created by: AYCS UG</div>
+<div class="source">Website: <a href="http://aycs.de/">aycs.de</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/de/app/kidsquiz/id399608204?mt=8">![KidsQuiz](/gfx/appstore.png 230x80)</a></div>
+
+Kidsquiz, das Ratespiel für Jung und Alt.
+
+Aus einem breiten Spektrum an Tönen wird zufällig einer ausgewählt der dann aus drei Optionen gefunden werden muss. Die Möglichkeiten werden jeweils durch Bild und Name dargestellt.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![KidsQuiz](/gfx/gallery/kidsquiz/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![KidsQuiz](/gfx/gallery/kidsquiz/screenshot02.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
