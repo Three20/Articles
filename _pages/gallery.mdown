@@ -128,6 +128,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">JandB Photo</span>
 </a>
+<a href="#meetup" class="artwork">
+  <img class="artwork" src="/gfx/gallery/meetup/icon.jpeg" width="75" height="75" alt="Meetup" />
+  <span class="mask"></span>
+  <span class="title">Meetup</span>
+</a>
 <a href="#mountainbiketrails" class="artwork">
   <img class="artwork" src="/gfx/gallery/mountainbiketrails/icon.jpeg" width="75" height="75" alt="Mountain Bike Trails" />
   <span class="mask"></span>
@@ -770,6 +775,27 @@ images can be shared with facebook with just a click.
 <div class="image-inline" markdown=1>![JandB Photo](/gfx/gallery/jandb/screenshot02.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![JandB Photo](/gfx/gallery/jandb/screenshot03.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![JandB Photo](/gfx/gallery/jandb/screenshot04.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+Meetup {#meetup}
+----------
+
+<div class="source">Created by: Meetup</div>
+<div class="source">Website: <a href="http://www.meetup.com/">meetup.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/meetup/id375990038?mt=8">![Meetup](/gfx/appstore.png 230x80)</a></div>
+
+Use the internet to get off the internet... and be part of real-life local community! Use
+Meetup to find friendly local Meetups started by people in your town.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Meetup](/gfx/gallery/meetup/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Meetup](/gfx/gallery/meetup/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Meetup](/gfx/gallery/meetup/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Meetup](/gfx/gallery/meetup/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Meetup](/gfx/gallery/meetup/screenshot05.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
