@@ -33,6 +33,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">BC Liquor Locator</span>
 </a>
+<a href="#buildingblok" class="artwork">
+  <img class="artwork" src="/gfx/gallery/buildingblok/icon.jpeg" width="75" height="75" alt="BuildingBlok" />
+  <span class="mask"></span>
+  <span class="title">BuildingBlok</span>
+</a>
 <a href="#citytag" class="artwork">
   <img class="artwork" src="/gfx/gallery/citytag/icon.jpeg" width="75" height="75" alt="CityTag" />
   <span class="mask"></span>
@@ -360,6 +365,24 @@ current location to find the closest open BCL.
 * ^TTActivityLabel^
 
 
+BuildingBlok {#buildingblok}
+----------
+
+<div class="source">Created by: BuildingBlock LLC</div>
+<div class="source">Website: <a href="http://www.buildingblok.com/">buildingblok.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/app/buildingblok/id386313684?mt=8">![BuildingBlok](/gfx/appstore.png 230x80)</a></div>
+
+BuildingBlok – simple and efficient construction management for the 21st century.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![BuildingBlok](/gfx/gallery/buildingblok/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![BuildingBlok](/gfx/gallery/buildingblok/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![BuildingBlok](/gfx/gallery/buildingblok/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![BuildingBlok](/gfx/gallery/buildingblok/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![BuildingBlok](/gfx/gallery/buildingblok/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
 
 
 CityTag {#citytag}
