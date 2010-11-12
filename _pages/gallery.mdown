@@ -379,9 +379,6 @@ BuildingBlok – simple and efficient construction management for the 21st centu
 
 <div class="image-inline" markdown=1>![BuildingBlok](/gfx/gallery/buildingblok/screenshot01.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![BuildingBlok](/gfx/gallery/buildingblok/screenshot02.jpeg 320x480)</div>
-<div class="image-inline" markdown=1>![BuildingBlok](/gfx/gallery/buildingblok/screenshot03.jpeg 320x480)</div>
-<div class="image-inline" markdown=1>![BuildingBlok](/gfx/gallery/buildingblok/screenshot04.jpeg 320x480)</div>
-<div class="image-inline" markdown=1>![BuildingBlok](/gfx/gallery/buildingblok/screenshot05.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
