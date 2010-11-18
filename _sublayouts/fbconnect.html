@@ -94,8 +94,6 @@ if ($uid) {
   
   $profile['fbid'] = $uid;
   unset($uid);
-  
-  print_r($profile);
 
 } else {
   $loginUrl = $facebook->getLoginUrl();
