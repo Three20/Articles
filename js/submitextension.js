@@ -33,25 +33,36 @@ $(document).ready(function() {
           )
         );
         $('#repoinfo').append(
-          $('<div>').addClass('header').append('Available tags')
+          $('<h3>').append('Step 2: Select a tag')
         );
-        $('#repoinfo').append(
-          $('<div>').append(
-            $('<div>').addClass('tagname').append('Tag Name')
-          ).append(
-            $('<div>').addClass('tagsha1').append('Tag SHA1')
+        var grid = $('<div>').addClass('grid');
+        grid.append(
+          $('<div>').addClass('row').append(
+            $('<div>').append(
+              $('<div>').addClass('col-4').append('Tag Name')
+            ).append(
+              $('<div>').addClass('col-4-fill-3').append('Tag SHA1')
+            ).append(
+              $('<div>').addClass('clearfix')
+            )
           )
         );
         for (var tagname in result.tags) {
           var tagsha1 = result.tags[tagname];
-          $('#repoinfo').append(
-            $('<div>').append(
-              $('<div>').addClass('tagname').append(tagname)
-            ).append(
-              $('<div>').addClass('tagsha1').append(tagsha1)
+          grid.append(
+            $('<div>').addClass('row').append(
+              $('<div>').append(
+                $('<a>').addClass('col-4').append(tagname)
+              ).append(
+                $('<div>').addClass('col-4-fill-3').append(tagsha1)
+              ).append(
+                $('<div>').addClass('clearfix')
+              )
             )
           );
         }
+        
+        $('#repoinfo').append(grid);
       }
     });
     

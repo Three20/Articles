@@ -1,0 +1,36 @@
+---
+layout:basic
+title:Extensions
+css:article grid documentation headerbar extensions
+js:jquery submitextension
+---
+
+<div id="content">
+<div class="fixed-width" markdown="1">
+
+Extensions
+==========
+
+Submit an extension
+-------------------
+
+### Step 1: Enter your GitHub repository info
+
+Please provide your GitHub username and the repository name. For example,
+for `https://github.com/jverkoey/extThree20XML` you would enter `jverkoey` for the username and
+`extThree20XML` for the repo name. You will then fetch your extension's tags.
+
++> !* Extension requirements
++> The extension must be in a public repository.    
++> The extension must have at least one tag.
+
+<form action="/extensions/submit" method="POST" id="submitextension">
+  <label for="username">User Name: <input id="username" name="username" type="text" value="jverkoey" /></label>
+  <label for="reponame">Repo Name: <input id="reponame" name="reponame" type="text" value="extThree20XML" /></label>
+  <input type="submit" value="Get Tags" />
+</form>
+
+<div id="repoinfo"></div>
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->
