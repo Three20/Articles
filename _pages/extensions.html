@@ -1,0 +1,23 @@
+---
+layout:basic
+title:Extensions
+css:article documentation headerbar extensions
+js:jquery submitextension
+---
+
+<div id="content">
+<div class="fixed-width">
+
+<h1>Extensions</h1>
+
+<h2>Submit an extension</h2>
+
+<form action="/extensions/submit" method="POST" id="submitextension">
+  <label for="username">User Name: <input id="username" name="username" type="text" value="jverkoey" /></label>
+  <label for="reponame">Repo Name: <input id="reponame" name="reponame" type="text" value="extThree20XML" /></label>
+  <input type="submit" value="Get Tags" />
+  <div id="repoinfo"></div>
+</form>
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->

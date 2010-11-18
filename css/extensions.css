@@ -1,0 +1,23 @@
+
+
+#repoinfo {
+  margin-top: 20px;
+}
+
+#repoinfo .metainfo {
+  margin-bottom: 20px;
+}
+
+#repoinfo .header {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+#repoinfo .tagname {
+  width: 200px;
+  float: left;
+}
+
+#repoinfo .tagsha1 {
+  margin-left: 200px;
+}
