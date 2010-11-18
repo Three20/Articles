@@ -11,6 +11,13 @@ js:jquery submitextension
 Submit an extension
 ===================
 
+<? if (isset($error_message)) { ?>
+
+!> !* Error
+!> Oh no. <?= $error_message ?>
+  
+<? } ?>
+
 Step 1: Enter your GitHub repository info
 -----------------------------------------
 

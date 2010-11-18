@@ -20,7 +20,15 @@ $(document).ready(function() {
     );
     
     $('#step3').append(
-      $('<input>').attr('type', 'submit').attr('value', 'Submit Extension')
+      $('<form>').attr('action', '/extensions/create').attr('method', 'POST').append(
+        $('<input>').attr('type', 'hidden').attr('name', 'username').attr('value', username)
+      ).append(
+        $('<input>').attr('type', 'hidden').attr('name', 'reponame').attr('value', reponame)
+      ).append(
+        $('<input>').attr('type', 'hidden').attr('name', 'tagname').attr('value', tagname)
+      ).append(
+        $('<input>').attr('type', 'submit').attr('value', 'Submit Extension')
+      )
     );
   };
 

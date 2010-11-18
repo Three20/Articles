@@ -2,7 +2,6 @@
 layout:basic
 title:Extensions
 css:article grid documentation headerbar
-js:jquery
 ---
 
 <div id="content">
@@ -11,7 +10,11 @@ js:jquery
 Extensions
 ==========
 
+<?php if ($this->profile): ?>
 [Submit an extension](/extensions/submit)
+<?php else: ?>
+<fb:login-button></fb:login-button> Please log in to submit an extension.
+<?php endif ?>
 
 </div> <!-- .fixed-width -->
 </div> <!-- #content -->

@@ -1,0 +1,14 @@
+---
+layout:basic
+title:Extensions
+css:article grid documentation headerbar
+---
+
+<div id="content">
+<div class="fixed-width" markdown="1">
+
+Extension
+=========
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->

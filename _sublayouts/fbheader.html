@@ -3,7 +3,7 @@
   window.fbAsyncInit = function() {
     FB.init({
       appId   : '<?php echo $facebook->getAppId(); ?>',
-      session : <?php echo json_encode($session); ?>, // don't refetch the session when PHP already has it
+      session : <?php echo json_encode($this->fbsession); ?>, // don't refetch the session when PHP already has it
       status  : true, // check login status
       cookie  : true, // enable cookies to allow the server to access the session
       xfbml   : true // parse XFBML
@@ -24,9 +24,9 @@
 </script>
 
 <ul class="right-links">
-<?php if ($profile): ?>
-<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/<?php echo $profile['fbid']; ?>/picture?type=square"><?php echo $profile['name']; ?></li>
-<li><a href="<?php echo $logoutUrl; ?>" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li>
+<?php if (isset($this->profile)): ?>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/<?php echo $this->profile['fbid']; ?>/picture?type=square"><?php echo $this->profile['name']; ?></li>
+<li><a href="<?php echo $this->logoutUrl; ?>" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li>
 <?php else: ?>
 <li><fb:login-button></fb:login-button></li>
 <?php endif ?>
