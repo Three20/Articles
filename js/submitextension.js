@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('#step3').empty();
 
     $('#step3').append(
-      $('<h3>').append('Step 3: Submit your extension')
+      $('<h2>').append('Step 3: Submit your extension')
     );
     
     $('#step3').append(
@@ -58,7 +58,7 @@ $(document).ready(function() {
           )
         );
         $('#step2').append(
-          $('<h3>').append('Step 2: Select a tag')
+          $('<h2>').append('Step 2: Select a tag')
         );
         var grid = $('<div>').addClass('grid');
         grid.append(
