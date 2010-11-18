@@ -1,11 +1,12 @@
 <?php
 
 require MODPATH.'facebook-php-sdk/src/facebook.php';
+require MODPATH.'facebook-php-sdk/src/facebook.config.php';
 
 // Create our Application instance (replace this with your appId and secret).
 $facebook = new Facebook(array(
-  'appId'  => '165692500131929',
-  'secret' => 'what-up',
+  'appId'  => FACEBOOK_APP_ID,
+  'secret' => FACEBOOK_SECRET,
   'cookie' => true,
 ));
 
