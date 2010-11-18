@@ -24,8 +24,8 @@
 </script>
 
 <ul class="right-links">
-<?php if ($me): ?>
-<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/<?php echo $uid; ?>/picture?type=square"><?php echo $me['name']; ?></li>
+<?php if ($profile): ?>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/<?php echo $profile['fbid']; ?>/picture?type=square"><?php echo $profile['name']; ?></li>
 <li><a href="<?php echo $logoutUrl; ?>">Log out</a></li>
 <?php else: ?>
 <li><fb:login-button></fb:login-button></li>

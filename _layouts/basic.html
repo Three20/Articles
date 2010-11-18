@@ -55,6 +55,7 @@
 echo three20html::script($js_foot_files, FALSE);
 ?>
 
+<?php if (IN_PRODUCTION): ?>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -68,6 +69,8 @@ echo three20html::script($js_foot_files, FALSE);
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+
+<?php endif ?>
 
 </body>
 </html>

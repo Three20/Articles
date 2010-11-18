@@ -95,6 +95,7 @@
 echo three20html::script($js_foot_files, FALSE);
 ?>
 
+<?php if (IN_PRODUCTION): ?>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -117,6 +118,8 @@ var disqus_shortname = 'three20info2';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
 </script>
+
+<?php endif ?>
 
 </body>
 </html>
