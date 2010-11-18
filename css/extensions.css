@@ -1,24 +1,15 @@
 
 
-#repoinfo {
+.repoinfo {
   margin-top: 20px;
 }
 
-#repoinfo .metainfo {
+.metainfo {
   margin-bottom: 20px;
 }
 
-#repoinfo .header {
+.header {
   font-size: 1.2em;
   margin-bottom: 5px;
   font-weight: bold;
-}
-
-#repoinfo .tagname {
-  width: 200px;
-  float: left;
-}
-
-#repoinfo .tagsha1 {
-  margin-left: 200px;
 }

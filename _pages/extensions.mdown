@@ -30,7 +30,8 @@ for `https://github.com/jverkoey/extThree20XML` you would enter `jverkoey` for t
   <input type="submit" value="Get Tags" />
 </form>
 
-<div id="repoinfo"></div>
+<div id="step2" class="repoinfo"></div>
+<div id="step3"></div>
 
 </div> <!-- .fixed-width -->
 </div> <!-- #content -->

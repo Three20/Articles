@@ -1,11 +1,36 @@
 
 $(document).ready(function() {
+  
+  var tag_click = function(username, reponame, tagname) {
+    $('#step3').empty();
+
+    $('#step3').append(
+      $('<h3>').append('Step 3: Submit your extension')
+    );
+    
+    $('#step3').append(
+      $('<div>').addClass('metainfo'
+      ).append(
+        $('<div>').append($('<strong>').append('User Name: ')).append(username)
+      ).append(
+        $('<div>').append($('<strong>').append('Repo name: ')).append(reponame)
+      ).append(
+        $('<div>').append($('<strong>').append('Tag name: ')).append(tagname)
+      )
+    );
+    
+    $('#step3').append(
+      $('<input>').attr('type', 'submit').attr('value', 'Submit Extension')
+    );
+  };
+
   $('#submitextension').submit(function() {
     var username = $('#username').val();
     var reponame = $('#reponame').val();
     
-    $('#repoinfo').empty();
-    $('#repoinfo').append(
+    $('#step2').empty();
+    $('#step3').empty();
+    $('#step2').append(
       $('<div>').addClass('loading').append('Scouring the tubes...')
     );
 
@@ -13,18 +38,18 @@ $(document).ready(function() {
       url: '/ajax/github/'+username+'/'+reponame,
       dataType: 'json',
       success: function(result) {
-        $('#repoinfo').empty();
+        $('#step2').empty();
         if (result.error) {
-          $('#repoinfo').append(
+          $('#step2').append(
             $('<div>').append(result.error)
           );
           return;
         }
 
-        $('#repoinfo').append(
+        $('#step2').append(
           $('<div>').addClass('metainfo').append(
-            $('<div>').addClass('description').append($('<strong>').
-              append('Description: ')).
+            $('<div>').append(
+              $('<strong>').append('Description: ')).
               append(result.description)
           ).append(
             $('<div>').addClass('homepage').append($('<strong>').
@@ -32,7 +57,7 @@ $(document).ready(function() {
               append(result.homepage)
           )
         );
-        $('#repoinfo').append(
+        $('#step2').append(
           $('<h3>').append('Step 2: Select a tag')
         );
         var grid = $('<div>').addClass('grid');
@@ -49,10 +74,13 @@ $(document).ready(function() {
         );
         for (var tagname in result.tags) {
           var tagsha1 = result.tags[tagname];
+          var click_method = function(e) {
+            tag_click(username, reponame, e.data.tagname);
+          };
           grid.append(
             $('<div>').addClass('row').append(
               $('<div>').append(
-                $('<a>').addClass('col-4').append(tagname)
+                $('<a>').addClass('col-4').append(tagname).bind('click', {tagname: tagname}, click_method)
               ).append(
                 $('<div>').addClass('col-4-fill-3').append(tagsha1)
               ).append(
@@ -62,7 +90,7 @@ $(document).ready(function() {
           );
         }
         
-        $('#repoinfo').append(grid);
+        $('#step2').append(grid);
       }
     });
     
