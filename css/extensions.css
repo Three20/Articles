@@ -1,0 +1,30 @@
+
+
+#extensions .extension {
+  float: left;
+  width: 288px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+#extensions .extension .header {
+  background-color: #eee;
+  border-bottom: 1px solid #eee;
+  padding: 5px;
+  text-align: center;
+  color: #000;
+}
+
+#extensions .extension .info {
+  padding: 5px;
+}
+
+#extensions a:hover {
+  text-decoration: none;
+}
+
+#extensions .extension:hover .info {
+  background-color: #8badcb;
+  color: #fff;
+}

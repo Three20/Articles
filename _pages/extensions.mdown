@@ -1,7 +1,7 @@
 ---
 layout:basic
 title:Extensions
-css:article grid documentation headerbar
+css:article grid documentation headerbar extensions
 ---
 
 <div id="content">
@@ -13,8 +13,34 @@ Extensions
 <?php if ($this->profile): ?>
 [Submit an extension](/extensions/submit)
 <?php else: ?>
-<fb:login-button></fb:login-button> Please log in to submit an extension.
+<fb:login-button></fb:login-button> Please log in if you would like to submit an extension.
 <?php endif ?>
+
+<? if (count($extensions)) { ?>
+
+Extension Directory
+===================
+
+<div id="extensions">
+<? foreach ($extensions as $ext) { ?>
+
+<a class="extension" href="/extension/<?= $ext->reponame ?>">
+<div class="header"><?= $ext->username ?>/<?= $ext->reponame ?></div>
+<div class="info"><?= $ext->description ?></div>
+</a>
+
+<? } ?>
+
+</div>
+
+<? } else { ?>
+
+No Extensions Listed
+====================
+
+We don't have any extensions listed yet.
+
+<? } ?>
 
 </div> <!-- .fixed-width -->
 </div> <!-- #content -->
