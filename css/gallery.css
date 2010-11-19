@@ -13,7 +13,7 @@
   padding: 20px;
   padding-right: 0;
   padding-top: 0;
-  width: 780px;
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -46,4 +46,13 @@
   z-index: 1;
   height: 63px;
   width: 62px;
+}
+
+#content .image-inline {
+  margin-right: 0;
+}
+
+#content .image-inline p img {
+  padding: 5px;
+  border-right: 0;
 }

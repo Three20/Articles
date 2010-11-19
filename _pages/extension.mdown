@@ -4,11 +4,80 @@ title:Extensions
 css:article grid documentation headerbar
 ---
 
+<? $repo = $repos[0];
+
+$sortedtags = array();
+$tagmap = array();
+
+foreach ($repo->tags as $tag) {
+  $sortedtags []= $tag->tagname;
+  $tagmap[$tag->tagname]= $tag;
+}
+
+usort($sortedtags, 'version_compare');
+
+$sortedtags = array_reverse($sortedtags);
+
+$newest_tag = $sortedtags[0];
+
+ ?>
+
 <div id="content">
 <div class="fixed-width" markdown="1">
 
-Extension
-=========
+<?= $repo->reponame ?>
+======================
+
+<p>
+<?= $repo->description ?>
+</p>
+
+Newest Submitted Version
+------------------------
+
+<?
+
+function render_grab($tag, $repo, $tagmap) {
+?>
+<div class="grid">
+  <div class="row right-border">
+    <div class="col-5"><img class="profileimg" valign="bottom" height="100" src="https://graph.facebook.com/<?= $tagmap[$tag]->fbid ?>/picture?type=large"></div>
+    <div class="col-5-fill-4 no-right-border">Submitted by <?= $tagmap[$tag]->name ?> on <?= $tagmap[$tag]->date_submitted ?></div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="row right-border">
+    <div class="col-2">Command line (git)
+      <div class="subtext"><code>git clone git://github.com/<?= $repo->username ?>/<?= $repo->reponame ?>.git</code></div>
+      <div class="subtext"><code>git checkout <?= $tag ?></code></div>
+    </div>
+    <div class="col-2 no-right-border">Download
+      <div class="subtext"><a href="http://github.com/<?= $repo->username ?>/<?= $repo->reponame ?>/tarball/<?= $tag ?>"><?= $repo->reponame ?>-<?= $tag ?>.tar.gz</a></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<?
+}
+
+render_grab($newest_tag, $repo, $tagmap);
+
+?>
+
+<? if (count($sortedtags) > 1) { ?>
+
+Older Submitted Versions
+------------------------
+
+<div class="grid">
+<? array_shift($sortedtags); foreach ($sortedtags as $tag) {
+
+  render_grab($tag, $repo, $tagmap);
+
+} ?>
+</div>
+
+
+<? } ?>
 
 </div> <!-- .fixed-width -->
 </div> <!-- #content -->

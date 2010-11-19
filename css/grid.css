@@ -2,8 +2,8 @@
 .grid {
   border: 1px solid #EEE;
   background-color: #FFF;
-  width: 720px;
-  margin: 0 40px;
+  width: 960px;
+  margin: 0 auto;
   border-bottom: 0;
   border-right: 0;
   margin-bottom: 20px;
@@ -15,7 +15,7 @@
 
 .grid .row {
   clear: left;
-  width: 720px;
+  width: 960px;
   border-bottom: 1px solid #EEE;
 }
 
@@ -38,7 +38,11 @@
 .grid .col-3-fill,
 .grid .col-4,
 .grid .col-4-fill-2,
-.grid .col-4-fill-3 {
+.grid .col-4-fill-3,
+.grid .col-5,
+.grid .col-5-fill-2,
+.grid .col-5-fill-3,
+.grid .col-5-fill-4 {
   float: left;
   display: block;
   text-align: center;
@@ -72,31 +76,47 @@
 }
 
 .grid .col-1 {
-  width: 719px;
+  width: 959px;
 }
 
 .grid .col-2 {
-  width: 359px;
-}
-
-.grid .col-3 {
-  width: 239px;
-}
-
-.grid .col-3-fill {
   width: 479px;
 }
 
+.grid .col-3 {
+  width: 319px;
+}
+
+.grid .col-3-fill {
+  width: 639px;
+}
+
 .grid .col-4 {
-  width: 179px;
+  width: 239px;
 }
 
 .grid .col-4-fill-2 {
-  width: 359px;
+  width: 479px;
 }
 
 .grid .col-4-fill-3 {
-  width: 539px;
+  width: 719px;
+}
+
+.grid .col-5 {
+  width: 191px;
+}
+
+.grid .col-5-fill-2 {
+  width: 383px;
+}
+
+.grid .col-5-fill-3 {
+  width: 575px;
+}
+
+.grid .col-5-fill-4 {
+  width: 767px;
 }
 
 .grid .no-padding {
