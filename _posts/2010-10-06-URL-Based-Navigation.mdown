@@ -216,14 +216,12 @@ Native parameters {#nativeparams}
 
 One of the first questions people ask about ^TTNavigator^ is how to pass native objects around,
 rather than encoding them somehow in a URL. There is a simple pattern for this, using the
-`query:` version of the `openURL:animated:`
-selector, `openURL:query:animated:query:`. For example, imagine you
-wanted to pass along an `NSArray` of items to show in the new view:
+`query` property of `TTURLAction` (or its equivalent convenience function, `applyQuery:`). For
+example, imagine you wanted to pass along an `NSArray` of items to show in the new view:
 
     NSArray *arr = [...load up with data...];
-    [[TTNavigator navigator] openURL:@"tt://restaurant/Chotchkie's" 
-      query:[NSDictionary dictionaryWithObject:arr forKey:@"arraydata"],
-      animated:YES]
+    [[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:@"tt://restaurant/Chotchkie's"]
+      applyQuery:[NSDictionary dictionaryWithObject:arr forKey:@"arraydata"]]];
 
 In this example, the array is passed directly to the initWithName: but only if there is a
 matching selector that accepts the query:
@@ -239,7 +237,7 @@ matching selector that accepts the query:
 There is a catch to using this related to persistence. If the user quits the application
 after this instance of the MenuController's view shows up on screen, then the next launch
 of this application will load the url `@"tt://restaurant/Chotchkie's"` but the
-`query:` argument will be `nil`.
+`query` property will be `nil`.
 
 A general solution to this problem is to encode a unique id into the URL.
 This unique id can then be used to load the data in question whenever the controller loads and
