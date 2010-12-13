@@ -41,7 +41,7 @@ What is a cut? Read about "{{2010-10-24-Branches-And-Cuts}}".
 </div>
 
 <div>
->>v1.0a1issues<<
+>>v1.0a2issues<<
 </div>
 
 </div> <!-- .fixed-width -->
