@@ -6,8 +6,8 @@ css:article headerbar grid gallery
 <div id="content">
 <div class="fixed-width" markdown="1">
 
-The Three20 Gallery
-===================
+The Gallery
+===========
 
 This is a showcase of some apps currently in the App Store that use Three20, shown in
 alphabetical order.

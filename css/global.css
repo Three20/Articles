@@ -65,3 +65,7 @@ a {
 .banner-notification strong {
   font-weight: bold;
 }
+
+#content em {
+  font-style: italic;
+}
