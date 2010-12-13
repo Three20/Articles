@@ -13,6 +13,11 @@ This is a showcase of some apps currently in the App Store that use Three20, sho
 alphabetical order.
 
 <div id="applist">
+<a href="#albums" class="artwork">
+  <img class="artwork" src="/gfx/gallery/albums/icon.jpeg" width="75" height="75" alt="Albums for Facebook Friends" />
+  <span class="mask"></span>
+  <span class="title">Albums for Facebook Friends</span>
+</a>
 <a href="#allrecalls" class="artwork">
   <img class="artwork" src="/gfx/gallery/allrecalls/icon.jpeg" width="75" height="75" alt="All Recalls" />
   <span class="mask"></span>
@@ -63,10 +68,20 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">Cookmate</span>
 </a>
+<a href="#spiderman" class="artwork">
+  <img class="artwork" src="/gfx/gallery/spiderman/icon.jpeg" width="75" height="75" alt="Covers of Spider-Man" />
+  <span class="mask"></span>
+  <span class="title">Covers of Spider-Man</span>
+</a>
 <a href="#daftie" class="artwork">
   <img class="artwork" src="/gfx/gallery/daftie/icon.jpeg" width="75" height="75" alt="Daft.ie" />
   <span class="mask"></span>
   <span class="title">Daft.ie</span>
+</a>
+<a href="#deluxemusictuner" class="artwork">
+  <img class="artwork" src="/gfx/gallery/deluxemusictuner/icon.jpeg" width="75" height="75" alt="Deluxe Music Tuner" />
+  <span class="mask"></span>
+  <span class="title">Deluxe Music Tuner</span>
 </a>
 <a href="#drync" class="artwork">
   <img class="artwork" src="/gfx/gallery/drync/icon.jpeg" width="75" height="75" alt="Drync Wine Pro" />
@@ -123,6 +138,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">GPSMS</span>
 </a>
+<a href="#grader" class="artwork">
+  <img class="artwork" src="/gfx/gallery/grader/icon.jpeg" width="75" height="75" alt="Grader" />
+  <span class="mask"></span>
+  <span class="title">Grader</span>
+</a>
 <a href="#hackernews" class="artwork">
   <img class="artwork" src="/gfx/gallery/hackernews/icon.jpeg" width="75" height="75" alt="Hacker News" />
   <span class="mask"></span>
@@ -142,6 +162,11 @@ alphabetical order.
   <img class="artwork" src="/gfx/gallery/imagebank/icon.jpeg" width="75" height="75" alt="ImageBank" />
   <span class="mask"></span>
   <span class="title">ImageBank</span>
+</a>
+<a href="#instantnightlife" class="artwork">
+  <img class="artwork" src="/gfx/gallery/instantnightlife/icon.jpeg" width="75" height="75" alt="InstantNightlife" />
+  <span class="mask"></span>
+  <span class="title">InstantNightlife</span>
 </a>
 <a href="#itoret" class="artwork">
   <img class="artwork" src="/gfx/gallery/itoret/icon.jpeg" width="75" height="75" alt="iToret" />
@@ -177,6 +202,11 @@ alphabetical order.
   <img class="artwork" src="/gfx/gallery/meetup/icon.jpeg" width="75" height="75" alt="Meetup" />
   <span class="mask"></span>
   <span class="title">Meetup</span>
+</a>
+<a href="#minicollector" class="artwork">
+  <img class="artwork" src="/gfx/gallery/minicollector/icon.jpeg" width="75" height="75" alt="Mini Collector" />
+  <span class="mask"></span>
+  <span class="title">Mini Collector</span>
 </a>
 <a href="#mountainbiketrails" class="artwork">
   <img class="artwork" src="/gfx/gallery/mountainbiketrails/icon.jpeg" width="75" height="75" alt="Mountain Bike Trails" />
@@ -263,6 +293,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">UH Guide</span>
 </a>
+<a href="#vanguardia" class="artwork">
+  <img class="artwork" src="/gfx/gallery/vanguardia/icon.jpeg" width="75" height="75" alt="Vanguardia Móvil" />
+  <span class="mask"></span>
+  <span class="title">Vanguardia Móvil</span>
+</a>
 <a href="#vorarlberg" class="artwork">
   <img class="artwork" src="/gfx/gallery/vorarlberg/icon.jpeg" width="75" height="75" alt="Vorarlberg Online" />
   <span class="mask"></span>
@@ -285,6 +320,27 @@ alphabetical order.
 </a>
 <div class="clearfix"></div>
 </div>
+
+Albums for Facebook Friends Free {#albums}
+----------
+
+<div class="source">Created by: Yunhe Shi</div>
+<div class="source">Website: <a href="http://www.shiyunhe.com/facebook-friends-photo-albums">shiyunhe.com/facebook-friends-photo-albums</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/ie/app/facebook-friends-photo-albums/id387112307">![Albums for Facebook Friends Free](/gfx/appstore.png 230x80)</a></div>
+
+The app gives you fun to browse, view and comment your Facebook friends' photo albums. Friend
+list, friends' album list and photos are cached locally to improve performance and to allow
+offline access.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Albums for Facebook Friends Free](/gfx/gallery/albums/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Albums for Facebook Friends Free](/gfx/gallery/albums/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Albums for Facebook Friends Free](/gfx/gallery/albums/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Albums for Facebook Friends Free](/gfx/gallery/albums/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Albums for Facebook Friends Free](/gfx/gallery/albums/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
 
 
 All Recalls {#allrecalls}
@@ -541,6 +597,34 @@ to cook from these ingredients! Never wonder what's for dinner again!
 * ^TTWebController^
 
 
+Covers of Spider-Man {#spiderman}
+----------
+
+<div class="source">Created by: Outer Court</div>
+<div class="source">Website: <a href="http://outer-court.com/iphone/">outer-court.com/iphone</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/us/app/covers-of-spider-man/id404527304?mt=8">![Covers of Spider-Man](/gfx/appstore.png 230x80)</a></div>
+
+Cover Browser has partnered with Marvel in the past for special celebration issues such as
+Thor #600, Captain America #600, Daredevil #500 and more. In this collection app especially
+made for the iPhone, you can now browse over 2,500 classic Spider-Man covers! Explore the
+fascinating cover artwork of series like Amazing Spider-Man from way back in 1963, Spectacular
+Spider-Man, Spider-Girl, to the more recent Ultimate Spider-Man and many more. Mark your most
+beloved covers as favorites, or save them to your photo album. You can shake the app to view a
+random cover, perfect to spend some surprise time in a cafe, on the bus, or in the train. If
+you're a comic book collector or just have an interest in super heroes and vintage and new comic
+cover art, this app's for you!
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Covers of Spider-Man](/gfx/gallery/spiderman/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Covers of Spider-Man](/gfx/gallery/spiderman/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Covers of Spider-Man](/gfx/gallery/spiderman/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Covers of Spider-Man](/gfx/gallery/spiderman/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Covers of Spider-Man](/gfx/gallery/spiderman/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
 Daft.ie {#daftie}
 ----------
 
@@ -559,6 +643,27 @@ Over 100,000 properties.
 <div class="image-inline" markdown=1>![Daft.ie](/gfx/gallery/daftie/screenshot03.jpeg 320x460)</div>
 <div class="image-inline" markdown=1>![Daft.ie](/gfx/gallery/daftie/screenshot04.jpeg 320x460)</div>
 <div class="image-inline" markdown=1>![Daft.ie](/gfx/gallery/daftie/screenshot05.jpeg 320x460)</div>
+<div class="clearfix"></div>
+
+
+Deluxe Music Tuner {#deluxemusictuner}
+----------
+
+<div class="source">Created by: DELUXE Television GmbH</div>
+<div class="source">Website: <a href="http://deluxetelevision.com/deluxe-tuner">deluxetelevision.com/deluxe-tuner</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/de/app/deluxe-music-tuner/id382422776?mt=8">![Deluxe Music Tuner](/gfx/appstore.png 230x80)</a></div>
+
+Der DELUXE MUSIC TUNER bietet 9 Musikprogramme (TV und Radio) und bringt als einziger
+Musikfernsehsender sein Liveprogramm kostenfrei 24/7 auf Ihr iPad, Ihr iPhone (3G, 3Gs, 4) und
+Ihren iPod Touch.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Deluxe Music Tuner](/gfx/gallery/deluxemusictuner/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Deluxe Music Tuner](/gfx/gallery/deluxemusictuner/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Deluxe Music Tuner](/gfx/gallery/deluxemusictuner/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Deluxe Music Tuner](/gfx/gallery/deluxemusictuner/screenshot04.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
@@ -800,6 +905,23 @@ GPSMS is an app that allows you to send your current location to a contact in yo
 <div class="clearfix"></div>
 
 
+Grader - Inbound Marketing Tools by HubSpot {#grader}
+----------
+
+<div class="source">Created by: HubSpot, Inc.</div>
+<div class="source">Website: <a href="http://www.hubspot.com/">hubspot.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/us/app/grader-inbound-marketing-tools/id380033833?mt=8">![Grader - Inbound Marketing Tools by HubSpot](/gfx/appstore.png 230x80)</a></div>
+
+GRADER is a free suite of tools that helps you measure and analyze your marketing efforts.
+Quickly measure what matters in inbound marketing. Get the metrics you need, when you need them.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Grader - Inbound Marketing Tools by HubSpot](/gfx/gallery/grader/screenshot01.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
 Hacker News {#hackernews}
 -----------
 
@@ -881,6 +1003,25 @@ iPad without syncing or uploading.
 <div class="image-inline" markdown=1>![ImageBank](/gfx/gallery/imagebank/screenshot03.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![ImageBank](/gfx/gallery/imagebank/screenshot04.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![ImageBank](/gfx/gallery/imagebank/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+InstantNightlife {#instantnightlife}
+----------
+
+<div class="source">Created by: InstantNightlife, Inc.</div>
+<div class="source">Website: <a href="http://www.instantnightlife.com/">instantnightlife.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/us/app/instantnightlife/id366740502?mt=8">![InstantNightlife](/gfx/appstore.png 230x80)</a></div>
+
+Your real-time guide to nightlife in Boston.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![InstantNightlife](/gfx/gallery/instantnightlife/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![InstantNightlife](/gfx/gallery/instantnightlife/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![InstantNightlife](/gfx/gallery/instantnightlife/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![InstantNightlife](/gfx/gallery/instantnightlife/screenshot04.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
@@ -1022,6 +1163,25 @@ Meetup to find friendly local Meetups started by people in your town.
 <div class="image-inline" markdown=1>![Meetup](/gfx/gallery/meetup/screenshot03.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![Meetup](/gfx/gallery/meetup/screenshot04.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![Meetup](/gfx/gallery/meetup/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+Mini Collector {#minicollector}
+----------
+
+<div class="source">Created by: Better Than Tomorrow</div>
+<div class="source">Website: <a href="http://blog.betterthantomorrow.com/minicollector/">blog.betterthantomorrow.com/minicollector</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/ca/app/mini-collector/id390113980?mt=8">![Mini Collector](/gfx/appstore.png 230x80)</a></div>
+
+Bring your LEGO™ Minifigures Series 1 & 2 collection wherever you go. Avoid buying a minifigure you already have.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Mini Collector](/gfx/gallery/minicollector/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Mini Collector](/gfx/gallery/minicollector/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Mini Collector](/gfx/gallery/minicollector/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Mini Collector](/gfx/gallery/minicollector/screenshot04.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
@@ -1408,6 +1568,26 @@ The UH Guide iPhone application assists you in finding your way around the Unive
 * ^TTURLRequest^: caching for our "points of interest" requests
 * ^TTPhotoViewController^: nice thumbnail photos from Flickr
 * ^TTTabBar^: switching between content
+
+
+Vanguardia Móvil {#vanguardia}
+----------
+
+<div class="source">Created by: Grupo Editorial de Coahuila SA de CV</div>
+<div class="source">Website: <a href="http://www.vanguardia.com.mx/">vanguardia.com.mx</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/mx/app/vanguardia-movil/id392786698?mt=8">![Vanguardia Móvil](/gfx/appstore.png 230x80)</a></div>
+
+La nueva versión de Vanguardia para iPhone ya está aquí. Con navegación intuitiva y enfoque a multimedia. Vive la experiencia de nuestras secciones de Cartones, Fotogalerías y Videos. Lee a reconocidas plumas como Armando Fuentes Aguirre "Catón, Gaby Vargas, Denisse Dresser, Raymundo Riva Palacio, Fernando Savater y Mario Vargas Llosa entre otros.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![Vanguardia Móvil](/gfx/gallery/vanguardia/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Vanguardia Móvil](/gfx/gallery/vanguardia/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Vanguardia Móvil](/gfx/gallery/vanguardia/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Vanguardia Móvil](/gfx/gallery/vanguardia/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![Vanguardia Móvil](/gfx/gallery/vanguardia/screenshot05.jpeg 320x480)</div>
+<div class="clearfix"></div>
 
 
 Vorarlberg Online {#vorarlberg}
