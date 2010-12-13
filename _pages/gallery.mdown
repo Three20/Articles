@@ -148,6 +148,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">iToret</span>
 </a>
+<a href="#iwallpapers" class="artwork">
+  <img class="artwork" src="/gfx/gallery/iwallpapers/icon.jpeg" width="75" height="75" alt="iWallpapers" />
+  <span class="mask"></span>
+  <span class="title">iWallpapers</span>
+</a>
 <a href="#jandb" class="artwork">
   <img class="artwork" src="/gfx/gallery/jandb/icon.jpeg" width="75" height="75" alt="JandB Photo" />
   <span class="mask"></span>
@@ -894,6 +899,26 @@ to your position.
 
 <div class="image-inline" markdown=1>![iToret](/gfx/gallery/itoret/screenshot01.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![iToret](/gfx/gallery/itoret/screenshot02.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+iWallpapers {#iwallpapers}
+----------
+
+<div class="source">Created by: Lucky Star</div>
+<div class="source">Website: <a href="http://teknology.com/">teknology.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/us/app/iwallpapers-hd-wallpapers/id383554361?mt=8">![iWallpapers](/gfx/appstore.png 230x80)</a></div>
+
+This application contains HD Wallpapers.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![iWallpapers](/gfx/gallery/iwallpapers/screenshot01.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![iWallpapers](/gfx/gallery/iwallpapers/screenshot02.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![iWallpapers](/gfx/gallery/iwallpapers/screenshot03.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![iWallpapers](/gfx/gallery/iwallpapers/screenshot04.jpeg 320x460)</div>
+<div class="image-inline" markdown=1>![iWallpapers](/gfx/gallery/iwallpapers/screenshot05.jpeg 320x460)</div>
 <div class="clearfix"></div>
 
 
