@@ -93,31 +93,11 @@
 echo three20html::script($js_foot_files, FALSE);
 ?>
 
-<?php if (IN_PRODUCTION): ?>
-<script type="text/javascript">
+>>analytics<<
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-19295672-1']);
-  _gaq.push(['_setDomainName', '.three20.info']);
-  _gaq.push(['_trackPageview']);
+>>disqus<<
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
-<script type="text/javascript">
-var disqus_shortname = 'three20info2';
-(function () {
-  var s = document.createElement('script'); s.async = true;
-  s.src = 'http://disqus.com/forums/three20info2/count.js';
-  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
-</script>
-
-<?php endif ?>
+>>chat<<
 
 </body>
 </html>
