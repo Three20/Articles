@@ -37,7 +37,7 @@ Newest Submitted Version
 
 <?
 
-function render_grab($tag, $repo, $tagmap) {
+function print_repo_grab_info($tag, $repo, $tagmap) {
 ?>
 <div class="grid">
   <div class="row right-border">
@@ -59,9 +59,28 @@ function render_grab($tag, $repo, $tagmap) {
 <?
 }
 
-render_grab($newest_tag, $repo, $tagmap);
+print_repo_grab_info($newest_tag, $repo, $tagmap);
 
 ?>
+
+<? if ($tagmap[$newest_tag]->readme) {
+  function strip_only_tags($str, $tags, $stripContent=false) {
+      $content = '';
+      if(!is_array($tags)) {
+          $tags = (strpos($str, '>') !== false ? explode('>', str_replace('<', '', $tags)) : array($tags));
+          if(end($tags) == '') array_pop($tags);
+      }
+      foreach($tags as $tag) {
+          if ($stripContent)
+               $content = '(.+</'.$tag.'(>|\s[^>]*>)|)';
+           $str = preg_replace('#</?'.$tag.'(>|\s[^>]*>)'.$content.'#is', '', $str);
+      }
+      return $str;
+  }
+
+  require Kohana::find_file('vendor', 'Markdown');
+  echo Markdown(strip_only_tags($tagmap[$newest_tag]->readme, '<script><meta><link><head><html><body>'));
+} ?>
 
 <? if (count($sortedtags) > 1) { ?>
 
@@ -71,7 +90,7 @@ Older Submitted Versions
 <div class="grid">
 <? array_shift($sortedtags); foreach ($sortedtags as $tag) {
 
-  render_grab($tag, $repo, $tagmap);
+  print_repo_grab_info($tag, $repo, $tagmap);
 
 } ?>
 </div>
