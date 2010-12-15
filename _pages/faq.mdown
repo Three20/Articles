@@ -1,0 +1,37 @@
+---
+layout:basic
+css:article community headerbar
+---
+
+<div id="content">
+
+<div class="fixed-width" markdown="1">
+
+Frequently Answered Questions
+=============================
+
+<div class="authors">
+  <a class="author" href="#three20additions">Permalink</a>
+  <a class="author" href="https://groups.google.com/d/msg/three20/rbMr-NywpPU/ISKCzxsfwS8J">Source Question</a>
+</div>
+
+Request for member 'width' not a structure or union {#three20additions}
+---------------------------------------------------
+
+Example code that might cause this error:
+
+    _pageControl = [[TTPageControl alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 20)];
+
+The culprit in this code is `self.view.width`. The `.width` accessor is not a standard UIView
+method. In fact, it's a utility method provided by Three20 in the form of an "addition" to the
+UIView object. Three20 additions may only be used if you
+`#import <Three20/Three20+Additions.h>` into your project.
+
+### Variations
+
+    Request for member 'height' not a structure or union
+    Request for member 'left' not a structure or union
+
+</div> <!-- .fixed-width -->
+
+</div> <!-- #content -->

@@ -73,7 +73,8 @@ html {
   margin-bottom: 20px;
 }
 
-#content .authors div {
+#content .authors .author {
+  display: block;
   text-align: right;
 }
 
