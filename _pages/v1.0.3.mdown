@@ -10,7 +10,7 @@ css:article headerbar grid issues
 Version 1.0.3
 ===========================
 
-This is version 1.0.3 of the [1.0](/roadmap/v1.0). Included in this cut:
+Included in this release:
 [1 new features](#newfeatures),
 [15 resolved issues](#resolvedissues), and [154 open issues](#openissues).
 
@@ -23,11 +23,11 @@ New Features Since [v1.0a2](/roadmap/v1.0a2) {#newfeatures}
 
 +> !* `Three20UI/TTTableViewNetworkEnabledDelegate.h`
 +> 
-+> <a href="https://github.com/facebook/three20/blob/v1.0/src/Three20UI/Headers/TTTableViewNetworkEnabledDelegate.h">`TTTableViewNetworkEnabledDelegate`</a> - TTTableViewNetworkEnabledDelegate provides support for both drag refresh and the new infinite scroll footer. You can choose to enable either, both or neither of these features when you instantiate the delegate.
++> <a href="https://github.com/facebook/three20/blob/v1.0.3/src/Three20UI/Headers/TTTableViewNetworkEnabledDelegate.h">`TTTableViewNetworkEnabledDelegate`</a> - TTTableViewNetworkEnabledDelegate provides support for both drag refresh and the new infinite scroll footer. You can choose to enable either, both or neither of these features when you instantiate the delegate.
 
 +> !* `Three20UI/TTTableFooterInfiniteScrollView.h`
 +> 
-+> <a href="https://github.com/facebook/three20/blob/v1.0/src/Three20UI/Headers/TTTableFooterInfiniteScrollView.h">`TTTableFooterInfiniteScrollView`</a> - TTTableNetworkEnabledTableViewController protocol, which allows TableViewControllers to specify when infinite scroll loading should occur based on a scroll ratio by implementing shouldLoadAtScrollRatio:
++> <a href="https://github.com/facebook/three20/blob/v1.0.3/src/Three20UI/Headers/TTTableFooterInfiniteScrollView.h">`TTTableFooterInfiniteScrollView`</a> - TTTableNetworkEnabledTableViewController protocol, which allows TableViewControllers to specify when infinite scroll loading should occur based on a scroll ratio by implementing shouldLoadAtScrollRatio:
 
 Resolved Issues Since [v1.0a2](/roadmap/v1.0a2) {#resolvedissues}
 ----------------------------
