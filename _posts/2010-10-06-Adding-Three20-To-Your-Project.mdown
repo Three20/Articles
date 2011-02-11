@@ -7,11 +7,11 @@ Add Three20 To Your Project
 ===========================
 
 <div>
->>v1.0a2grab<<
+>>1.0.3grab<<
 </div>
 
-This will check out the latest official cut of Three20. Learn more about cuts by reading the
-article {{2010-10-24-Branches-And-Cuts}}. Pick your own cut by checking out the
+This will check out the latest official release of Three20. Read {{2010-10-24-Branches-And-Cuts}}
+to learn more about Three20's releases. Stay tuned with releases by checking out the
 [Three20 Roadmap](/roadmap).
 
 Automatically add Three20 to your project
@@ -24,7 +24,7 @@ Three20 includes a script that adds Three20 to Xcode iOS projects. Here's how to
 Running that command will show you the script's help information, complete with a few examples.
 Here's a dead simple example:
 
-    > python three20/src/scripts/ttmodule.py -p path/to/myProject.xcodeproj -c Debug -c Release Three20
+    > python three20/src/scripts/ttmodule.py -p path/to/myProject.xcodeproj Three20
 
 This will add the [Three20](/module/three20) module and all of its dependencies.
 Read the article "{{2010-10-21-Understanding-Modules}}" to learn more about Modules and their

@@ -1,0 +1,51 @@
+---
+layout:basic
+title:v1.0.3 Information
+css:article headerbar grid issues
+---
+
+<div id="content">
+<div class="fixed-width" markdown="1">
+
+Version 1.0.3
+===========================
+
+Included in this release:
+[3 new features](#newfeatures),
+[15 resolved issues](#resolvedissues), and [154 open issues](#openissues).
+
+<div>
+>>1.0.3grab<<
+</div>
+
+New Features Since [v1.0a2](/roadmap/v1.0a2) {#newfeatures}
+-------------------------
+
++> !* UI/TTTableViewNetworkEnabledDelegate.h
++> 
++> <a href="https://github.com/facebook/three20/blob/v1.0.3/src/Three20UI/Headers/TTTableViewNetworkEnabledDelegate.h">`TTTableViewNetworkEnabledDelegate`</a> - TTTableViewNetworkEnabledDelegate provides support for both drag refresh and the new infinite scroll footer. You can choose to enable either, both or neither of these features when you instantiate the delegate.
+
++> !* UI/TTTableFooterInfiniteScrollView.h
++> 
++> <a href="https://github.com/facebook/three20/blob/v1.0.3/src/Three20UI/Headers/TTTableFooterInfiniteScrollView.h">`TTTableFooterInfiniteScrollView`</a> - TTTableNetworkEnabledTableViewController protocol, which allows TableViewControllers to specify when infinite scroll loading should occur based on a scroll ratio by implementing shouldLoadAtScrollRatio:
+
++> !* Simplified ttmodule script
++> 
++> The ttmodule.py script for adding Three20 to your applications now automatically adds Three20
++> configuration settings to every configuration in your project if you don't explicitly state
++> which configuration to modify. This reduces the script to
++> `ttmodule.py -p path/to/myApp/myApp.xcodeproj Three20` in its simplest use.
+
+Resolved Issues Since [v1.0a2](/roadmap/v1.0a2) {#resolvedissues}
+----------------------------
+
+<div>
+>>1.0.3resolved<<
+</div>
+
+<div>
+>>1.0.3issues<<
+</div>
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->

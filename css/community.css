@@ -1,7 +1,7 @@
 
 #content .profile {
   padding: 20px;
-  margin-right: 20px;
+  margin: 0 5px;
   margin-bottom: 20px;
   border: 1px solid #DDD;
   background-color: #FFF;
@@ -12,20 +12,14 @@
   opacity: 0.5;
 }
 
-#content .team-list .profile:nth-child(3n+4) {
-  padding-left: 19px;
-  padding-right: 19px;
-  margin-right: 0;
-}
-
 #content .name {
-  font-size: 1.7em;
+  font-size: 1.3em;
   text-align: center;
-  width: 212px;
+  width: 180px;
 }
 
 #content .role {
-  font-size: 1.3em;
+  font-size: 1.1em;
   text-align: center;
   color: #888;
   margin-bottom: 0.3em;
@@ -33,6 +27,6 @@
 
 #content .twitter,
 #content .github {
-  font-size: 1.3em;
+  font-size: 1.1em;
   text-align: center;
 }

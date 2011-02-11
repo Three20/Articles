@@ -10,9 +10,8 @@ Roadmap
 =======
 
 <div class="grid">
-  <div class="row header-row"><div class="col-4">Branch</div><div class="col-4">Latest Cut</div><div class="col-4-fill-2"># of Issues</div><div class="clearfix"></div></div>
-  <div class="row"><a class="col-4" href="/roadmap/v1.1">v1.1</a><a href="http://three20.lighthouseapp.com/projects/62400-three20/milestones/88714-three20-v11" class="col-4">Feature list</a><div class="col-4-fill-2">In development</div><div class="clearfix"></div></div>
-  <div class="row"><a class="col-4" href="/roadmap/v1.0">v1.0</a><a class="col-4" href="/roadmap/v1.0a2">v1.0a2</a><div class="col-4-fill-2">162 issues</div><div class="clearfix"></div></div>
+  <div class="row header-row"><div class="col-4">Branch</div><div class="col-4">Latest Release</div><div class="col-4-fill-2"># of Issues</div><div class="clearfix"></div></div>
+  <div class="row"><a class="col-4" href="/roadmap/v1.0">master</a><a class="col-4" href="/roadmap/1.0.3">1.0.3</a><div class="col-4-fill-2">154 issues</div><div class="clearfix"></div></div>
 </div>
 
 Contribute
