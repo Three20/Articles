@@ -7,20 +7,25 @@ html {
   padding-bottom: 20px;
 }
 
+#content .fixed-width {
+  border: 1px solid #EEE;
+  background-color: #FFF;
+  padding: 0 20px;
+  width: 960px;
+  margin: 20px auto;
+}
+
 #content h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
+  font-size: 2em;
 }
 
 #content h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 1.6em;
   color: #666;
 }
 
 #content h3 {
-  font-size: 1.5em;
-  margin-bottom: 20px;
+  font-size: 1.3em;
   color: #888;
 }
 
@@ -28,6 +33,7 @@ html {
 #content h2,
 #content h3 {
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;
+  margin: 0.5em 0;
 }
 
 #content .toc ul {
@@ -40,6 +46,7 @@ html {
 #content ul,
 #content ol {
   -webkit-font-smoothing: antialiased;
+  background-color: #FFF;
 }
 
 #content ul li {
@@ -55,11 +62,8 @@ html {
 
 #content .mdlist,
 #content p {
-  background-color: #FFF;
-  border: 1px solid #eee;
-  margin-bottom: 20px;
-  padding: 20px;
   line-height: 1.4em;
+  margin: 1em 0;
 }
 
 #content ul,
@@ -124,7 +128,8 @@ html {
 
 #content .naviblock p,
 #content .infoblock p {
-  margin-bottom: 10px;
+  margin-top: 0;
+  padding: 10px 10px;
 }
 
 #content .naviblock .navi,
@@ -164,6 +169,7 @@ html {
   background-color: #F8F8FF;
   border: 1px solid #DEDEDE;
   padding: 0px 0.2em;
+  white-space:nowrap;
 }
 
 #content pre {

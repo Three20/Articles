@@ -1,15 +1,38 @@
 ---
-title: Branches and Cuts
+title: The Three20 Branching Model
 ---
 
-Branches and Cuts
-=================
+The Three20 Branching Model
+===========================
 
-If you want to use Three20 in your project it's absolutely important that you understand how
-branches and cuts are used.
+The Three20 branching model defines a set of paradigms used by the Core Team to ensure
+stable development on Three20. As a developer using Three20, you can be certain that any
+given release within this model is build-able and stable.
 
-What is a Branch?
------------------
+This article is split into multiple sections, with each subsequent section providing more
+in-depth discussions about the branching model.
+
+Getting Started
+---------------
+
+Three20 is a git-based framework. If you're new to git, check out the
+[Git Community Book](http://book.git-scm.com/index.html). To focus your reading you should
+check out the following articles:
+
+* [Installing Git on Mac OS X](http://code.google.com/p/git-osx-installer/downloads/list?can=3)
+* [Getting repositories](http://book.git-scm.com/3_getting_a_git_repository.html)
+* [Normal workflow](http://book.git-scm.com/3_normal_workflow.html)
+* [Basic branching and merging](http://book.git-scm.com/3_basic_branching_and_merging.html)
+
+
+
+
+Hacking on Three20
+------------------
+
+Based off of the branching model described at
+[nvie.com](http://nvie.com/posts/a-successful-git-branching-model/).
+
 
 A branch in Three20 denotes a specific development path. "Mainline", for example, refers to the
 [master](http://github.com/facebook/three20) branch (i.e. the default branch). Each major

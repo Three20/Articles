@@ -11,7 +11,7 @@ Version 1.0.3
 ===========================
 
 Included in this release:
-[2 new features](#newfeatures),
+[3 new features](#newfeatures),
 [15 resolved issues](#resolvedissues), and [154 open issues](#openissues).
 
 <div>
@@ -21,11 +21,11 @@ Included in this release:
 New Features Since [v1.0a2](/roadmap/v1.0a2) {#newfeatures}
 -------------------------
 
-+> !* `Three20UI/TTTableViewNetworkEnabledDelegate.h`
++> !* UI/TTTableViewNetworkEnabledDelegate.h
 +> 
 +> <a href="https://github.com/facebook/three20/blob/v1.0.3/src/Three20UI/Headers/TTTableViewNetworkEnabledDelegate.h">`TTTableViewNetworkEnabledDelegate`</a> - TTTableViewNetworkEnabledDelegate provides support for both drag refresh and the new infinite scroll footer. You can choose to enable either, both or neither of these features when you instantiate the delegate.
 
-+> !* `Three20UI/TTTableFooterInfiniteScrollView.h`
++> !* UI/TTTableFooterInfiniteScrollView.h
 +> 
 +> <a href="https://github.com/facebook/three20/blob/v1.0.3/src/Three20UI/Headers/TTTableFooterInfiniteScrollView.h">`TTTableFooterInfiniteScrollView`</a> - TTTableNetworkEnabledTableViewController protocol, which allows TableViewControllers to specify when infinite scroll loading should occur based on a scroll ratio by implementing shouldLoadAtScrollRatio:
 
