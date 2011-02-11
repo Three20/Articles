@@ -16,7 +16,7 @@ Getting Started
 ---------------
 
 Three20 is a git-based framework. If you're new to git, check out the
-[Git Community Book](http://book.git-scm.com/index.html). To focus your reading you should
+[Git Community Book](http://book.git-scm.com/index.html), [Pro Git Book](http://http://progit.org/book/) and [Git Immersion](http://gitimmersion.com). To focus your reading you should
 check out the following articles:
 
 * [Installing Git on Mac OS X](http://code.google.com/p/git-osx-installer/downloads/list?can=3)
