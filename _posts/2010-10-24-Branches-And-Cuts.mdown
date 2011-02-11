@@ -41,8 +41,8 @@ the development branch and then merged into master on a *release* branch.
 A *release* branch is a branch of development intended for a stable release. Each release
 branch will be named the same as its corresponding version and
 it subsequent tag name in the master branch. For example, at some point in the development
-branch we may decide to release v1.1. A new branch will be made from development with
-`git checkout -b v1.1`. This new release branch will then make any necessary final
+branch we may decide to release 1.1.0. A new branch will be made from development with
+`git checkout -b 1.1.0`. This new release branch will then make any necessary final
 modifications to the library, such as bumping up the library's version number or writing
 release notes. Once the release branch is stable and ready to be released, it is merged into
 master.

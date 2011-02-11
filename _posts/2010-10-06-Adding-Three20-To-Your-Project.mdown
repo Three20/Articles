@@ -7,7 +7,7 @@ Add Three20 To Your Project
 ===========================
 
 <div>
->>v1.0.3grab<<
+>>1.0.3grab<<
 </div>
 
 This will check out the latest official release of Three20. Read {{2010-10-24-Branches-And-Cuts}}

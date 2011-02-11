@@ -15,7 +15,7 @@ Included in this release:
 [15 resolved issues](#resolvedissues), and [154 open issues](#openissues).
 
 <div>
->>v1.0.3grab<<
+>>1.0.3grab<<
 </div>
 
 New Features Since [v1.0a2](/roadmap/v1.0a2) {#newfeatures}
@@ -40,11 +40,11 @@ Resolved Issues Since [v1.0a2](/roadmap/v1.0a2) {#resolvedissues}
 ----------------------------
 
 <div>
->>v1.0.3resolved<<
+>>1.0.3resolved<<
 </div>
 
 <div>
->>v1.0.3issues<<
+>>1.0.3issues<<
 </div>
 
 </div> <!-- .fixed-width -->
