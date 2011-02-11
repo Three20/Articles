@@ -24,26 +24,30 @@ check out the following articles:
 * [Normal workflow](http://book.git-scm.com/3_normal_workflow.html)
 * [Basic branching and merging](http://book.git-scm.com/3_basic_branching_and_merging.html)
 
+Primary Branches
+----------------
 
+There are two primary branches in Three20: *master* and *development*.
 
+The *master* branch will be tagged with stable releases and should, in practice, be the
+only branch you use if you're simply using Three20 and not making any modifications.
+Each time a new release is made, you'll simply need to `git fetch` and then
+`git rebase origin/master` within the Three20 repository.
 
-Hacking on Three20
-------------------
+The *development* branch is for active development on the library and
+**is not necessarily stable**. All changes made to the library will first be added to
+the development branch and then merged into master on a *release* branch.
 
-Based off of the branching model described at
+A *release* branch is a branch of development intended for a stable release. Each release
+branch will be named the same as its corresponding version and
+it subsequent tag name in the master branch. For example, at some point in the development
+branch we may decide to release v1.1. A new branch will be made from development with
+`git checkout -b v1.1`. This new release branch will then make any necessary final
+modifications to the library, such as bumping up the library's version number or writing
+release notes. Once the release branch is stable and ready to be released, it is merged into
+master.
+
+Three20's branching model is based off of the one described at
 [nvie.com](http://nvie.com/posts/a-successful-git-branching-model/).
 
 
-A branch in Three20 denotes a specific development path. "Mainline", for example, refers to the
-[master](http://github.com/facebook/three20) branch (i.e. the default branch). Each major
-version release of Three20 has its own branch, e.g.
-[v1.0](/roadmap/v1.0) or
-[v1.1](/roadmap/v1.1).
-
-What is a Cut?
---------------
-
-A cut of Three20 denotes a known stable point in Three20's development history. Version cuts
-denote an accepted, stable release of the source, e.g.
-[v1.0a1](/roadmap/v1.0a1) is the first stable cut of the v1.0
-branch.
