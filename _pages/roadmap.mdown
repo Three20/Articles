@@ -14,11 +14,38 @@ Roadmap
   <div class="row"><a class="col-4" href="/roadmap/v1.0">master</a><a class="col-4" href="/roadmap/1.0.3">1.0.3</a><div class="col-4-fill-2">154 issues</div><div class="clearfix"></div></div>
 </div>
 
+The following represents features that are actively under development by the Three20 Team. Most of these features here are intended to be launched within the following six months. We'll do our best to keep this roadmap updated.
+
+### Features on Deck ###
+*   XCode 4 Support
+*   Better backward compatibility with iOS 3
+*   XCode integrated Documentation
+*   Easier installation and management
+*   Extension management and support
+
+### Major Features That Have Been Implemented ###
+*   TTModule Python Script
+*   Modularization of Three20
+*   TTableFooterInfiniteScrollView
+*   Nib Support
+*   iPad Support with TTSplitViewController
+
+For a more detailed list of previous changes, see the [release notes](http://three20.info/roadmap/1.0.3).
+
 Contribute
 ==========
 
 If you plan to write code for Three20, make the process faster by ensuring that you follow the
-{{2010-10-24-Three20-Style-Guide}}.
+{{2010-10-24-Three20-Style-Guide}} and the [Three20 Branching Model](http://three20.info/article/2010-10-24-Branches-And-Cuts).
+
+*   Get the Source - The Three20 source is stored at [GitHub](https://github.com/facebook/three20).
+
+*   Report Bugs - We use [GitHub Issues](https://github.com/facebook/three20/issues) for tracking bugs and feature requests. Please report anything you think is a bug! Performance problems are considered bugs, so please report those too.
+
+*   Fix Bugs - We’d love it if you help fix open bugs. If you don't know where to start, feel free to contact us and we can help you get started!
+
+*   Fix Articles on the website - We also depend on community contributions and edits to keep our documentation informative and relevant. If you have a useful FAQ or walkthrough or article, please add it to the website. And we welcome anyone who wants to help reorganize or edit existing content. The source for all the Articles can be found on the [Article repo on GitHub](https://github.com/three20/articles).
+
 
 </div> <!-- .fixed-width -->
 </div> <!-- #content -->
