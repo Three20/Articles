@@ -1,6 +1,7 @@
 ---
 layout:basic
 css:article community headerbar
+title:Frequently Answered Questions (FAQ)
 ---
 
 <div id="content">
