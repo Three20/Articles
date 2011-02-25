@@ -22,26 +22,14 @@ Three20 v1.1 is in active development. Keep this in mind if you plan to use any 
 The v1.1 milestones are outlined on
 [Three20's Lighthouse](http://three20.lighthouseapp.com/projects/62400/milestones/88714-three20-v11).
 
+<div>
+>>grab(v1.1)<<
+</div>
+
 v1.1 Milestones
 ---------------
 
 * Split Three20UI into smaller modules (outlined at [Three20's Lighthouse](http://three20.lighthouseapp.com/projects/62400/milestones/88714-three20-v11)).
-
-Grab it
--------
-
-<div class="grid">
-  <div class="row right-border">
-    <div class="col-2">Command line (git)
-      <div class="subtext"><code>git clone git://github.com/facebook/three20.git</code></div>
-      <div class="subtext"><code>git checkout v1.1</code></div>
-    </div>
-    <div class="col-2 no-right-border">Download
-      <div class="subtext"><a href="http://github.com/facebook/three20/tarball/v1.1">Three20-v1.1.tar.gz</a></div>
-    </div>
-    <div class="clearfix"></div>
-  </div>
-</div>
 
 </div> <!-- .fixed-width -->
 </div> <!-- #content -->

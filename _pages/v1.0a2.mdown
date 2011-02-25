@@ -19,7 +19,7 @@ gresrun, jwang, mrevilme, and wlach for their hard work throughout the week and 
 submitted issues and pull requests.
 
 <div>
->>v1.0a2grab<<
+>>grab(v1.0a2)<<
 </div>
 
 Deprecation Notices Since [v1.0a1](/roadmap/v1.0a1) {#deprecation}

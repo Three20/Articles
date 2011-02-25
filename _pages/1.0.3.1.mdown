@@ -1,0 +1,36 @@
+---
+layout:basic
+title:v1.0.3.1 Information
+css:article headerbar grid issues
+---
+
+<div id="content">
+<div class="fixed-width" markdown="1">
+
+Version 1.0.3.1
+===========================
+
+Included in this release:
+[1 hotfix](#hotfixes) and [154 open issues](#openissues).
+
+<div>
+>>grab(1.0.3.1)<<
+</div>
+
+Hotfixes [v1.0.3](/roadmap/v1.0.3) {#hotfixes}
+-------------------------
+
+!> !* Web View Controller Assertions
+!> 
+!> TTNetworkRequestStarted methods added to the web view controller were causing harmless
+!> assertions when invalid content was loaded. The assertions were fired because the number of
+!> network stopped calls didn't match up with the number of started calls and is simply a warning
+!> that something, somewhere isn't pairing these calls properly. At worst, this could lead
+!> to the loading indicator displaying indefinitely.
+
+<div>
+>>1.0.3.1issues<<
+</div>
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->

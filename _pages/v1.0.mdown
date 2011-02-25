@@ -16,13 +16,14 @@ Releases {#releases}
 --------
 
 <div class="grid">
-  <div class="row"><a class="col-3" href="/roadmap/1.0.3">1.0.3</a><div class="col-3">February 11, 2011</div><div class="col-3">154 Issues</div><div class="clearfix"></div></div>
-  <div class="row"><a class="col-3" href="/roadmap/v1.0a2">v1.0a2</a><div class="col-3">November 7, 2010</div><div class="col-3">162 Issues</div><div class="clearfix"></div></div>
-  <div class="row"><a class="col-3" href="/roadmap/v1.0a1">v1.0a1</a><div class="col-3">October 24, 2010</div><div class="col-3">199 Issues</div><div class="clearfix"></div></div>
+  >>roadmaprow(1.0.3.1, "February 16, 2011", 154 Issues)<<
+  >>roadmaprow(1.0.3, "February 11, 2011", 154 Issues)<<
+  >>roadmaprow(v1.0a2, "November 7, 2010", 162 Issues)<<
+  >>roadmaprow(v1.0a1, "October 24, 2010", 199 Issues)<<
 </div>
 
 <div>
->>1.0.3issues<<
+>>1.0.3.1issues<<
 </div>
 
 </div> <!-- .fixed-width -->

@@ -18,7 +18,7 @@ header (.h) and source (.m) files.
 ### The Preamble {#preamble}
 
     //
-    // Copyright 2009-2010 Facebook
+    // Copyright 2009-2011 Facebook
     //
     // Licensed under the Apache License, Version 2.0 (the "License");
     // you may not use this file except in compliance with the License.
@@ -362,7 +362,8 @@ init and dealloc methods should always be the first methods in the class impleme
 !> easiest to find.
 
     - (id)init {
-      if (self = [self initWithTarget:nil]) {
+      self = [self initWithTarget:nil];
+      if (self) {
       }
 
       return self;
@@ -379,3 +380,12 @@ initializer using `self`.
 !>
 !> See the Apple documentation on [designated initializers](http://developer.apple.com/mac/library/documentation/cocoa/conceptual/ObjectiveC/Articles/ocAllocInit.html#//apple_ref/doc/uid/TP30001163-CH22-SW8)
 !> for more details.
+!> Initializers should set self outside the if condition per the Apple Documentation.
+
+    - (id)init {
+      self = [self initWithTarget:nil];
+      if (self) {
+      }
+
+      return self;
+    }
