@@ -1,23 +1,30 @@
 ---
-title: Hiding the iPhone Tab Bar With TTNavigator
+title: Hide the iPhone Tab Bar With TTNavigator
 css: grid
 ---
+
+<div class="authors">
+  <div class="author">Author: <a href="http://www.seqoy.com/">seqoy</a></div>
+  <div class="editor">Editor: Jeff Verkoeyen</div>
+</div>
 
 Hiding the iPhone Tab Bar With TTNavigator
 ===========================
 
-`TTNavigator` is a very powerful manner to control the navigation 
+^TTNavigator^ is a very powerful manner to control the navigation 
 on your application. This class abstract the navigation and simplifies 
 how you open different screens. Learn more about it on this
-article: <a href="http://three20.info/article/2010-10-06-URL-Based-Navigation">URL-Based Navigation</a>.
+article: {{2010-10-06-URL-Based-Navigation}}.
 
 Here we'll illustrate one issue that you can found using it
 with Tab Bar driving applications.
 
 Let's think that you have some mapped View Controller like this:
+
       [map from:@"tt://login/(initWithUser:)" toSharedViewController:[LoginViewController class]];
 
 And later on your application you open this View Controller like this:
+
       -(void)openLoginViewController {
             TTURLAction *action =  [TTURLAction actionWithURLPath: [NSString stringWithFormat:@"tt://login/%@", anUser]];
 
@@ -28,48 +35,54 @@ And later on your application you open this View Controller like this:
 Now, you want that when you open this View Controller, the Tab Bar disappears. 
 And when you exit the Tab Bar automatically appears. Well, <a href="http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40006926-CH3-SW11">UIViewController</a> has one nice property called <a href="http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40006926-CH3-SW11">hidesBottomBarWhenPushed</a>. Set this property to <b>YES</b> and everything just works.
 
-But as you can see, `TTNavigator` does all the work "under the hood". 
+But as you can see, ^TTNavigator^ does all the work "under the hood". 
 So you doesn't have access to the View Controller Instance to set
 this property. Don't panic, if you implemented this class you can 
 simply set this property on your init class like this:
-    @implementation LoginViewController 
+
+    @implementation LoginViewController
+    
     -(id)init {
          ... Your init Code.
          this.hidesBottomBarWhenPushed = YES;
          ...
      }
 
-The second case is when you doesn't have access to the implementation 
+The second case is when you don't have access to the implementation 
 of this class, because you're using it from one Static Library 
 or another reason.
 
 Don't panic at all, let's use one different approach on this case.     
 
-  * First, add the `TTNavigatorDelegate` to your interface:
-         @interface LoginViewController <TTNavigatorDelegate> { 
+  * First, add the ^TTNavigatorDelegate-p^ to your interface:
+
+         @interface LoginViewController <TTNavigatorDelegate> {
              ... Interface Code 
          }
 
-  * Second, set your class as delegate of `TTNavigator`. 
-One good place to put this code is your init method:
+  * Second, set your class as delegate of ^TTNavigator^. One good place to put this code is
+    your init method:
 
          -(id)init {
                   ... Your init Code.
                   [[TTNavigator navigator] setDelegate:self];
                   ...
          }
+
   * Third, add the method `navigator:willOpenURL:inViewController:` 
 to your implementation. This method will be called before the 
-Navigator push the view to screen. So you have enough time 
+navigator push the view to screen. So you have enough time 
 to configure some properties:
+
          -(void)navigator:(TTBaseNavigator *)navigator willOpenURL:(NSURL *)URL inViewController:(UIViewController*)controller {
                   controller.hidesBottomBarWhenPushed = YES;
          }
 
 This is it. One last point, doesn't forget to unset your class 
-as delegate of `TTNavigator` when you finish. For safety, you doesn't 
-want that your `TTNavigator` still pointing to one deallocated instance. 
+as delegate of ^TTNavigator^ when you finish. For safety, you doesn't 
+want that your ^TTNavigator^ still pointing to one deallocated instance. 
 So, include this code on your dealloc method:
+
       -(void)dealloc {
             ... Your dealloc code
             [[TTNavigator navigator] setDelegate:nil];
