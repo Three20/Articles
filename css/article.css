@@ -164,6 +164,10 @@ html {
   text-align: right;
 }
 
+#content blockquote {
+  margin: 1em 40px;
+}
+
 /* This mimics GitHub's code style so people feel at home :) */
 #content code {
   background-color: #F8F8FF;

@@ -10,11 +10,14 @@ Roadmap
 =======
 
 <div class="grid">
-  <div class="row header-row"><div class="col-4">Branch</div><div class="col-4">Latest Release</div><div class="col-4-fill-2"># of Issues</div><div class="clearfix"></div></div>
-  <div class="row"><a class="col-4" href="/roadmap/v1.0">master</a><a class="col-4" href="/roadmap/1.0.3.1">1.0.3.1</a><div class="col-4-fill-2">154 issues</div><div class="clearfix"></div></div>
+  <div class="row header-row"><div class="col-4">Branch</div><div class="col-4"></div><div class="col-4-fill-2">Release Date</div><div class="clearfix"></div></div>
+  <div class="row"><span class="col-4">development</span><a class="col-4" href="/roadmap/1.0.4">1.0.4</a><div class="col-4-fill-2">Scheduled for Feb 28, 2011</div><div class="clearfix"></div></div>
+  <div class="row"><a class="col-4" href="/roadmap/v1.0">master</a><a class="col-4" href="/roadmap/1.0.3.1">1.0.3.1</a><div class="col-4-fill-2">Feb 16, 2011</div><div class="clearfix"></div></div>
 </div>
 
-The following represents features that are actively under development by the Three20 Team. Most of these features here are intended to be launched within the following six months. We'll do our best to keep this roadmap updated.
+The following represents features that are actively under development by the Three20 Team. Most
+of these features here are intended to be launched within the following six months. We'll do
+our best to keep this roadmap updated.
 
 ### Features on Deck ###
 *   XCode 4 Support

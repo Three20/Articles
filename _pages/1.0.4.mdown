@@ -1,0 +1,113 @@
+---
+layout:basic
+title:1.0.4 Information
+css:article headerbar grid issues
+---
+
+<div id="content">
+<div class="fixed-width" markdown="1">
+
+Version 1.0.4
+=============
+
+Included in this release:
+[1 deprecated method](#deprecation), [7 new features](#newfeatures),
+[7 resolved issues](#resolvedissues), and [154 open issues](#openissues).
+
+<div>
+>>grab(1.0.4)<<
+</div>
+
+Deprecation Notices Since [1.0.3.1](/roadmap/1.0.3.1) {#deprecation}
+--------------------------------
+
+!> !* `Three20Core/NSStringAdditions.h`
+!> 
+!> <a href="https://github.com/facebook/three20/blob/1.0.4/src/Three20Core/Headers/NSStringAdditions.h#L31">`isEmptyOrWhitespace`</a>
+!> has been deprecated in favor of <a href="https://github.com/facebook/three20/blob/1.0.4/src/Three20Core/Headers/NSStringAdditions.h#L26">`isWhitespaceAndNewlines`</a>.
+!>
+!> ***Please note the following***    
+!> `if (!textField.text.isEmptyOrWhitespace) {` becomes
+!> `if (TTIsStringWithAnyText(textField.text) && !textField.text.isWhitespaceAndNewlines) {`
+!> and
+!> `if (textField.text.isEmptyOrWhitespace) {` becomes
+!> `if (0 == textField.text.length || textField.text.isWhitespaceAndNewlines) {`.
+
+New Features Since [1.0.3.1](/roadmap/1.0.3.1) {#newfeatures}
+-------------------------
+
++> !* <a href="https://github.com/facebook/three20/pull/319">Download progress</a>
++> 
++> A method titled `downloadProgress` was added to the TTURLRequest object. This method may
++> be called while a download is active to get its progress in a range from 0 to 1. A sample
++> can be found in the TTCatalog sample app under the "Download Progress" section.
+
++> !* <a href="https://github.com/facebook/three20/pull/422">Three20 no longer needs `-all_load` or `-force_load`</a>
++> 
++> Thanks to <a href="https://github.com/facebook/three20/pull/422">a patch by Eric Chamberlain</a>,
++> Three20 no longer needs to use the `-all_load`
++> or `-force_load` flags to load categories. The fix works by implementing an empty class
++> in each source file that only contains a category. This forces Xcode to load the surrounding
++> code when linking. As a result, you only need to specify the `-ObjC` flag now.
+
++> !* <a href="https://github.com/facebook/three20/pull/426">Add strong / em parsing</a>
++> 
++> Added by <a href="https://github.com/olegueret">olegueret</a>.
+
++> !* Drag-to-refresh sample in TTCatalog
++> 
++> A new sample has been added to TTCatalog demoing the use of the drag-to-refresh header.
+
++> !* <a href="https://github.com/facebook/three20/pull/405">Add support to TTURLMap for the file scheme</a>
++> 
++> Added by <a href="https://github.com/echamberlain">echamberlain</a>.
+
++> !* Turkish and Korean translations
++> 
++> Added Turkish and Korean translations to Three20.
+
++> !* Articles moved to Three20.info
++> 
++> The articles that used to be in the Articles/ directory can now be found on three20.info in
++> the {{documentation}} section.
+
+Resolved Issues Since [v1.0.3.1](/roadmap/1.0.3.1) {#resolvedissues}
+----------------------------
+
++> !* Removed Xcode-specific targets
++> 
++> All Xcode-specific targets have been removed from the libraries and sample projects. Starting
++> with Three20 1.0.4 we will only support Xcode 3.2.5 and newer.
+
++> !* <a href="https://github.com/facebook/three20/pull/434">Fix possible layout bug TTTableTextItemCell</a>
++> 
++> Use the same lineBreakMode for drawing and height calculation.
+
++> !* <a href="https://github.com/facebook/three20/pull/431">Fix 64 bit compiler warnings</a>
++> 
++> Fix the warning for `"warning: implicit conversion shortens 64-bit value into a 32-bit value"`.
+
++> !* <a href="https://github.com/facebook/three20/pull/428">TTFlowLayout didn't correctly handle variable-height rows</a>
++> 
++> <a href="https://github.com/mmorearty">mmorearty</a> put together
++> <a href="https://github.com/facebook/three20/pull/428">a great pull request</a>
++> describing the issue.
+
++> !* <a href="https://github.com/facebook/three20/pull/414">TTImageView default image flicker fix</a>
++> 
++> Fixed by <a href="https://github.com/eventualbuddha">eventualbuddha</a>.
+
++> !* <a href="https://github.com/facebook/three20/issues/408">TTTableHeaderView Disappears trying to reuse on Table Views</a>
++> 
++> Fixed by <a href="https://github.com/seqoy">seqoy</a>.
+
++> !* <a href="https://github.com/facebook/three20/pull/432">Fix layout bug table image item cell</a>
++> 
++> Factored out method to choose the font and use that for height calculations and in setObject.
+
+<div>
+>>1.0.4issues<<
+</div>
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->
