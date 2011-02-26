@@ -1,0 +1,25 @@
+---
+layout:basic
+title:Submit an app to the Three20 Gallery
+css:article headerbar grid gallerysubmit
+---
+
+<div id="content">
+<div class="fixed-width" markdown="1">
+
+Submit your app to the Three20 Gallery
+======================================
+
+<form action="/gallery/getcode" method="POST" id="gallerysubmit">
+  <div class="formrow"><label for="appname">App Name:</label><input id="appname" name="appname" class="text" type="text" size="30" /></div>
+  <div class="formrow"><label for="companyname">Company Name:</label><input id="companyname" name="companyname" class="text" type="text" size="30" /></div>
+  <div class="formrow"><label for="website">Website:</label><input id="website" name="website" class="text" type="text" size="30" /></div>
+  <div class="formrow"><label for="itunesurl">iTunes URL:</label><input id="itunesurl" name="itunesurl" class="text" type="text" size="30" /></div>
+  <div class="formrow"><label for="description">Description:</label><textarea id="description" name="description" class="text" type="text" cols="31" rows="5"></textarea></div>
+  <div class="formrow"><input type="submit" value="Get your Gallery code" class="text" /></div>
+</form>
+
+Once you submit your extension you will be given more instructions.
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->

@@ -1,0 +1,97 @@
+---
+layout:basic
+title:Submit an app to the Three20 Gallery
+css:article headerbar grid gallerysubmit
+---
+
+<div id="content">
+<div class="fixed-width">
+
+<h1>Your Gallery Code</h1>
+
+<pre>
+
+    &lt;a href="#<?= $appid ?>" class="artwork">
+      &lt;img class="artwork" src="/gfx/gallery/<?= $appid ?>/icon.jpeg" width="75" height="75" alt="<?= $appname ?>" />
+      &lt;span class="mask">&lt;/span>
+      &lt;span class="title"><?= $appname ?>&lt;/span>
+    &lt;/a>
+
+    <?= $appname ?> {#<?= $appid ?>}
+    ----------
+
+    &lt;div class="source">Created by: <?= $companyname ?>&lt;/div>
+    &lt;div class="source">Website: &lt;a href="<?= $website ?>"><?= $websiteclean ?>&lt;/a>&lt;/div>
+
+    &lt;div class="appstore" markdown=1>&lt;a href="<?= $itunesurl ?>">![<?= $appname ?>](/gfx/appstore.png 230x80)&lt;/a>&lt;/div>
+
+    <?= $description ?>
+
+
+    ### Screenshots
+
+    &lt;div class="image-inline" markdown=1>![<?= $appname ?>](/gfx/gallery/<?= $appid ?>/screenshot01.jpeg 320x480)&lt;/div>
+    &lt;div class="image-inline" markdown=1>![<?= $appname ?>](/gfx/gallery/<?= $appid ?>/screenshot02.jpeg 320x480)&lt;/div>
+    &lt;div class="image-inline" markdown=1>![<?= $appname ?>](/gfx/gallery/<?= $appid ?>/screenshot03.jpeg 320x480)&lt;/div>
+    &lt;div class="image-inline" markdown=1>![<?= $appname ?>](/gfx/gallery/<?= $appid ?>/screenshot04.jpeg 320x480)&lt;/div>
+    &lt;div class="image-inline" markdown=1>![<?= $appname ?>](/gfx/gallery/<?= $appid ?>/screenshot05.jpeg 320x480)&lt;/div>
+    &lt;div class="clearfix">&lt;/div>
+
+</pre>
+
+If everything looks ok up there, please follow the guide below.
+
+<h2>Next steps</h2>
+
+<ol>
+  <li>Create a folder on your computer named <code><?= $appid ?></code> where you will place the following files.</li>
+  <li>Copy the code below and save it to a file named <code><?= $appid ?>.txt</code> in the root of the folder you just created.</li>
+  <li>Add your app's icon at a size of exactly 75x75 and name it <code>icon.jpeg</code>.</li>
+  <li>Add each of your app's screenshots to your folder with the file paths <code><?= $appid ?>/screenshot##.jpeg</code>.
+    You may have up to 5 screenshots.</li>
+  <li>At this point you should have the following directory structure:
+    <pre>
+<?= $appid ?>/<?= $appid ?>.txt
+<?= $appid ?>/icon.jpeg
+<?= $appid ?>/<?= $appid ?>/screenshot01.jpeg
+<?= $appid ?>/<?= $appid ?>/screenshot02.jpeg
+<?= $appid ?>/<?= $appid ?>/screenshot03.jpeg
+<?= $appid ?>/<?= $appid ?>/screenshot04.jpeg
+<?= $appid ?>/<?= $appid ?>/screenshot05.jpeg
+    </pre>
+    </li>
+  <li>Archive the folder you created and email it to Jeff at jverkoey@gmail.com for review</li>
+</ol>
+
+<h3>Your code</h3>
+
+<textarea cols="100" rows="10">
+&lt;a href="#<?= $appid ?>" class="artwork">
+  &lt;img class="artwork" src="/gfx/gallery/<?= $appid ?>/icon.jpeg" width="75" height="75" alt="<?= $appname ?>" />
+  &lt;span class="mask">&lt;/span>
+  &lt;span class="title"><?= $appname ?>&lt;/span>
+&lt;/a>
+
+<?= $appname ?> {#<?= $appid ?>}
+----------
+
+&lt;div class="source">Created by: <?= $companyname ?>&lt;/div>
+&lt;div class="source">Website: &lt;a href="<?= $website ?>"><?= $websiteclean ?>&lt;/a>&lt;/div>
+
+&lt;div class="appstore" markdown=1>&lt;a href="<?= $itunesurl ?>">![<?= $appname ?>](/gfx/appstore.png 230x80)&lt;/a>&lt;/div>
+
+<?= $description ?>
+
+
+### Screenshots
+
+&lt;div class="image-inline" markdown=1>![<?= $appname ?>](/gfx/gallery/<?= $appid ?>/screenshot01.jpeg 320x480)&lt;/div>
+&lt;div class="image-inline" markdown=1>![<?= $appname ?>](/gfx/gallery/<?= $appid ?>/screenshot02.jpeg 320x480)&lt;/div>
+&lt;div class="image-inline" markdown=1>![<?= $appname ?>](/gfx/gallery/<?= $appid ?>/screenshot03.jpeg 320x480)&lt;/div>
+&lt;div class="image-inline" markdown=1>![<?= $appname ?>](/gfx/gallery/<?= $appid ?>/screenshot04.jpeg 320x480)&lt;/div>
+&lt;div class="image-inline" markdown=1>![<?= $appname ?>](/gfx/gallery/<?= $appid ?>/screenshot05.jpeg 320x480)&lt;/div>
+&lt;div class="clearfix">&lt;/div>
+</textarea>
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->

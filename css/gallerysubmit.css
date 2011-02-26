@@ -1,0 +1,15 @@
+
+#gallerysubmit .formrow {
+  padding: 10px 0;
+}
+
+#gallerysubmit .formrow label {
+  width: 200px;
+  display: block;
+  float: left;
+  text-align: right;
+}
+
+#gallerysubmit .formrow .text {
+  margin-left: 10px;
+}
