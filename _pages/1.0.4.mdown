@@ -10,13 +10,9 @@ css:article headerbar grid issues
 Version 1.0.4
 =============
 
-Included in this release:
+Scheduled for release on February 28, 2011. Included in this release:
 [1 deprecated method](#deprecation), [7 new features](#newfeatures),
 [7 resolved issues](#resolvedissues), and [154 open issues](#openissues).
-
-<div>
->>grab(1.0.4)<<
-</div>
 
 Deprecation Notices Since [1.0.3.1](/roadmap/1.0.3.1) {#deprecation}
 --------------------------------
