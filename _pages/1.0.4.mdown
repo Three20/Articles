@@ -11,8 +11,8 @@ Version 1.0.4
 =============
 
 Scheduled for release on February 28, 2011. Included in this release:
-[1 deprecated method](#deprecation), [7 new features](#newfeatures),
-[7 resolved issues](#resolvedissues), and [154 open issues](#openissues).
+[1 deprecated method](#deprecation), [7 new features](#newfeatures), and
+[7 resolved issues](#resolvedissues).
 
 Deprecation Notices Since [1.0.3.1](/roadmap/1.0.3.1) {#deprecation}
 --------------------------------
