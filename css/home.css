@@ -12,7 +12,11 @@
   border-bottom: 1px solid #eee;
   clear: both;
   padding: 10px;
-  text-align: right;
+}
+
+#demobox .showcase-overbar .appstorestatusok {
+  background-color: #d6ffec;
+  padding: 5px;
 }
 
 #demobox .sidebar {
