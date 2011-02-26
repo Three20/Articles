@@ -1,0 +1,70 @@
+---
+layout:basic
+title:1.0.4 Information
+css:article headerbar grid issues
+---
+
+<div id="content">
+<div class="fixed-width" markdown="1">
+
+Version 1.0.4
+=============
+
+Included in this release:
+[1 new features](#newfeatures),
+[15 resolved issues](#resolvedissues), and [154 open issues](#openissues).
+
+<div>
+>>grab(1.0.4)<<
+</div>
+
+Deprecation Notices Since [1.0.3.1](/roadmap/1.0.3.1) {#deprecation}
+--------------------------------
+
+!> !* `Three20Core/NSStringAdditions.h`
+!> 
+!> <a href="https://github.com/facebook/three20/blob/1.0.4/src/Three20Core/Headers/NSStringAdditions.h#L31">`isEmptyOrWhitespace`</a>
+!> has been deprecated in favor of <a href="https://github.com/facebook/three20/blob/1.0.4/src/Three20Core/Headers/NSStringAdditions.h#L26">`isWhitespaceAndNewlines`</a>.
+!>
+!> ***Please note the following***    
+!> `if (!textField.text.isEmptyOrWhitespace) {` becomes
+!> `if (TTIsStringWithAnyText(textField.text) && !textField.text.isWhitespaceAndNewlines) {`
+!> and
+!> `if (textField.text.isEmptyOrWhitespace) {` becomes
+!> `if (0 == textField.text.length || textField.text.isWhitespaceAndNewlines) {`.
+
+New Features Since [1.0.3.1](/roadmap/1.0.3.1) {#newfeatures}
+-------------------------
+
++> !* <a href="https://github.com/facebook/three20/pull/319">Download progress</a>
++> 
++> A method titled `downloadProgress` was added to the TTURLRequest object. This method may
++> be called while a download is active to get its progress in a range from 0 to 1. A sample
++> can be found in the TTCatalog sample app under the "Download Progress" section.
+
++> !* Drag-to-refresh sample in TTCatalog
++> 
++> A new sample has been added to TTCatalog demoing the use of the drag-to-refresh header.
+
++> !* Turkish translations
++> 
++> Added turkish translations to Three20.
+
++> !* Articles moved to Three20.info
++> 
++> The articles that used to be in the Articles/ directory can now be found on three20.info in
++> the {{documentation}} section.
+
+Resolved Issues Since [v1.0.3.1](/roadmap/1.0.3.1) {#resolvedissues}
+----------------------------
+
+<div>
+>>1.0.4resolved<<
+</div>
+
+<div>
+>>1.0.4issues<<
+</div>
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->
