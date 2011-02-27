@@ -119,21 +119,28 @@ html {
   background: #EEE url('/gfx/angledgradientgreen.gif') repeat scroll 0 0;
 }
 
+#content .warningblock {
+  background: #EEE url('/gfx/angledgradientyellow.gif') repeat scroll 0 0;
+}
+
 #content .naviblock,
-#content .infoblock {
+#content .infoblock,
+#content .warningblock {
   padding: 10px;
   padding-bottom: 1px;
   margin-bottom: 20px;
 }
 
 #content .naviblock p,
-#content .infoblock p {
+#content .infoblock p,
+#content .warningblock p {
   margin-top: 0;
   padding: 10px 10px;
 }
 
 #content .naviblock .navi,
-#content .infoblock .navi {
+#content .infoblock .navi,
+#content .warningblock .navi {
   font-size: 2em;
   color: #000;
   background-color: #FFF;
@@ -145,7 +152,8 @@ html {
 }
 
 #content .naviblock .syntaxhighlighter,
-#content .infoblock .syntaxhighlighter {
+#content .infoblock .syntaxhighlighter,
+#content .warningblock .syntaxhighlighter {
   background-color: #fff !important;
   padding: 20px !important;
 }
