@@ -7,7 +7,7 @@ css:article headerbar grid issues
 <div id="content">
 <div class="fixed-width" markdown="1">
 
-Version 1.0.3
+Version 1.0.3 February 11, 2011
 ===========================
 
 Included in this release:

@@ -11,23 +11,23 @@ Version 1.0.4
 =============
 
 Scheduled for release on February 28, 2011. Included in this release:
-[1 deprecated method](#deprecation), [7 new features](#newfeatures), and
+[1 deprecated method](#deprecation), [8 new features](#newfeatures), and
 [7 resolved issues](#resolvedissues).
 
 Deprecation Notices Since [1.0.3.1](/roadmap/1.0.3.1) {#deprecation}
 --------------------------------
 
-!> !* `Three20Core/NSStringAdditions.h`
-!> 
-!> <a href="https://github.com/facebook/three20/blob/1.0.4/src/Three20Core/Headers/NSStringAdditions.h#L31">`isEmptyOrWhitespace`</a>
-!> has been deprecated in favor of <a href="https://github.com/facebook/three20/blob/1.0.4/src/Three20Core/Headers/NSStringAdditions.h#L26">`isWhitespaceAndNewlines`</a>.
-!>
-!> ***Please note the following***    
-!> `if (!textField.text.isEmptyOrWhitespace) {` becomes
-!> `if (TTIsStringWithAnyText(textField.text) && !textField.text.isWhitespaceAndNewlines) {`
-!> and
-!> `if (textField.text.isEmptyOrWhitespace) {` becomes
-!> `if (0 == textField.text.length || textField.text.isWhitespaceAndNewlines) {`.
+?> !* `Three20Core/NSStringAdditions.h`
+?> 
+?> <a href="https://github.com/facebook/three20/blob/1.0.4/src/Three20Core/Headers/NSStringAdditions.h#L31">`isEmptyOrWhitespace`</a>
+?> has been deprecated in favor of <a href="https://github.com/facebook/three20/blob/1.0.4/src/Three20Core/Headers/NSStringAdditions.h#L26">`isWhitespaceAndNewlines`</a>.
+?>
+?> ***Please note the following***    
+?> `if (!textField.text.isEmptyOrWhitespace) {` becomes
+?> `if (TTIsStringWithAnyText(textField.text) && !textField.text.isWhitespaceAndNewlines) {`
+?> and
+?> `if (textField.text.isEmptyOrWhitespace) {` becomes
+?> `if (0 == textField.text.length || textField.text.isWhitespaceAndNewlines) {`.
 
 New Features Since [1.0.3.1](/roadmap/1.0.3.1) {#newfeatures}
 -------------------------
@@ -53,6 +53,11 @@ New Features Since [1.0.3.1](/roadmap/1.0.3.1) {#newfeatures}
 +> !* Drag-to-refresh sample in TTCatalog
 +> 
 +> A new sample has been added to TTCatalog demoing the use of the drag-to-refresh header.
+
++> !* <a href="https://github.com/facebook/three20/pull/411">TTLauncherButton add badgeValue support</a>
++> 
++> Modify TTLauncherItem to support both badgeNumber and badgeValue. Behavior matches
++> UIApplication applicationIconBadgeNumber and UITabBarItem badgeValue.
 
 +> !* <a href="https://github.com/facebook/three20/pull/405">Add support to TTURLMap for the file scheme</a>
 +> 

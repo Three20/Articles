@@ -12,7 +12,16 @@ given release within this model is build-able and stable.
 This article is split into multiple sections, with each subsequent section providing more
 in-depth discussions about the branching model.
 
-Getting Started
+### Table of Contents
+
+<div class="toc" markdown="1">
+* [Getting Started](#gettingstarted)
+* [Primary Branches](#primarybranches)
+* [Making Pull Requests](#pullrequests)
+</div>
+<div class="clearfix"></div>
+
+Getting Started {#gettingstarted}
 ---------------
 
 Three20 is a git-based framework. If you're new to git, check out the
@@ -24,7 +33,7 @@ check out the following articles:
 * [Normal workflow](http://book.git-scm.com/3_normal_workflow.html)
 * [Basic branching and merging](http://book.git-scm.com/3_basic_branching_and_merging.html)
 
-Primary Branches
+Primary Branches {#primarybranches}
 ----------------
 
 There are two primary branches in Three20: *master* and *development*.
@@ -50,4 +59,51 @@ master.
 Three20's branching model is based off of the one described at
 [nvie.com](http://nvie.com/posts/a-successful-git-branching-model/).
 
+Making Pull Requests {#pullrequests}
+--------------------
 
+All changes that enter Three20 must be reviewed by at least one developer from the core team.
+In order to initiate a code review, you must create a GitHub Pull Request for your bug fix or
+feature request. The process to do this is rather straightforward.
+
+### Initial setup (one-time only)
+
+1. Create a GitHub account if you don't already have one.
+2. ![Fork](/gfx/fork.png 58x23) the [facebook/three20](https://github.com/facebook/three20)
+   repository.
+
+### Create a pull request
+
+Add your fork to your local git Three20 repository:
+
+    ~/three20 $ git remote add myusername git@github.com:myusername/three20.git
+
+?> !* Branches
+?> 
+?> Any changes you make should be on their own branch. For example, if you want to fix a minor
+?> bug in the TTCatalog sample app, you should have a branch titled `ttcatalog-navfix` based
+?> off of the `development` branch that contains only the commits related to this fix. See the
+?> example below:
+?>
+?> ![Branch Example](/gfx/branchexample.png 630x105)
+
+
+Once you're ready to have your code reviewed, push it to your fork.
+
+    ~/three20 $ git push myusername ttcatalog-navfix
+
+This will push your changes to GitHub. You can verify this by going to your fork on GitHub and
+checking that the new branch is available in the branches dropdown on your fork's homepage.
+
+Now you're ready to make the pull request. Click the ![Pull Request](/gfx/pullrequest.png 101x23)
+button. By default, GitHub will choose facebook/three20's `master` branch as the base branch,
+so you'll need to change this to the `development` branch. Make the base branch `development`
+and ensure that the head branch is the branch that you want to have reviewed.
+
+Once you've selected the correct branches, ensure that you're sending the correct set of commits
+by selecting each of the tabs in the Pull Request form. Fill out the discussion form and try
+to give a detailed description about the problem, how you're attempting to fix it, and how
+the fix can be verified.
+
+After sending the pull request, the members of the core team will be notified and begin the
+code review process. Good luck!

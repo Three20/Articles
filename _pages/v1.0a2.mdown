@@ -7,7 +7,7 @@ css:article headerbar grid issues
 <div id="content">
 <div class="fixed-width" markdown="1">
 
-Version 1.0, Cut 2 (v1.0a2)
+Version 1.0, Cut 2 (v1.0a2) November 7, 2010
 ===========================
 
 The second cut of the [v1.0 branch](/roadmap/v1.0). Included in this cut:
@@ -25,10 +25,10 @@ submitted issues and pull requests.
 Deprecation Notices Since [v1.0a1](/roadmap/v1.0a1) {#deprecation}
 --------------------------------
 
-!> !* `Three20Core/NSStringAdditions.h`
-!> 
-!> <a href="https://github.com/facebook/three20/blob/v1.0a2/src/Three20Core/Headers/NSStringAdditions.h#L36">`queryDictionaryUsingEncoding:`</a>
-!> has been deprecated in favor of <a href="https://github.com/facebook/three20/blob/v1.0a2/src/Three20Core/Headers/NSStringAdditions.h#L43">`queryContentsUsingEncoding:`</a>.
+?> !* `Three20Core/NSStringAdditions.h`
+?> 
+?> <a href="https://github.com/facebook/three20/blob/v1.0a2/src/Three20Core/Headers/NSStringAdditions.h#L36">`queryDictionaryUsingEncoding:`</a>
+?> has been deprecated in favor of <a href="https://github.com/facebook/three20/blob/v1.0a2/src/Three20Core/Headers/NSStringAdditions.h#L43">`queryContentsUsingEncoding:`</a>.
 
 New Features Since [v1.0a1](/roadmap/v1.0a1) {#newfeatures}
 -------------------------
