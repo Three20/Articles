@@ -59,7 +59,7 @@ New Features Since [1.0.3.1](/roadmap/1.0.3.1) {#newfeatures}
 +> Modify TTLauncherItem to support both badgeNumber and badgeValue. Behavior matches
 +> UIApplication applicationIconBadgeNumber and UITabBarItem badgeValue.
 
-+> !* <a href="https://github.com/facebook/three20/pull/405">Add support to TTURLMap for the file scheme</a>
++> !* <a href="https://github.com/facebook/three20/pull/405">Add support to TTURLMap for the file:// scheme</a>
 +> 
 +> Added by <a href="https://github.com/echamberlain">echamberlain</a>.
 
