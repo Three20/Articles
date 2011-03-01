@@ -12,67 +12,7 @@ Version 1.0.4 February 28, 2011
 
 Included in this release:
 [1 deprecated method](#deprecation), [9 new features](#newfeatures), and
-[7 resolved issues](#resolvedissues).
-
-People involved this release
-----------------------------
-
-<div class="profile">
-  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/010973d3b8d80be922371063874e4e2d?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
-  <div class="name">Eric Chamberlain</div>
-  <div class="github"><a href="http://github.com/echamberlain">echamberlain</a></div>
-</div>
-
-<div class="profile">
-  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/95a12008dd91997226e9cf4a74c5b0b8?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
-  <div class="name">Stephan Diederich</div>
-  <div class="github"><a href="http://github.com/diederich">diederich</a></div>
-</div>
-
-<div class="profile">
-  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/d62308e6f4a387595064a6df1cfff538?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
-  <div class="name">Brian Donovan</div>
-  <div class="github"><a href="http://github.com/eventualbuddha">eventualbuddha</a></div>
-</div>
-
-<div class="profile">
-  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
-  <div class="name">Oleguer Huguet</div>
-  
-</div>
-
-<div class="profile">
-  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
-  <div class="name">Atish Mehta</div>
-  
-</div>
-
-<div class="profile">
-  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/ff18a517e9eeeca270cedc1c0f20afe3?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
-  <div class="name">Mike Morearty</div>
-  <div class="github"><a href="http://github.com/mmorearty">mmorearty</a></div>
-</div>
-
-<div class="profile">
-  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/7adfa1038eb46b001fd5c85a47dffc13?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
-  <div class="name">Peter Steinberger</div>
-  <div class="github"><a href="http://github.com/steipete">steipete</a></div>
-</div>
-
-<div class="profile">
-  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/f3c8603c353afa79b9f1c77f35efd566?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
-  <div class="name">Jeff Verkoeyen</div>
-  <div class="github"><a href="http://github.com/jverkoey">jverkoey</a></div>
-</div>
-
-<div class="profile">
-  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/099e5c6d3d5dfb615735cd2cfa61828e?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
-  <div class="name">John Wang</div>
-  <div class="github"><a href="http://github.com/jwang">jwang</a></div>
-</div>
-
-<div class="clearfix"></div>
-
+[7 resolved issues](#resolvedissues). [People involved in this release](#people).
 
 Deprecation Notices Since [1.0.3.1](/roadmap/1.0.3.1) {#deprecation}
 --------------------------------
@@ -183,9 +123,65 @@ Resolved Issues Since [v1.0.3.1](/roadmap/1.0.3.1) {#resolvedissues}
 +> 
 +> Factored out method to choose the font and use that for height calculations and in setObject.
 
-<div>
->>1.0.4issues<<
+
+People involved in this release {#people}
+-------------------------------
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/010973d3b8d80be922371063874e4e2d?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Eric Chamberlain</div>
+  <div class="github"><a href="http://github.com/echamberlain">echamberlain</a></div>
 </div>
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/95a12008dd91997226e9cf4a74c5b0b8?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Stephan Diederich</div>
+  <div class="github"><a href="http://github.com/diederich">diederich</a></div>
+</div>
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/d62308e6f4a387595064a6df1cfff538?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Brian Donovan</div>
+  <div class="github"><a href="http://github.com/eventualbuddha">eventualbuddha</a></div>
+</div>
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Oleguer Huguet</div>
+  
+</div>
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Atish Mehta</div>
+  
+</div>
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/ff18a517e9eeeca270cedc1c0f20afe3?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Mike Morearty</div>
+  <div class="github"><a href="http://github.com/mmorearty">mmorearty</a></div>
+</div>
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/7adfa1038eb46b001fd5c85a47dffc13?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Peter Steinberger</div>
+  <div class="github"><a href="http://github.com/steipete">steipete</a></div>
+</div>
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/f3c8603c353afa79b9f1c77f35efd566?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Jeff Verkoeyen</div>
+  <div class="github"><a href="http://github.com/jverkoey">jverkoey</a></div>
+</div>
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/099e5c6d3d5dfb615735cd2cfa61828e?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">John Wang</div>
+  <div class="github"><a href="http://github.com/jwang">jwang</a></div>
+</div>
+
+<div class="clearfix"></div>
 
 </div> <!-- .fixed-width -->
 </div> <!-- #content -->
