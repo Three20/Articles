@@ -132,3 +132,9 @@ hr {
   border: 1px solid #EEE;
   padding: 1em;
 }
+
+table td.indexkey,
+table td.indexvalue {
+  padding: 5px;
+  border: 1px solid #eee;
+}

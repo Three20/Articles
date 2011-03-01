@@ -1,0 +1,32 @@
+
+#content .profile {
+  padding: 5px;
+  margin: 0 5px;
+  margin-bottom: 20px;
+  border: 1px solid #DDD;
+  background-color: #FFF;
+  float: left;
+}
+
+#content .retired {
+  opacity: 0.5;
+}
+
+#content .name {
+  font-size: 0.8em;
+  text-align: center;
+  width: 135px;
+}
+
+#content .role {
+  font-size: 0.8em;
+  text-align: center;
+  color: #888;
+  margin-bottom: 0.3em;
+}
+
+#content .twitter,
+#content .github {
+  font-size: 0.8em;
+  text-align: center;
+}
