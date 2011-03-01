@@ -14,6 +14,8 @@ Included in this release:
 [1 deprecated method](#deprecation), [9 new features](#newfeatures), and
 [7 resolved issues](#resolvedissues). [People involved in this release](#people).
 
+[Compare 1.0.3.1 to 1.0.4](https://github.com/facebook/three20/compare/1.0.3.1...1.0.4) on GitHub.
+
 Deprecation Notices Since [1.0.3.1](/roadmap/1.0.3.1) {#deprecation}
 --------------------------------
 
