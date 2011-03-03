@@ -30,27 +30,4 @@ This will add the [Three20](/module/three20) module and all of its dependencies.
 Read the article "{{2010-10-21-Understanding-Modules}}" to learn more about Modules and their
 dependencies.
 
-Known Issues with ttmodule.py
------------------------------
-
-!> !* Debugging
-!>
-!> ttmodule.py uses the `-force_load` flag to add each of the libraries to your project. This flag
-!> is handy, in that it doesn't obsessively load everything at link-time unlike its cousin,
-!> `-all_load` (usually
-!> found paired with `-ObjC`). The problem with `-force_load`, however, is that Xcode 3.2.2-3.2.5
-!> have
-!> a pretty serious bug when debugging libraries linked using this flag. The library's symbols
-!> simply won't
-!> appear in the debugger. Breakpoints set in the libraries won't hit, and assertions fired
-!> within the library will shrug and fail to point you to the instigating statement.
-!>
-!> A workaround for this, for now, is to use `-all_load` and `-ObjC` instead, if you need to debug
-!> within the Three20 libraries.
-!>
-!> A RDAR bug has been filed. See bug ID #8683662.
-
-
-<div class="video">
-<object style="background-image:url(http://i4.ytimg.com/vi/wCrzY7kV1Dw/hqdefault.jpg)"  width="425" height="344"><param name="movie" value="http://www.youtube.com/v/wCrzY7kV1Dw?fs=1&amp;hl=en_US"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/wCrzY7kV1Dw?fs=1&amp;hl=en_US" width="425" height="344" allowScriptAccess="never" allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash"></embed></object>
-</div>
+<iframe title="YouTube video player" width="960" height="562" src="http://www.youtube.com/embed/-0-E-Z0fihg?hd=1" frameborder="0" allowfullscreen></iframe>
