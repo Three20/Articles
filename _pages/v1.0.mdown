@@ -7,8 +7,8 @@ css:article headerbar grid issues
 <div id="content">
 <div class="fixed-width" markdown="1">
 
-master
-======
+1.0 Versions
+============
 
 Learn more about Three20 versions by understanding "{{2010-10-24-Branches-And-Cuts}}".
 
@@ -21,10 +21,6 @@ Releases {#releases}
   >>roadmaprow(1.0.3, "February 11, 2011", 154 Issues)<<
   >>roadmaprow(v1.0a2, "November 7, 2010", 162 Issues)<<
   >>roadmaprow(v1.0a1, "October 24, 2010", 199 Issues)<<
-</div>
-
-<div>
->>1.0.3.1issues<<
 </div>
 
 </div> <!-- .fixed-width -->
