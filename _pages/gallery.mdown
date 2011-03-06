@@ -193,6 +193,11 @@ alphabetical order.
   <span class="mask"></span>
   <span class="title">KidsQuiz</span>
 </a>
+<a href="#lazyeye" class="artwork">
+  <img class="artwork" src="/gfx/gallery/lazyeye/icon.jpeg" width="75" height="75" alt="LazyEye" />
+  <span class="mask"></span>
+  <span class="title">LazyEye</span>
+</a>
 <a href="#luciartista" class="artwork">
   <img class="artwork" src="/gfx/gallery/luciartista/icon.jpeg" width="75" height="75" alt="Luci d'Artista" />
   <span class="mask"></span>
@@ -1122,6 +1127,27 @@ Aus einem breiten Spektrum an Tönen wird zufällig einer ausgewählt der dann a
 
 <div class="image-inline" markdown=1>![KidsQuiz](/gfx/gallery/kidsquiz/screenshot01.jpeg 320x480)</div>
 <div class="image-inline" markdown=1>![KidsQuiz](/gfx/gallery/kidsquiz/screenshot02.jpeg 320x480)</div>
+<div class="clearfix"></div>
+
+
+LazyEye {#lazyeye}
+----------
+
+<div class="source">Created by: Brian Partridge</div>
+<div class="source">Website: <a href="http://www.lazyeyeapp.com">lazyeyeapp.com</a></div>
+
+<div class="appstore" markdown=1><a href="http://itunes.apple.com/us/app/lazyeye/id415180387?mt=8&ls=1">![LazyEye](/gfx/appstore.png 230x80)</a></div>
+
+A Rapid Serial Visual Presentation (RSVP) reader. The distractions of the web are removed:
+no blinking ads, no pop-ups, just the words that you want to read.
+
+### Screenshots
+
+<div class="image-inline" markdown=1>![LazyEye](/gfx/gallery/lazyeye/screenshot01.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![LazyEye](/gfx/gallery/lazyeye/screenshot02.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![LazyEye](/gfx/gallery/lazyeye/screenshot03.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![LazyEye](/gfx/gallery/lazyeye/screenshot04.jpeg 320x480)</div>
+<div class="image-inline" markdown=1>![LazyEye](/gfx/gallery/lazyeye/screenshot05.jpeg 320x480)</div>
 <div class="clearfix"></div>
 
 
