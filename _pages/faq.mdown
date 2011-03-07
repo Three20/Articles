@@ -33,6 +33,30 @@ UIView object. Three20 additions may only be used if you
     Request for member 'height' not a structure or union
     Request for member 'left' not a structure or union
 
+<div class="authors">
+  <a class="author" href="#three20setup">Permalink</a>
+  <a class="author" href="http://groups.google.com/group/three20/browse_thread/thread/0243e2dcd848c129">Source Question</a>
+</div>
+
+Added Three20, URL Mapping but Getting a Blank Screen {#three20setup}
+---------------------------------------------------
+
+Example code that might cause this problem is in "main.m" under "Other Sources":
+
+    int retVal = UIApplicationMain(argc, argv, nil, nil);
+
+The culprit in this code is the last `nil` in the above.
+You will need to change the last parameter to a string containing name of 
+your app delegate. For example, my app delegate is declared as "@interface 
+AppDelegate", so I would write: 
+
+    int retVal = UIApplicationMain(argc, argv, nil, @"AppDelegate");
+
+You can also remove the line:
+    Main nib file base name => MainWindow
+From your app's info.plist file and remove the MainWindow.xib from your project.
+
+
 </div> <!-- .fixed-width -->
 
 </div> <!-- #content -->
