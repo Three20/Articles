@@ -1,4 +1,8 @@
 
+html {
+  background: #EEE url('/gfx/texturedgray.gif') repeat scroll 0 0;
+}
+
 .fixed-width {
   width: 1000px;
   margin: 0 auto;

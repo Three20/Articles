@@ -42,5 +42,7 @@ We don't have any extensions listed yet.
 
 <? } ?>
 
+<div class="clearfix"></div>
+
 </div> <!-- .fixed-width -->
 </div> <!-- #content -->
