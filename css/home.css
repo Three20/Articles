@@ -6,6 +6,7 @@
 #demobox {
   border: 1px solid #eee;
   overflow: hidden;
+  background-color: #fff;
 }
 
 #demobox .showcase-overbar {

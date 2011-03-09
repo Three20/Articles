@@ -33,6 +33,29 @@ UIView object. Three20 additions may only be used if you
     Request for member 'height' not a structure or union
     Request for member 'left' not a structure or union
 
+<div class="authors">
+  <a class="author" href="#three20setup">Permalink</a>
+  <a class="author" href="http://groups.google.com/group/three20/browse_thread/thread/0243e2dcd848c129">Source Question</a>
+</div>
+
+Added Three20 and set up URL mapping but getting a black screen {#blackscreen}
+--------------------------------------------------------
+
+This will happen when you've set up a new project, removed the default nib, and
+only use Three20 in your app delegate to present the initial view controllers.
+
+The problem is likely that you haven't declared to your app the name of your
+app delegate. To resolve this problem, check out `main.m` in your project.
+It's usually in the "Other Sources" folder. Find the following line:
+
+    int retVal = UIApplicationMain(argc, argv, nil, nil);
+
+You will need to change the last parameter to a string containing the name of
+your app delegate. For example, if your app delegate is declared as "@interface
+AppDelegate", you should write:
+
+    int retVal = UIApplicationMain(argc, argv, nil, @"AppDelegate");
+
 </div> <!-- .fixed-width -->
 
 </div> <!-- #content -->
