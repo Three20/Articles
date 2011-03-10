@@ -11,7 +11,7 @@ Roadmap
 
 <div class="grid">
   <div class="row header-row"><div class="col-4">Branch</div><div class="col-4"></div><div class="col-4-fill-2">Release Date</div><div class="clearfix"></div></div>
-  <div class="row"><a class="col-4" href="/roadmap/v1.0">master</a><a class="col-4" href="/roadmap/1.0.4">1.0.4</a><div class="col-4-fill-2">Feb 28, 2011</div><div class="clearfix"></div></div>
+  <div class="row"><a class="col-4" href="/roadmap/v1.0">master</a><a class="col-4" href="/roadmap/1.0.4.1">1.0.4.1</a><div class="col-4-fill-2">March 10, 2011</div><div class="clearfix"></div></div>
 </div>
 
 The following represents features that are actively under development by the Three20 Team. Most
