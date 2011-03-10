@@ -148,7 +148,7 @@ var sh = {
 		xmlComments					: /(&lt;|<)!--[\s\S]*?--(&gt;|>)/gm,
 		url							: /&lt;\w+:\/\/[\w-.\/?%&=@:;]*&gt;|\w+:\/\/[\w-.\/?%&=@:;]*/g,
 		
-		ttobject	: /\w(TT[a-z0-9_]+)/gi,
+		ttobject	: /\b(TT[a-z0-9_]+)/gi,
 		
 		/** <?= ?> tags. */
 		phpScriptTags 				: { left: /(&lt;|<)\?=?/g, right: /\?(&gt;|>)/g },
