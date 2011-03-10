@@ -1,0 +1,38 @@
+---
+layout:basic
+title:1.0.4.1 Information
+css:article headerbar grid issues release
+---
+
+<div id="content">
+<div class="fixed-width" markdown="1">
+
+Version 1.0.4.1 March 10, 2011
+=============
+
+Included in this release:
+[1 crash fix](#crashfix). [People involved in this release](#people).
+
+[Compare 1.0.4 to 1.0.4.1](https://github.com/facebook/three20/compare/1.0.4...1.0.4.1) on GitHub.
+
+Crash Fixes {#crashfix}
+-----------
+
++> !* <a href="https://github.com/facebook/three20/pull/463">Crash when opening url from UIBarButtonItem with openURLFromButton:</a>
++> 
++> This fixes a crash seen when tapping a UIBarButtonItem that uses openURLFromButton:
+
+
+People involved in this release {#people}
+-------------------------------
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/f3c8603c353afa79b9f1c77f35efd566?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Jeff Verkoeyen</div>
+  <div class="github"><a href="http://github.com/jverkoey">jverkoey</a></div>
+</div>
+
+<div class="clearfix"></div>
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->
