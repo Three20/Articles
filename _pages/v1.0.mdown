@@ -16,8 +16,9 @@ Releases {#releases}
 --------
 
 <div class="grid">
-  >>roadmaprow(1.0.4.1, "March 10, 2011", )<<
-  >>roadmaprow(1.0.4, "February 28, 2011", )<<
+  >>roadmaprow(1.0.5, "March 10, 2011", Xcode 4 Support)<<
+  >>roadmaprow(1.0.4.1, "March 10, 2011", Hotfix)<<
+  >>roadmaprow(1.0.4, "February 28, 2011", No more load flags)<<
   >>roadmaprow(1.0.3.1, "February 16, 2011", 154 Issues)<<
   >>roadmaprow(1.0.3, "February 11, 2011", 154 Issues)<<
   >>roadmaprow(v1.0a2, "November 7, 2010", 162 Issues)<<

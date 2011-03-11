@@ -1,0 +1,131 @@
+---
+layout:basic
+title:1.0.5 Information
+css:article headerbar grid issues release
+---
+
+<div id="content">
+<div class="fixed-width" markdown="1">
+
+Version 1.0.5 March 10, 2011
+=============
+
+Included in this release:
+[1 new feature](#newfeatures), and
+[10 resolved issues](#resolvedissues). [People involved in this release](#people).
+
+[Compare 1.0.4.1 to 1.0.5](https://github.com/facebook/three20/compare/1.0.4.1...1.0.5) on GitHub.
+
+New Features Since [1.0.4.1](/roadmap/1.0.4.1) {#newfeatures}
+-------------------------
+
++> !* <a href="https://github.com/facebook/three20/pull/466">Xcode 4 Support</a>
++> 
++> Xcode 4 is now officially supported by Three20. Please read more about our Xcode 4 support
++> by reading the following article: {{2011-03-10-Xcode4-Support}}.
+
+
+Resolved Issues Since [1.0.4.1](/roadmap/1.0.4.1) {#resolvedissues}
+----------------------------
+
++> !* <a href="https://github.com/facebook/three20/pull/361">TTTableViewController crash when inserting/deleting items</a>
++> 
++> TTTableViewController crash when inserting/deleting items in the underlying model while the
++> table view is not onscreen. Fixed by <a href="https://github.com/mmorearty">mmorearty</a>.
+
++> !* <a href="https://github.com/facebook/three20/pull/381">TTTableSubtextItem height calculation in grouped table</a>
++> 
++> Patch for an issue reported in
++> [this discussion](https://groups.google.com/d/topic/three20/kLyUpw-OP6A/discussion):
++> If you have a TTTableSubtextItem in a table that has the "grouped" style, the height of the
++> TTTableSubtextItem is calculated incorrectly.
++> Fixed by <a href="https://github.com/mmorearty">mmorearty</a>.
+
++> !* <a href="https://github.com/facebook/three20/pull/437">Purged obsolete environment variables</a>
++> 
++> Fixed by <a href="https://github.com/vguerci">vguerci</a>.
+
++> !* <a href="https://github.com/facebook/three20/pull/448">TTButton.h fix documentation cleanup</a>
++> 
++> Fixed by <a href="https://github.com/echamberlain">echamberlain</a>.
+
++> !* <a href="https://github.com/facebook/three20/pull/442">TTPostController: super view appear/disappear methods</a>
++> 
++> Fixed by <a href="https://github.com/echamberlain">echamberlain</a>.
+
++> !* <a href="https://github.com/facebook/three20/pull/450">Optimize table plain header label layout</a>
++> 
++> Fixed by <a href="https://github.com/diederich">diederich</a>.
+
++> !* <a href="https://github.com/facebook/three20/pull/458">TTBaseViewController uses [UIApplication sharedApplication] statusBarStyle]</a>
++> 
++> Before this change, TTBaseViewController was hardcoded to set the statusBarStyle to
++> UIStatusBarStyleDefault. This meant that an application had to change the UIStatusBarStyle
++> in the info.plist file and in every subclass of TTBaseViewController.
++>
++> With this change, the application only needs to set the UIStatusBarStyle in the info.plist and
++> all view will use the setting, unless explicitly overridden.
++> Fixed by <a href="https://github.com/echamberlain">echamberlain</a>.
+
++> !* Add missing #import for TTTableHeaderDragRefreshView.h
++> 
++> Fixed by <a href="https://github.com/jverkoey">jverkoey</a>.
+
++> !* <a href="https://github.com/facebook/three20/pull/460">Add *.pyc to .gitignore</a>
++> 
++> Fixed by <a href="https://github.com/jwang">jwang</a>.
+
++> !* Removed stray Xcode 3.2.4-specific files.
++> 
++> Fixed by <a href="https://github.com/jverkoey">jverkoey</a>.
+
+
+People involved in this release {#people}
+-------------------------------
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/010973d3b8d80be922371063874e4e2d?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Eric Chamberlain</div>
+  <div class="github"><a href="http://github.com/echamberlain">echamberlain</a></div>
+</div>
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/95a12008dd91997226e9cf4a74c5b0b8?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Stephan Diederich</div>
+  <div class="github"><a href="http://github.com/diederich">diederich</a></div>
+</div>
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/9ce3defacdc398921e9e1b5cce75b2b6?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Vincent Guerci</div>
+  <div class="github"><a href="http://github.com/vguerci">vguerci</a></div>
+</div>
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Tony Lewis</div>
+  
+</div>
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/ff18a517e9eeeca270cedc1c0f20afe3?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Mike Morearty</div>
+  <div class="github"><a href="http://github.com/mmorearty">mmorearty</a></div>
+</div>
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/f3c8603c353afa79b9f1c77f35efd566?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">Jeff Verkoeyen</div>
+  <div class="github"><a href="http://github.com/jverkoey">jverkoey</a></div>
+</div>
+
+<div class="profile">
+  <img width="135px" height="135px" src="http://www.gravatar.com/avatar/099e5c6d3d5dfb615735cd2cfa61828e?s=135&amp;d=http://three20.info/gfx/team/silhouette.gif" />
+  <div class="name">John Wang</div>
+  <div class="github"><a href="http://github.com/jwang">jwang</a></div>
+</div>
+
+<div class="clearfix"></div>
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->
