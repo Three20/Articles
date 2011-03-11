@@ -11,21 +11,21 @@ Roadmap
 
 <div class="grid">
   <div class="row header-row"><div class="col-4">Branch</div><div class="col-4"></div><div class="col-4-fill-2">Release Date</div><div class="clearfix"></div></div>
-  <div class="row"><a class="col-4" href="/roadmap/v1.0">master</a><a class="col-4" href="/roadmap/1.0.4.1">1.0.4.1</a><div class="col-4-fill-2">March 10, 2011</div><div class="clearfix"></div></div>
+  <div class="row"><a class="col-4" href="/roadmap/v1.0">master</a><a class="col-4" href="/roadmap/1.0.5">1.0.5</a><div class="col-4-fill-2">March 10, 2011</div><div class="clearfix"></div></div>
 </div>
 
 The following represents features that are actively under development by the Three20 Team. Most
 of these features here are intended to be launched within the following six months. We'll do
 our best to keep this roadmap updated.
 
-### Features on Deck ###
-*   XCode 4 Support
+### Upcoming Features ###
 *   Better backward compatibility with iOS 3
 *   XCode integrated Documentation
 *   Easier installation and management
 *   Extension management and support
 
 ### Major Features That Have Been Implemented ###
+*   XCode 4 Support
 *   TTModule Python Script
 *   Modularization of Three20
 *   TTableFooterInfiniteScrollView

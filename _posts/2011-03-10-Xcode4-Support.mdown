@@ -1,0 +1,62 @@
+---
+title: Xcode 4 Support
+css: grid
+---
+
+<div class="authors">
+  <div class="author">Date: March 10, 2011</div>
+</div>
+
+Xcode 4 Transition Guide
+========================
+
+Apple is pushing for Xcode 4 to be the primary development environment and, as a result,
+many of us will transition from Xcode 3.2 to Xcode 4 over the coming weeks. This
+guide has been put together by the Three20 team in order to help you migrate your apps to Xcode 4
+successfully.
+
+What you need to do
+-------------------
+
+### For existing projects
+
+If you want to start using Xcode 4 with an existing project made using Xcode 3.2.#, all you need
+to do to update your project is run ttmodule again like so:
+
+    > python three20/src/scripts/ttmodule.py -p path/to/your/project/project.xcodeproj Three20 --xcode-version=4
+
+This will add the following two header search paths to your project:
+
+    $(BUILT_PRODUCTS_DIR)/../three20
+    $(BUILT_PRODUCTS_DIR)/../../three20
+
+If you do not want to use ttmodule to do this, you can do it by hand. Simply modify your target's
+settings and add both values to the "Header Search Paths" value.
+
+We specify both flags before the existing search path because we want to prioritize these folders
+over the other one.
+
+### For new projects
+
+Please use the ttmodule script to add Three20 to your project. We do not currently directly
+support workspaces.
+
+!> !* Hey, listen!
+!>
+!> Before you transition to Xcode 4, please *clear out the three20/Build directory* of everything
+!> except the ignoreme file. This is to ensure that you don't accidentally use an old version
+!> of one of the Three20 headers.
+
+The Dirty Details
+-----------------
+
+Build output is now, by default, placed in a "derived data location". This goes
+against a basic assumption the Three20 ecosystem makes about the build environment: that
+it controls where its build output goes. As a result, when you open an Xcode 3.2.# project in
+Xcode 4, it will build your Three20 dependencies in a new "derived data location". When your
+app then goes to look for the Three20 headers in `../three20/Build/Products/three20`,
+it won't find the files. If it does, it's only because you probably still have files leftover
+from being built by Xcode 3.2.#.
+
+We solved this problem by adding some harmless additional search paths and
+doing conditional checks of the Xcode version and build type  where necessary.
