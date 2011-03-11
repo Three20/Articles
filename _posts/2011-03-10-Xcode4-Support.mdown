@@ -27,11 +27,13 @@ to do to update your project is run ttmodule again like so:
 
 This will add the following two header search paths to your project:
 
-    $(BUILT_PRODUCTS_DIR)/../three20
-    $(BUILT_PRODUCTS_DIR)/../../three20
+    "$(BUILT_PRODUCTS_DIR)/../three20"
+    "$(BUILT_PRODUCTS_DIR)/../../three20"
 
 If you do not want to use ttmodule to do this, you can do it by hand. Simply modify your target's
-settings and add both values to the "Header Search Paths" value.
+settings and add both values to the "Header Search Paths" value. Please ensure that you've added
+the quotes around the paths. This is in case there are any spaces in your path. Without the quotes,
+Xcode will see the space and think you're passing two paths instead of one.
 
 We specify both flags before the existing search path because we want to prioritize these folders
 over the other one.
