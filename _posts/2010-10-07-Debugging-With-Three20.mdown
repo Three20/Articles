@@ -87,9 +87,10 @@ a certain condition is met. A quick example:
 
     TTDCONDITIONLOG(TTDFLAG_URLREQUEST, @"Request parameters: %@", request.parameters)
 
-This will only produce the log if the flag `TTDFLAG_URLREQUEST` is set to a non-zero value. You can
-see a set of basic Three20 conditional log flags in
+This will only produce the log if the flag `TTDFLAG_URLREQUEST` is set to a non-zero value.
+All the available conditional log flags are listed and defined in
 [TTDebugFlags.h](http://github.com/facebook/three20/blob/master/src/Three20Core/Headers/TTDebugFlags.h).
+To turn them on, edit their values in your local copy of this file.
 
 Debug-only assertions {#debugassertions}
 =====================
