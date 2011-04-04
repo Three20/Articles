@@ -66,6 +66,11 @@
 	position: relative !important;
 }
 
+#content .syntaxhighlighter {
+  border: 1px solid #DEDEDE !important;
+	background-color: ghostWhite !important;
+}
+
 .syntaxhighlighter .bold 
 {
 	font-weight: bold !important;
