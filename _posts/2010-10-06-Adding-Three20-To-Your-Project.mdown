@@ -3,31 +3,158 @@ title: Add Three20 to your Project
 css: grid
 ---
 
-Add Three20 To Your Project
+Introduction
+============
+
+Before you begin using Three20 in your project, you should decide what directory layout works
+best for you.
+
+Recommended: Shared Layout
+--------------------------
+
+In this layout, Three20 is shared between multiple projects. If you need to make project-specific
+modifications to Three20, use git branches.
+
+If you are unfamiliar with git, it's highly recommended that you learn the basics in order to
+take advantage of this directory layout.
+
+### Directories
+
+    three20
+    projects/app1
+    projects/app2
+
+### Example workflow
+
+."brush: bash"
+    # Work on app1
+    > cd three20
+    three20 > git checkout app1                     # Check out app1's branch of modifications
+    three20 > open ../projects/app1/app1.xcodeproj  # Open app1 in Xcode
+    
+    # Work on app2
+    three20 > git checkout app2                     # Check out app2's branch of modifications
+    three20 > open ../projects/app2/app2.xcodeproj  # Open app1 in Xcode
+    
+    # Create a new app
+    three20 > git checkout -b app3 master           # Create a new branch, 'app3', at master
+    # <Create a new Xcode project in projects/app3>
+    # <Add Three20 to the new Xcode project using ttmodule>
+    
+    # Update three20 when a new release is made
+    three20 > git fetch                       # Get the latest updates from Github
+    three20 > git rebase origin/master master # Fast-forward the local release to the latest release
+    three20 > git rebase master app1          # Update each app individually, fixing any merge conflicts
+
+Submodule Layout
+----------------
+
+In this layout, Three20 lives directly within each project's folder as a git submodule. This
+layout can be useful if you don't plan to make modifications to Three20.
+
+### Directories
+
+    projects/app1
+    projects/app1/three20
+    projects/app2
+    projects/app2/three20
+
+### Example workflow
+
+."brush: bash"
+    # Add Three20 to app1
+    > cd projects/app1
+    projects/app1 > git submodule add git://github.com/facebook/three20.git three20
+    projects/app1 > git submodule init
+    projects/app1 > git add three20
+    projects/app1 > git commit -m "Add Three20 submodule"
+
+Add Three20 to your project
 ===========================
 
-<div>
->>grablatest<<
-</div>
-
-This will check out the latest official release of Three20. Read {{2010-10-24-Branches-And-Cuts}}
-to learn more about Three20's releases. Stay tuned with releases by checking out the
-[Three20 Roadmap](/roadmap).
+There are two primary means of adding Three20 to your project. The first method is recommended
+and will automatically add Three20's libraries to your project and set up the necessary project
+settings. Sometimes this first method will fail, so you can fall back on the second method
+to add Three20 to your project by hand.
 
 Automatically add Three20 to your project
 -----------------------------------------
 
-Three20 includes a script that adds Three20 to Xcode iOS projects. Here's how to use it:
+Three20 includes a python script that adds Three20 to Xcode iOS projects. Running it without
+any arguments will print the script's help guide.
 
+."brush: bash"
     > python three20/src/scripts/ttmodule.py
 
-Running that command will show you the script's help information, complete with a few examples.
-Here's a dead simple example:
+In order to add Three20 to your project, it's recommended that you do the following:
 
+."brush: bash"
     > python three20/src/scripts/ttmodule.py -p path/to/myProject.xcodeproj Three20
 
-This will add the [Three20](/module/three20) module and all of its dependencies.
-Read the article "{{2010-10-21-Understanding-Modules}}" to learn more about Modules and their
-dependencies.
+This will add the [Three20](/module/three20) module and all of its dependencies to your project.
+
+If your target's name does not match your project's name, you will need to set it explicitly.
+
+."brush: bash"
+    > python three20/src/scripts/ttmodule.py -p path/to/myProject.xcodeproj:myTargetName Three20
+
+If the script displays errors, it's possible that your project is located in a folder
+with non-standard characters, such as spaces, that aren't being escaped properly. If this happens,
+it might be easiest to move your project to a path that doesn't contain spaces. If this is
+not an option, you can follow the manual directions below.
+
+This screencast will walk you through the above process with the "Shared Layout" project layout.
 
 <iframe title="YouTube video player" width="960" height="562" src="http://www.youtube.com/embed/-0-E-Z0fihg?hd=1" frameborder="0" allowfullscreen></iframe>
+
+Manually add Three20 to your project
+------------------------------------
+
+1. Locate the "Three20.xcodeproj" file under "`three20/src/Three20/`". Drag Three20.xcodeproj and
+   drop it onto the root of your Xcode project's "Groups and Files"  sidebar.  A dialog will
+   appear -- make sure "Copy items" is unchecked and "Reference Type" is "Relative to Project"
+   before clicking "Add".    
+
+2. Open the Three20 Xcode Project that you just added to your app and expand the "Dependencies"
+   group. Select all of the projects listed there and drag them to your app as well. You should
+   now have the following list of Three20 projects added to your app:
+     * Three20Core
+     * Three20Network
+     * Three20Style
+     * Three20UICommon
+     * Three20UINavigator
+     * Three20UI
+     * Three20
+
+3. Link the Three20 static libraries to your project. Select all of the
+   project items that you just added to the sidebar.Under the "Details" table, you will see
+   a number of items, such as libThree20.a and libThree20Core.a. Check the checkbox on the
+   far right for each of the `lib` files (not the UnitTests). This will link each part of the
+   Three20 framework to your app.
+
+4. Add Three20 as a dependency of your project, so Xcode compiles it whenever
+   you compile your project. Expand the "Targets" section of the sidebar and double-click your
+   application's target. Under the "General" tab you will see a "Direct Dependencies" section. 
+   Click the "+" button, select "Three20" and each of the other libs, and click "Add Target".
+   You do *not* need to add the `UnitTests` target for each lib.
+
+5. Add the bundle of images and strings to your app.  Locate "Three20.bundle" under
+   "three20/src" and drag and drop it into your project.  A dialog will appear -- make sure 
+   "Create Folder References" is selected,  "Copy items" is unchecked, and "Reference Type" is 
+   "Relative to Project" before clicking "Add".
+
+6. Add the Core Animation framework to your project.  Right click on the
+   "Frameworks" group in your project (or equivalent) and select Add > Existing Frameworks. 
+   Then locate QuartzCore.framework and add it to the project.
+
+7. Finally, tell your project where to find the Three20 headers.  Open your
+   "Project Settings" and go to the "Build" tab. Look for "Header Search Paths" and double-click
+   it.  Add the relative path from your project's directory to the
+   "three20/Build/Products/three20" directory.
+
+8. While you are in Project Settings, go to "Other Linker Flags" under the "Linker" section, and
+   add "-ObjC" to the list of flags. WARNING: Make sure that you do this for all configuration
+   settings, not just the active one.
+
+9. You're ready to go.  Just #import "Three20/Three20.h" anywhere you want to use Three20 classes
+   in your project. It's recommended that you do so in a precompiled header for faster build times.
