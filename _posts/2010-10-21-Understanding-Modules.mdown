@@ -1,9 +1,10 @@
 ---
 css: grid
+title: About Modules
 ---
 
-Understanding Modules
-=====================
+About Modules
+=============
 
 Three20 is composed of several distinct modules that each provide their own set of features.
 

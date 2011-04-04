@@ -105,7 +105,7 @@ not an option, you can follow the manual directions below.
 
 This screencast will walk you through the above process with the "Shared Layout" project layout.
 
-<iframe title="YouTube video player" width="960" height="562" src="http://www.youtube.com/embed/-0-E-Z0fihg?hd=1" frameborder="0" allowfullscreen></iframe>
+<iframe title="YouTube video player" width="798" height="467" src="http://www.youtube.com/embed/-0-E-Z0fihg?hd=1" frameborder="0" allowfullscreen></iframe>
 
 Manually add Three20 to your project
 ------------------------------------
