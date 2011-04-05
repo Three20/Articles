@@ -1,18 +1,18 @@
 
 #toc .box {
   background-color: #FFF;
-  border: 1px solid #EEE;
+  border: 1px solid #F0F0F0;
   float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  max-width: 300px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  max-width: 200px;
 }
 
 #toc .box .title {
   background: #F8F8F8;
-  padding: 10px;
-  font-size: 1.5em;
-  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica,clean,sans-serif;;
+  padding: 5px;
+  font-size: 14px;
+  color: #999;
 }
 
 #toc .box ul {
@@ -22,24 +22,19 @@
 
 #toc .box li {
   list-style: none;
-  border-top: 1px solid #EEE;
+  border-top: 1px solid #F0F0F0;
   margin: 0;
 }
 
 #toc .box a {
-  color: #0054a6;
+  color: #0054A6;
   text-decoration: none;
-  font-size: 1em;
-  padding: 10px;
+  font-size: 14px;
+  padding: 5px;
   display: block;
-}
-
-#toc .box a:visited {
-  color: #66A;
 }
 
 #toc .box a:hover {
   cursor: pointer;
-  background-color: #acd6ff;
-  color: #FFF;
+  background-color: ghostWhite;
 }

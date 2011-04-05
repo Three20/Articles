@@ -1,5 +1,5 @@
 ---
-layout:basic
+layout:basictoc
 css:article community headerbar
 title:Frequently Answered Questions (FAQ)
 ---

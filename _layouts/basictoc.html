@@ -11,24 +11,22 @@
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="http://three20.info/"/>
   <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iOS iPhone iPad api open source sdk library uikit tt" />
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
   <title><?php echo html::specialchars($title) ?></title>
 <?
   echo three20html::stylesheet(array(
     'css/reset',
     'css/global.css',
-    'css/article.css',
     'css/shCore.css',
     'css/shTheme.css',
-    'css/headerbar.css',
   ), null, FALSE);
-  echo three20html::stylesheet($css_files, null, FALSE);
   echo three20html::script(array(
     'js/shCore.js',
     'js/shBrushObjC.js',
     'js/shBrushBash.js'
   ), FALSE);
+  echo three20html::stylesheet($css_files, null, FALSE);
   echo three20html::inlinescript('
   SyntaxHighlighter.defaults.light = true;
   SyntaxHighlighter.defaults[\'tab-size\'] = 2;
@@ -51,11 +49,6 @@
 
 >>rightlinks<<
 
-<ul class="right-links">
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
-  <li><a href="http://github.com/Three20/Articles/tree/master/<?= $article_dir ?>/<?= $article_id ?>">Edit this article on GitHub</a></li>
-</ul>
-
 >>fbheader<<
 
 >>leadin<<
@@ -70,36 +63,18 @@
 
 >>toc<<
 
-<div id="content">
-<div class="fixed-width">
-
 <?php echo $content ?>
 
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-  (function() {
-   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-   var disqus_identifier = '<?= $article_id ?>';
-   dsq.src = 'http://three20info2.disqus.com/embed.js';
-   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
+</div> <!-- #page-wrapper -->
 
-</div> <!-- #content -->
 </div> <!-- .fixed-width -->
 </div> <!-- #article-wrapper -->
-</div> <!-- #page-wrapper -->
 
 <?
 echo three20html::script($js_foot_files, FALSE);
 ?>
 
 >>analytics<<
-
->>disqus<<
 
 </body>
 </html>
