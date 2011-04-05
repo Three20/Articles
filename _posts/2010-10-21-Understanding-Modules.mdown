@@ -12,45 +12,12 @@ What is a Module?
 -----------------
 
 A Three20 module is a Cocoa Touch Static Library that can be linked into an iOS application.
-Modules often depend upon other modules to function correctly. It's easiest to think of
-modules as specific, independent features that you can plug into your application.
+Modules often depend upon other modules to function correctly. For example, every Three20 module
+depends on the Three20Core module.
 
 What is an Extension?
 ---------------------
 
-An extension is a module that provides additional features on top of the Three20 module set.
-Extensions are often developed by community members.
-
-Module Hierarchy
-----------------
-
-Presented below is the Three20 Module hierarchy. Select any module to learn more about it.
-
-<div class="grid">
-  <div class="row"><a class="col-1" href="/module/three20">Three20</a><div class="clearfix"></div></div>
-  <div class="row"><a class="col-1 version1dot1" href="/module/launcher">Launcher</a><div class="clearfix"></div></div>
-  <div class="row"><a class="col-1" href="/module/ui">UI</a><div class="clearfix"></div></div>
-  <div class="row"><a class="col-2" href="/module/style">Style</a><a class="col-2" href="/module/uinavigator">UINavigator</a><div class="clearfix"></div></div>
-  <div class="row"><a class="col-2" href="/module/network">Network</a><a class="col-2" href="/module/uicommon">UICommon</a><div class="clearfix"></div></div>
-  <div class="row"><a class="col-1" href="/module/core">Core</a><div class="clearfix"></div></div>
-</div>
-
-Extension Hierarchy
--------------------
-
-Presented below are the various Three20 extensions and their dependencies.
-
-<div class="grid">
-  <div class="row"><a class="col-1" href="/module/extcssstyle">extThree20CSSStyle</a><div class="clearfix"></div></div>
-  <div class="row"><a class="col-1" href="/module/style">Style</a><div class="clearfix"></div></div>
-  <div class="row"><a class="col-1" href="/module/network">Network</a><div class="clearfix"></div></div>
-  <div class="row"><a class="col-1" href="/module/core">Core</a><div class="clearfix"></div></div>
-  <div class="clearfix"></div>
-</div>
-
-<div class="grid">
-  <div class="row"><a class="col-2" href="/module/extjson">extThree20JSON</a><a class="col-2" href="/module/extxml">extThree20XML</a><div class="clearfix"></div></div>
-  <div class="row"><a class="col-1" href="/module/network">Network</a><div class="clearfix"></div></div>
-  <div class="row"><a class="col-1" href="/module/core">Core</a><div class="clearfix"></div></div>
-  <div class="clearfix"></div>
-</div>
+An extension is a module that provides additional features on top of the primary Three20
+feature set. Extensions are often developed by community members. Some examples include
+JSON and XML parsers, and using CSS to style applications.
