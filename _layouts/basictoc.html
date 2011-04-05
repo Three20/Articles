@@ -18,8 +18,21 @@
   echo three20html::stylesheet(array(
     'css/reset',
     'css/global.css',
+    'css/shCore.css',
+    'css/shTheme.css',
   ), null, FALSE);
+  echo three20html::script(array(
+    'js/shCore.js',
+    'js/shBrushObjC.js',
+    'js/shBrushBash.js'
+  ), FALSE);
   echo three20html::stylesheet($css_files, null, FALSE);
+  echo three20html::inlinescript('
+  SyntaxHighlighter.defaults.light = true;
+  SyntaxHighlighter.defaults[\'tab-size\'] = 2;
+  SyntaxHighlighter.defaults[\'auto-links\'] = false;
+  SyntaxHighlighter.defaults.toolbar = false;
+  SyntaxHighlighter.all();');
   echo three20html::script($js_head_files, FALSE);
   echo three20html::inlinescript($js_head_scripts);
 ?>
