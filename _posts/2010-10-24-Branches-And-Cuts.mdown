@@ -1,5 +1,5 @@
 ---
-title: The Three20 Branching Model
+title: Submitting Patches
 ---
 
 The Three20 Branching Model
@@ -19,7 +19,6 @@ in-depth discussions about the branching model.
 * [Primary Branches](#primarybranches)
 * [Making Pull Requests](#pullrequests)
 </div>
-<div class="clearfix"></div>
 
 Getting Started {#gettingstarted}
 ---------------

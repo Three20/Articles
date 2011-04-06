@@ -1,5 +1,5 @@
 ---
-title: How to Edit a GitHub Article
+title: Modifying Articles
 ---
 
 How to Edit a GitHub Article
