@@ -45,12 +45,12 @@ This will happen when you've set up a new project, removed the default nib, and
 only use Three20 in your app delegate to present the initial view controllers.
 
 The problem is likely that you haven't declared to your app the name of your
-app delegate. To resolve this problem, check out `main.m` in your project.
+app delegate. To resolve this problem, open `main.m` in your project.
 It's usually in the "Other Sources" folder. Find the following line:
 
     int retVal = UIApplicationMain(argc, argv, nil, nil);
 
-You will need to change the last parameter to a string containing the name of
+You will need to change the last nil parameter to a string containing the name of
 your app delegate. For example, if your app delegate is declared as "@interface
 AppDelegate", you should write:
 

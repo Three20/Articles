@@ -23,7 +23,6 @@ iPhone interfaces like ^UINavigationController^, ^UITabBarController^, and more.
 * [Native parameters](#nativeparams)
 * [Troubleshooting](#troubleshooting)
 </div>
-<div class="clearfix"></div>
 
 Introduction {#intro}
 ============

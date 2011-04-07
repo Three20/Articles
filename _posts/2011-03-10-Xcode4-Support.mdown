@@ -1,5 +1,5 @@
 ---
-title: Xcode 4 Support
+title: Xcode 4 Transition Guide
 css: grid
 ---
 
@@ -10,10 +10,9 @@ css: grid
 Xcode 4 Transition Guide
 ========================
 
-Apple is pushing for Xcode 4 to be the primary development environment and, as a result,
-many of us will transition from Xcode 3.2 to Xcode 4 over the coming weeks. This
-guide has been put together by the Three20 team in order to help you migrate your apps to Xcode 4
-successfully.
+Apple is aiming for Xcode 4 to be the primary iOS development environment and, as a result,
+many will need to transition from Xcode 3.2 to Xcode 4. This guide has been put together in
+order to help you migrate your apps to Xcode 4 successfully.
 
 What you need to do
 -------------------
