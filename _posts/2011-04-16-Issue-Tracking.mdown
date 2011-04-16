@@ -1,0 +1,116 @@
+---
+title: Issue Tracking
+css: grid720
+---
+
+Issue Tracking
+==============
+
+### Table of Contents
+
+<div class="toc" markdown="1">
+* [Tags](#tags)
+* [Assignment](#assignment)
+* [Milestones](#milestones)
+</div>
+
+Tags {#tags}
+----
+
+Tags help us organize issues. Three20 has four tag types: **priority**, **kind**,
+**review state**, and **version**.
+
+Note: Tags can only be set by members of the core team. Because of this limitation, it is
+helpful to include suggestions for tags in the issue description, but not required.
+
+### Priority Tags
+
+Priority tags signify how important it is to resolve the issue in the next milestone.
+We use three priority levels: low, high, and critical. 
+
+There are certain types of issues that should always have a minimum priority level. These
+minimum priorities are outlined below.
+
+* Crashing issues - **critical**
+* Memory leaks - **critical**
+* Visual bugs (incorrect layout, orientation bugs, incorrect font size) - **high**
+* Documentation updates - **high**
+* Typos or errors in translation - **low**
+* Non-critical bugs - **low**
+* Feature requests - **low**
+
++> !* Default priority level
++> If an issue does not have a priority level set, assume that the priority is **low** until
++> the priority is set otherwise.
+
+### Kind Tags
+
+Kind tags categorize issues into simple issue types. The issue types are listed below.
+
+* bug - Something that doesn't work the way it's expected to, but does not cause a crash.
+* crash - A bug that causes a crash.
+* docs - Updates to the documentation.
+* feature - A feature request.
+* fixavailable - A fix is available, either in an attached pull request or in the issue
+  description.
+* leak - A memory leak.
+* norepro - There is no consistent means of reproducing the issue.
+* notabug - Either something is by design or is not caused by Three20. Issues tagged notabug will
+  eventually be closed.
+* privateapi - A private API has been declared unsafe by Apple.
+* unconfirmed - It's not clear whether this something that should be fixed.
+
++> !* Default kind
++> If an issue does not have a kind set, assume that the kind is **bug** until the kind is
++> set otherwise.
+
+### Review State
+
+Review state is used by the core team to sign off on code reviews. By default, all issues
+are in a "being reviewed" state as long as they are open.
+
+Once a member of the core team has reviewed an issue and signed off on it, the issue is tagged
+**reviewed**. Any non-trivial issue requires that it is reviewed before being merged into
+the development branch. This requires that at least two members of the core team have seen the
+issue before it is merged.
+
++> !* Default review state
++> If an issue does not have a review state, assume that the state is **in review** until
++> the state is set otherwise.
+
+
+### Version
+
+Each minor release of Three20 will have its own tag in the issue tracker. For example, 1.0,
+1.1, 2.0, and 4.5 are all likely tags in the future. 1.0.5 is not, however, because it is
+a bugfix release.
+
+Version tagging is helpful to narrow down which version of the framework the bug applies to.
+
++> !* Default version
++> If an issue does not have a version, assume that the version is **the latest release** until
++> the version is set otherwise.
+
+
+Assignment {#assignment}
+----------
+
+With the introduction of Github's
+[Issues 2.0](https://github.com/blog/831-issues-2-0-the-next-generation)
+we can now assign issues to members of the core team. Issues can have one of two assignment
+states: **assigned to someone** or **unassigned**.
+
+We use assignment to denote that someone is actively working on an issue. We do not use
+assignment to let someone know that they should look at an issue. For that, we use @mention
+within the pull request comments.
+
+
+Milestones {#milestones}
+----------
+
+Github's [Issues 2.0](https://github.com/blog/831-issues-2-0-the-next-generation) also includes
+a new milestone feature. Three20 uses milestones to organize issues for each version of the
+framework. A milestone will not be released until all features in the milestone have been
+committed. If an issue is blocking the release of a new version of Three20, the issue can be
+moved to a later milestone.
+
