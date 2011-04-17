@@ -230,6 +230,7 @@
 
 #content .permalink {
   text-align: right;
+  border-top: 5px solid #ddd;
 }
 
 #content blockquote {
