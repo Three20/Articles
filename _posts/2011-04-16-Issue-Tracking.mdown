@@ -6,6 +6,12 @@ css: grid720
 Issue Tracking
 ==============
 
+We use Github's issue tracker as Three20's primary issue tracker. This guide defines our strategy
+for using Github's various features effectively and consistently.
+
+It is helpful, before diving into this article, to know that we think of *Pull Requests* as
+*Issues* without attached code.
+
 ### Table of Contents
 
 <div class="toc" markdown="1">
@@ -66,8 +72,9 @@ Kind tags categorize issues into simple issue types. The issue types are listed 
 
 ### Review State
 
-Review state is used by the core team to sign off on code reviews. By default, all issues
-are in a "being reviewed" state as long as they are open.
+For issues that **do** have attached pull requests, by default they are in a "being reviewed"
+state as long as they are open. Review state is used by the core team to sign off on pull
+request reviews.
 
 Once a member of the core team has reviewed an issue and signed off on it, the issue is tagged
 **reviewed**. Any non-trivial issue requires that it is reviewed before being merged into
@@ -75,8 +82,18 @@ the development branch. This requires that at least two members of the core team
 issue before it is merged.
 
 +> !* Default review state
-+> If an issue does not have a review state, assume that the state is **in review** until
++> If a pull request does not have a review state, assume that the state is **in review** until
 +> the state is set otherwise.
+
+For issues that **do not** have an attached pull request, the concept of being reviewed doesn't
+strictly apply. An issue can have an available fix, either outlined in the issue
+itself or in another pull request, in which case the issue should link to that pull request and
+be tagged **fixavailable**.
+
+If an issue does not have an available fix, then someone can volunteer to fix the issue and
+assign it to themselves accordingly (see the [assignment section](#assignment)). Whoever is
+assigned to an issue is held accountable for fixing it in a timely manner or providing a
+reasonable timeline.
 
 
 ### Version
@@ -102,7 +119,7 @@ states: **assigned to someone** or **unassigned**.
 
 We use assignment to denote that someone is actively working on an issue. We do not use
 assignment to let someone know that they should look at an issue. For that, we use @mention
-within the pull request comments.
+within the issue's comments.
 
 
 Milestones {#milestones}
