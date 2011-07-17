@@ -1,0 +1,23 @@
+---
+layout:basic
+title:1.0.6 Information
+css:article headerbar grid issues release
+---
+
+<div id="content">
+<div class="fixed-width" markdown="1">
+
+Version 1.0.6 July 11, 2011
+=============
+
+<div>
+>>grab(1.0.6)<<
+</div>
+
+[Compare 1.0.5 to 1.0.6](https://github.com/facebook/three20/compare/1.0.5...1.0.6) on GitHub.
+
+
+<div class="clearfix"></div>
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->

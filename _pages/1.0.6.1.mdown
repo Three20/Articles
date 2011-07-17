@@ -1,0 +1,36 @@
+---
+layout:basic
+title:1.0.6.1 Information
+css:article headerbar grid issues release
+---
+
+<div id="content">
+<div class="fixed-width" markdown="1">
+
+Version 1.0.6.1 July 15, 2011
+=============
+Included in this release:
+[2 hotfix](#hotfixes)
+
+<div>
+>>grab(1.0.6.1)<<
+</div>
+
+Hot Fixes {#hotfixes}
+-----------
+
+!> !* <a href="https://github.com/facebook/three20/issues/603">MAJOR: TTPhotoViewController does not have slide animation for picture change</a>
+!>  
+!>  
+
+!> !* <a href="https://github.com/facebook/three20/issues/604">TTPhotoViewController does not show toolbar at bottom</a>
+!> 
+!>  
+
+
+[Compare 1.0.6 to 1.0.6.1](https://github.com/facebook/three20/compare/1.0.6...1.0.6.1) on GitHub.
+
+<div class="clearfix"></div>
+
+</div> <!-- .fixed-width -->
+</div> <!-- #content -->
