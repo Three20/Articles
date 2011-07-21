@@ -10,18 +10,18 @@ css: grid
 Using ETAGs with TTImageView
 ===========================
 
-^TTImageView^ is network-enabled image view that could asynchronously load one image from a web server, has 
+^TTImageView^ is a network-enabled image view that could asynchronously load one image from a web server, has 
 the powerful feature to cache the image locally based on different policies.
 
 One powerful and well knowed policy is use <a href=http://en.wikipedia.org/wiki/HTTP_ETag"">HTML ETAGs</a>. 
-But how I can enable ^TTImageView^ to use this policy?
+But how we can enable ^TTImageView^ to use this policy?
 
 ^TTImageView^ internally use the ^TTURLRequest^ in order to make the server call and retrieve the data. ^TTURLRequest^
 default policy is ^TTURLRequestCachePolicyDefault^. So, we have to change this property to ^TTURLRequestCachePolicyEtag^.
 
-But how I do that?
+And how we do that?
 
-Since version 1.0.7 Three20 ^TTImageView^ pass the control to his <b>delegate</b> before fire the <b>request</b>. 
+Since Three20 version 1.0.7, ^TTImageView^ pass the control to his <b>delegate</b> before fire the <b>request</b>. 
 On this specific moment you can set the <b>requester</b> with the new policy.
 
 Let's see how we can do that in code:
