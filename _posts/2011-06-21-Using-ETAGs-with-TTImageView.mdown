@@ -1,0 +1,49 @@
+---
+title: Using ETAGs with TTImageView
+css: grid
+---
+
+<div class="authors">
+  <div class="author">Author: <a href="http://www.pauloliveira.net/resume">Paulo Oliveira</a></div>
+</div>
+
+Using ETAGs with TTImageView
+===========================
+
+^TTImageView^ is a network-enabled image view that could asynchronously load one image from a web server, has 
+the powerful feature to cache the image locally based on different policies.
+
+One powerful and well knowed policy is use <a href=http://en.wikipedia.org/wiki/HTTP_ETag"">HTML ETAGs</a>. 
+But how we can enable ^TTImageView^ to use this policy?
+
+^TTImageView^ internally use the ^TTURLRequest^ in order to make the server call and retrieve the data. ^TTURLRequest^
+default policy is ^TTURLRequestCachePolicyDefault^. So, we have to change this property to ^TTURLRequestCachePolicyEtag^.
+
+And how we do that?
+
+Since Three20 version 1.0.7, ^TTImageView^ pass the control to his <b>delegate</b> before fire the <b>request</b>. 
+On this specific moment you can set the <b>requester</b> with the new policy.
+
+Let's see how we can do that in code:
+
+First the class that will act as <b>delegate</b> should implement the ^TTImageViewDelegate^ protocol:
+
+    @interface myTTImageViewDelegate <TTImageViewDelegate>
+    ...
+    @end
+    
+Next you should attach your class as delegate of ^TTImageView^:
+
+    TTImageView *imageView = [[TTImageView alloc] initWithFrame:someFrame];
+    imageView.delegate = myDelegate;
+    
+And finally implement the <code>imageView:willSendARequest</code> method:
+
+    - (void)imageView:(TTImageView*)imageView willSendARequest:(TTURLRequest*)requester {
+        // Use ETAgs.
+        requester.cachePolicy = TTURLRequestCachePolicyEtag;
+    }
+    
+That's it, this method will be called everytime just before the ^TTImageView^ ask
+the server for the image. 
+
