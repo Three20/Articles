@@ -34,7 +34,7 @@ take advantage of this directory layout.
     
     # Work on app2
     three20 > git checkout app2                     # Check out app2's branch of modifications
-    three20 > open ../projects/app2/app2.xcodeproj  # Open app1 in Xcode
+    three20 > open ../projects/app2/app2.xcodeproj  # Open app2 in Xcode
     
     # Create a new app
     three20 > git checkout -b app3 master           # Create a new branch, 'app3', at master
